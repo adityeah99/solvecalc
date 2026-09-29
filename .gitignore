@@ -3,6 +3,6 @@ dist/
 .astro/
 # generated from the games source by `npm run games:sync`
 
-public/thumbs/
+
 .DS_Store
-src/generated/
+
