@@ -4,9 +4,7 @@ import { SITE } from './src/config/site.ts';
 
 export default defineConfig({
   site: SITE.url,
-  // /calculators/fractions instead of /calculators/fractions/
-  trailingSlash: 'never',
-  build: { format: 'file', inlineStylesheets: 'auto' },
+  build: { format: 'directory', inlineStylesheets: 'auto' },
   prefetch: { prefetchAll: false, defaultStrategy: 'hover' },
   integrations: [sitemap()],
 });
