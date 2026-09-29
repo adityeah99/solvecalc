@@ -1,0 +1,156 @@
+---
+// The scientific calculator, including Code Mode (4-digit game codes).
+// Behaviour lives in src/scripts/scientific.ts.
+import '../../styles/sci.css';
+import { MATH_GAMES } from '../../data/math-games.ts';
+
+interface Props {
+  id?: string;
+  /** Show the history panel next to the keys (full page) or fold it away (home hero). */
+  layout?: 'full' | 'compact';
+  /** Route typing on the page body into the calculator (only on its own page). */
+  globalKeys?: boolean;
+  autofocus?: boolean;
+}
+const { id = 'sci', layout = 'full', globalKeys = false, autofocus = false } = Astro.props;
+const gameCodes = JSON.stringify(Object.fromEntries(MATH_GAMES.map((g) => [g.code, { slug: g.slug, name: g.name }])));
+
+type Kind = 'fn' | 'num' | 'op' | 'eq' | 'clr';
+interface Key {
+  label: string;
+  kind: Kind;
+  insert?: string;
+  action?: 'clear' | 'back' | 'equals';
+  aria?: string;
+  code?: boolean; // stays active in Code Mode
+}
+const k = (label: string, kind: Kind, insert?: string, aria?: string): Key => ({ label, kind, insert, aria });
+const num = (d: string): Key => ({ label: d, kind: 'num', insert: d, code: /\d/.test(d) });
+
+const KEYS: Key[] = [
+  k('sin', 'fn', 'sin(', 'sine'),
+  k('cos', 'fn', 'cos(', 'cosine'),
+  k('tan', 'fn', 'tan(', 'tangent'),
+  k('π', 'fn', 'π', 'pi'),
+  k('e', 'fn', 'e', "Euler's number e"),
+  k('sin⁻¹', 'fn', 'sin⁻¹(', 'inverse sine'),
+  k('cos⁻¹', 'fn', 'cos⁻¹(', 'inverse cosine'),
+  k('tan⁻¹', 'fn', 'tan⁻¹(', 'inverse tangent'),
+  k('log', 'fn', 'log(', 'log base 10'),
+  k('ln', 'fn', 'ln(', 'natural log'),
+  k('n!', 'fn', '!', 'factorial'),
+  k('(', 'fn', '(', 'open bracket'),
+  k(')', 'fn', ')', 'close bracket'),
+  { label: 'AC', kind: 'clr', action: 'clear', aria: 'clear all', code: true },
+  { label: '⌫', kind: 'clr', action: 'back', aria: 'backspace', code: true },
+  k('x²', 'fn', '²', 'square'),
+  num('7'),
+  num('8'),
+  num('9'),
+  k('÷', 'op', '÷', 'divide'),
+  k('√', 'fn', '√(', 'square root'),
+  num('4'),
+  num('5'),
+  num('6'),
+  k('×', 'op', '×', 'multiply'),
+  k('xʸ', 'fn', '^', 'power'),
+  num('1'),
+  num('2'),
+  num('3'),
+  k('−', 'op', '−', 'minus'),
+  k('%', 'fn', '%', 'percent'),
+  num('0'),
+  num('.'),
+  { label: '=', kind: 'eq', action: 'equals', aria: 'equals', code: true },
+  k('+', 'op', '+', 'plus'),
+];
+---
+
+<div
+  class={`sci sci--${layout}`}
+  id={id}
+  data-sci
+  data-game-codes={gameCodes}
+  data-global-keys={globalKeys ? '' : undefined}
+  data-autofocus={autofocus ? '' : undefined}
+>
+  <div class="sci-shell">
+    <div class="sci-brandrow" aria-hidden="true">
+      <span class="sci-maker">Calcora</span>
+      <span class="sci-solar"><i></i><i></i><i></i><i></i></span>
+    </div>
+
+    <div class="sci-lcd lcd">
+      <div class="sci-normal" data-normal-view>
+        <div class="sci-ann" aria-hidden="true">
+          <span data-ann-angle>DEG</span>
+          <span data-ann-hist class="is-off">HIST</span>
+        </div>
+        <label class="visually-hidden" for={`${id}-expr`}>Expression</label>
+        <input
+          id={`${id}-expr`}
+          class="sci-expr"
+          data-expr
+          type="text"
+          inputmode="none"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-describedby={`${id}-result ${id}-error`}
+        />
+        <output id={`${id}-result`} class="sci-result" data-result aria-live="polite">0</output>
+        <p id={`${id}-error`} class="sci-error" data-error role="alert"></p>
+      </div>
+    </div>
+
+    <div class="sci-controls">
+      <div class="sci-angle" role="group" aria-label="Angle unit" data-angle-group>
+        <button type="button" data-angle="deg" aria-pressed="true">DEG</button>
+        <button type="button" data-angle="rad" aria-pressed="false">RAD</button>
+      </div>
+      <button type="button" class="sci-mode" role="switch" aria-checked="false" data-codemode>
+        <span class="sci-switch" aria-hidden="true"></span>
+        <span>Code Mode: <strong data-codemode-state>OFF</strong></span>
+      </button>
+    </div>
+
+    <div class="sci-keys" data-keys>
+      {
+        KEYS.map((key) => (
+          <button
+            type="button"
+            class={`sci-key sci-key--${key.kind}`}
+            data-insert={key.insert}
+            data-action={key.action}
+            data-code-key={key.code ? '' : undefined}
+            aria-label={key.aria}
+          >
+            {key.label}
+          </button>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="sci-side">
+    <div class="sci-actions">
+      <button type="button" class="key key--sm" data-copy>Copy result</button>
+      <button type="button" class="key key--sm key--ghost" data-clear>Clear</button>
+      <button type="button" class="key key--sm key--ghost" data-reset>Reset</button>
+    </div>
+    <details class="sci-history" data-history open={layout === 'full'}>
+      <summary>History <span class="sci-hcount" data-history-count></span></summary>
+      <ol class="sci-hlist" data-history-list></ol>
+      <p class="sci-hempty" data-history-empty>Finished calculations show up here. Select one to use it again.</p>
+    </details>
+    <p class="sci-tip">
+      Tip: type on your keyboard, like <kbd>sin(30)</kbd> or <kbd>2^10</kbd>, then press <kbd>Enter</kbd>.
+    </p>
+  </div>
+</div>
+
+<script>
+  import { mountScientific } from '../../scripts/scientific.ts';
+  document.querySelectorAll<HTMLElement>('[data-sci]').forEach(mountScientific);
+</script>

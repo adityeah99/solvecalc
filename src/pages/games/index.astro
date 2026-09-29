@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MathGameCard from '../../components/mathgames/MathGameCard.astro';
+import '../../styles/mathgames.css';
+import { MATH_GAMES } from '../../data/math-games.ts';
+---
+
+<BaseLayout
+  title="Math Games"
+  description={`${MATH_GAMES.length} free math games that run in your browser: mental arithmetic, fractions, equations, angles, primes, averages and probability.`}
+  crumbs={[{ label: 'Games' }]}
+>
+  <div class="wrap games-page">
+    <header class="index-head">
+      <h1>Math games</h1>
+      <p class="lede">
+        Short games that practice one skill each. No downloads, no sign-up. Your best scores are saved in this browser.
+      </p>
+    </header>
+    <ul class="mg-grid">
+      {MATH_GAMES.map((g) => <MathGameCard game={g} headingLevel="h2" />)}
+    </ul>
+    <p class="games-note muted">
+      Every game has a 4-digit code. Switch on Code Mode on the <a href="/calculators/scientific">calculator</a> and type
+      it to jump straight in.
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .games-page {
+    padding-bottom: 40px;
+  }
+  .index-head {
+    max-width: 760px;
+    margin-bottom: 24px;
+  }
+  .games-note {
+    margin-top: 28px;
+    max-width: 70ch;
+  }
+</style>

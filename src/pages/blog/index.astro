@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Mascot from '../../components/Mascot.astro';
+import PostCard from '../../components/PostCard.astro';
+import '../../styles/blog.css';
+import { BLOG_CATEGORIES } from '../../data/blog.ts';
+import { SITE } from '../../config/site.ts';
+
+const posts = (await getCollection('blog')).sort((a, b) => +b.data.published - +a.data.published);
+const groups = BLOG_CATEGORIES.map((c) => ({ cat: c, items: posts.filter((p) => p.data.category === c.id) })).filter((g) => g.items.length);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: `${SITE.name} Blog`,
+    url: new URL('/blog', SITE.url).href,
+    blogPost: posts.map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.data.title,
+      url: new URL(`/blog/${p.id}`, SITE.url).href,
+      datePublished: p.data.published.toISOString().slice(0, 10),
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title="Math Blog: Study Tips and Guides"
+  description="Study tips, mental-math tricks and plain-English guides for students and parents, from the Calcora team."
+  crumbs={[{ label: 'Blog' }]}
+  jsonLd={jsonLd}
+>
+  <div class="wrap blog-page">
+    <header class="blog-hero">
+      <div>
+        <h1>The Calcora blog</h1>
+        <p class="lede">Study tips, mental-math tricks and clear guides for students and the grown-ups helping them.</p>
+      </div>
+      <Mascot mood="wave" size={128} />
+    </header>
+
+    {
+      groups.map((g) => (
+        <section class="blog-section" id={g.cat.id}>
+          <h2>
+            <span class="blog-cat-dot" style={`background:${g.cat.color}`} aria-hidden="true" />
+            {g.cat.label}
+          </h2>
+          <ul class="post-grid">
+            {g.items.map((post) => (
+              <PostCard post={post} />
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>

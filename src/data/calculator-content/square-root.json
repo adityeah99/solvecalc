@@ -1,0 +1,58 @@
+{
+  "intro": "Find the square root and the cube root of a number. For whole numbers you also get the simplified radical form, like √72 = 6√2, and you can see whether the number is a perfect square.",
+  "formula": [
+    { "label": "Square root", "expr": "√n = r means r × r = n and r ≥ 0", "note": "√49 = 7 because 7 × 7 = 49." },
+    { "label": "Simplifying a radical", "expr": "√(a² × b) = a√b", "note": "√72 = √(36 × 2) = 6√2" },
+    { "label": "Square root of a negative", "expr": "√(−n) = √n × i, where i² = −1", "note": "√−9 = 3i" },
+    { "label": "Cube root", "expr": "∛n = r means r × r × r = n", "note": "∛−8 = −2 because (−2)³ = −8." }
+  ],
+  "howItWorks": [
+    "The square root of a number is the value that, multiplied by itself, gives that number. The cube root is the value that, multiplied by itself three times, gives the number. You get both at once, as decimals.",
+    "For a whole number, the calculator also looks for the largest perfect square that divides into it, such as 36 in 72. That square comes out of the root as a whole number and whatever is left stays inside, so √72 = 6√2. If nothing is left inside, the number is a perfect square.",
+    "A negative number has no real square root, because any real number times itself is zero or positive. So √−9 is shown as the imaginary number 3i. Cube roots of negative numbers are fine, because a negative times a negative times a negative is negative, so ∛−8 = −2."
+  ],
+  "example": {
+    "title": "Simplifying √180",
+    "problem": "Write √180 in simplified radical form and as a decimal.",
+    "steps": [
+      "Break 180 into prime factors: 180 = 2² × 3² × 5.",
+      "The squared factors make the perfect square 2² × 3² = 36, so 180 = 36 × 5.",
+      "Split the root: √180 = √36 × √5 = 6√5.",
+      "As a decimal: 6 × 2.23607… ≈ 13.4164.",
+      "Something is left inside the root, so 180 is not a perfect square."
+    ],
+    "answer": "√180 = 6√5 ≈ 13.4164"
+  },
+  "mistakes": [
+    {
+      "title": "Splitting a root over addition",
+      "text": "√(9 + 16) is √25 = 5, not √9 + √16 = 7. You can split a root over multiplication, but not over addition."
+    },
+    {
+      "title": "Not using the largest square factor",
+      "text": "√72 = 2√18 is true but not finished, because 18 still contains the square 9. Take out 36 in one go: √72 = 6√2."
+    },
+    {
+      "title": "Forgetting the ± when solving x² = n",
+      "text": "√9 means the positive root, 3. But the equation x² = 9 has two answers, x = 3 and x = −3."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a perfect square?",
+      "a": "A whole number that is another whole number times itself, like 1, 4, 9, 16, 25 and 36. Its square root is a whole number."
+    },
+    {
+      "q": "Why is √−9 equal to 3i?",
+      "a": "The number i is defined so that i² = −1. Then (3i)² = 9 × i² = −9, so 3i is a square root of −9."
+    },
+    {
+      "q": "Why keep the answer as 6√2 instead of a decimal?",
+      "a": "6√2 is exact. The decimal 8.4853… goes on forever without repeating, so any decimal you write down is rounded."
+    },
+    {
+      "q": "How can I estimate a square root without a calculator?",
+      "a": "Find the perfect squares on either side. 50 is between 49 and 64, so √50 is between 7 and 8, and closer to 7. It is about 7.07."
+    }
+  ]
+}

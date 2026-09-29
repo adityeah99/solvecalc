@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site.ts';
+const updated = 'September 2026';
+---
+
+<BaseLayout
+  title="Disclaimer"
+  description={`${SITE.name} is a learning tool. Always check important calculations yourself.`}
+  crumbs={[{ label: 'Disclaimer' }]}
+>
+  <div class="wrap reading">
+    <article class="reading-main">
+      <header class="reading-head">
+        <h1>Disclaimer</h1>
+        <p class="muted">Last updated: {updated}</p>
+      </header>
+      <div class="prose">
+        <p>{SITE.name} is made to help people learn and practice math. Please keep the following in mind.</p>
+
+        <h2>For learning</h2>
+        <p>The calculators and lessons are study aids. They are built carefully and tested, but they can still contain mistakes. For graded work, exams or any decision that matters, check the answer yourself and make sure the steps make sense.</p>
+
+        <h2>Not professional advice</h2>
+        <p>Nothing on {SITE.name} is financial, medical, legal or other professional advice. A calculator gives a number; it does not know your situation.</p>
+
+        <h2>External content</h2>
+        <p>Where the site links to other websites, that content is not under our control and we cannot vouch for it.</p>
+
+        <h2>Contact</h2>
+        <p>Found something wrong? Please tell us on the <a href="/contact">contact page</a> so we can fix it.</p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

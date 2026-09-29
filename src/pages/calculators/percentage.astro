@@ -1,0 +1,36 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="percentage">
+  <CalculatorShell id="pct-form">
+    <Segmented
+      name="mode"
+      legend="What do you want to find?"
+      options={[
+        { value: 'of', label: 'P% of a number' },
+        { value: 'what', label: 'A is what % of B' },
+        { value: 'change', label: '% increase / decrease' },
+      ]}
+    />
+    <div class="field-row" data-when="mode:of">
+      <InputField name="p" label="Percent (P)" placeholder="15" hint="Without the % sign" />
+      <InputField name="n" label="Of the number" placeholder="80" />
+    </div>
+    <div class="field-row" data-when="mode:what">
+      <InputField name="a" label="A (the part)" placeholder="18" />
+      <InputField name="b" label="B (the whole)" placeholder="24" />
+    </div>
+    <div class="field-row" data-when="mode:change">
+      <InputField name="old" label="Old value" placeholder="50" />
+      <InputField name="new" label="New value" placeholder="65" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/percentage.ts';
+</script>

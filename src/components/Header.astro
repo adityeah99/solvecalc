@@ -1,0 +1,69 @@
+---
+import { NAV } from '../config/nav.ts';
+import { SITE } from '../config/site.ts';
+import Logo from './Logo.astro';
+
+const path = Astro.url.pathname.replace(/\.html$/, '');
+const isCurrent = (href: string) => path === href || path.startsWith(href + '/');
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label={`${SITE.name} home`}>
+      <Logo />
+      <span>{SITE.name}</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <ul class="nav-list">
+        {
+          NAV.map((item) => (
+            <li>
+              <a class="nav-top" href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <details class="nav-mobile">
+      <summary class="key key--sm" aria-label="Menu">
+        <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+          <path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        Menu
+      </summary>
+      <nav class="nav-panel sheet" aria-label="Main">
+        <ul class="nav-list">
+          {
+            NAV.map((item) => (
+              <li>
+                <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<script>
+  // Mobile menu: close on Escape or a tap outside.
+  const menu = document.querySelector<HTMLDetailsElement>('.nav-mobile');
+  if (menu) {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.open) {
+        menu.open = false;
+        menu.querySelector('summary')?.focus();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (menu.open && !menu.contains(e.target as Node)) menu.open = false;
+    });
+  }
+</script>

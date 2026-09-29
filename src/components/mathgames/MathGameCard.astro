@@ -1,0 +1,31 @@
+---
+import type { MathGame } from '../../data/math-games.ts';
+import { topicById } from '../../data/topics.ts';
+
+interface Props {
+  game: MathGame;
+  headingLevel?: 'h2' | 'h3';
+}
+const { game, headingLevel: H = 'h3' } = Astro.props;
+---
+
+<li>
+  <a class="mg-card" href={`/games/${game.slug}`}>
+    <span class={`mg-cover tone-${game.tone}`} data-code={`CODE ${game.code}`} aria-hidden="true">{game.cover}</span>
+    <span class="mg-card-body">
+      <H class="mg-card-title"><strong>{game.name}</strong></H>
+      <span>{game.blurb}</span>
+      <span class="mg-card-meta">
+        <span class="pill">{topicById(game.topic).name}</span>
+        <span class="pill">Code {game.code}</span>
+      </span>
+    </span>
+  </a>
+</li>
+
+<style>
+  .mg-card-title {
+    margin: 0;
+    font-size: inherit;
+  }
+</style>

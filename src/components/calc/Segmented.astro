@@ -1,0 +1,24 @@
+---
+// Radio group styled as key caps: calculator modes, shapes, operations.
+interface Props {
+  name: string;
+  legend: string;
+  options: { value: string; label: string }[];
+  value?: string;
+  when?: string;
+  hideLegend?: boolean;
+}
+const { name, legend, options, value = options[0]?.value, when, hideLegend = false } = Astro.props;
+---
+
+<fieldset class="seg" data-when={when}>
+  <legend class:list={[{ 'visually-hidden': hideLegend }]}>{legend}</legend>
+  {
+    options.map((o) => (
+      <label>
+        <input type="radio" name={name} value={o.value} checked={o.value === value} />
+        <span>{o.label}</span>
+      </label>
+    ))
+  }
+</fieldset>

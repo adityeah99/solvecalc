@@ -1,0 +1,46 @@
+---
+// "Keep going" strip that links one topic's lesson, quiz and games, so every
+// page leads to the next step: calculate → understand → practice → play.
+import { topicById, type TopicId } from '../data/topics.ts';
+import { calculatorBySlug } from '../data/calculators.ts';
+
+interface Props {
+  topic: TopicId;
+  /** Which step the current page is, so it can be marked as "you are here". */
+  current?: 'calculate' | 'learn' | 'practice' | 'play';
+  calculatorHref?: string;
+}
+const { topic, current, calculatorHref } = Astro.props;
+const t = topicById(topic);
+const steps = [
+  {
+    id: 'calculate',
+    verb: 'Calculate',
+    label: t.calculator ? (calculatorBySlug(t.calculator)?.name ?? 'Calculators') : `${t.name} calculators`,
+    href: calculatorHref ?? (t.calculator ? `/calculators/${t.calculator}` : `/calculators#${t.id}`),
+  },
+  t.lesson
+    ? { id: 'learn', verb: 'Understand', label: `${t.name} lesson`, href: `/learn/${t.id}` }
+    : { id: 'learn', verb: 'Understand', label: `${t.name} articles`, href: `/articles#${t.id}` },
+  t.quiz
+    ? { id: 'practice', verb: 'Practice', label: `${t.name} quiz`, href: `/quizzes/${t.id}` }
+    : { id: 'practice', verb: 'Practice', label: 'All quizzes', href: '/quizzes' },
+  { id: 'play', verb: 'Play', label: t.games.label, href: t.games.href },
+];
+---
+
+<nav class="topic-path" aria-label={`Keep going with ${t.name}`}>
+  <p class="eyebrow">Keep going with {t.name.toLowerCase()}</p>
+  <ol>
+    {
+      steps.map((s) => (
+        <li>
+          <a href={s.href} class:list={['topic-step', { 'is-here': s.id === current }]} aria-current={s.id === current ? 'step' : undefined}>
+            <span class="topic-verb">{s.verb}</span>
+            <span class="topic-label">{s.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>

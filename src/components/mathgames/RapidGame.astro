@@ -1,0 +1,100 @@
+---
+import type { MathGame } from '../../data/math-games.ts';
+
+interface Props {
+  game: MathGame;
+}
+const { game } = Astro.props;
+const { mode, seconds, levels } = game.rapid!;
+const PAD = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '-', '0', 'back'];
+const label = (k: string) => (k === '-' ? '±' : k === 'back' ? '⌫' : k);
+---
+
+<div
+  class="mg"
+  data-rapid={game.slug}
+  data-mode={mode}
+  data-seconds={seconds}
+  data-levels={levels ? '' : undefined}
+  aria-label={`${game.name} game`}
+  role="region"
+>
+  <div class="mg-hud" aria-live="off">
+    <span class="mg-stat"><span class="mg-stat-label">Time</span><b data-time>{seconds}</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Score</span><b data-score>0</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Streak</span><b data-streak>0</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Best</span><b data-best>–</b></span>
+  </div>
+  <div class="mg-timebar" aria-hidden="true"><span data-timebar></span></div>
+
+  <div class="mg-screen lcd">
+    <div class="mg-view mg-start" data-view="start">
+      <p class="mg-title">{game.name}</p>
+      <p class="mg-blurb">{game.blurb}</p>
+      {
+        levels && (
+          <fieldset class="seg mg-levels">
+            <legend class="visually-hidden">Level</legend>
+            <label>
+              <input type="radio" name="level" value="1" checked />
+              <span>Easy</span>
+            </label>
+            <label>
+              <input type="radio" name="level" value="2" />
+              <span>Medium</span>
+            </label>
+            <label>
+              <input type="radio" name="level" value="3" />
+              <span>Hard</span>
+            </label>
+          </fieldset>
+        )
+      }
+      <button type="button" class="key key--hi mg-go" data-start>Start</button>
+      <p class="mg-best-line" data-best-line></p>
+    </div>
+
+    <div class="mg-view mg-play" data-view="play" hidden>
+      <p class="mg-prompt" data-prompt></p>
+      <div class="mg-visual" data-visual></div>
+      {mode === 'input' && <p class="mg-entry" data-entry aria-live="polite" aria-label="Your answer"></p>}
+      <p class="mg-flash" data-flash aria-live="polite"></p>
+    </div>
+
+    <div class="mg-view mg-end" data-view="end" hidden>
+      <p class="mg-sub">Time's up. Your score:</p>
+      <p class="mg-final" data-final></p>
+      <p data-final-line></p>
+      <div class="mg-missed" data-missed-wrap hidden>
+        <p class="mg-sub">Worth another look:</p>
+        <ul data-missed></ul>
+      </div>
+      <button type="button" class="key key--hi mg-go" data-again>Play again</button>
+    </div>
+  </div>
+
+  <div class="mg-pad" data-pad hidden>
+    {
+      mode === 'input' ? (
+        <div class="mg-keys">
+          {PAD.map((k) => (
+            <button type="button" class:list={['mg-key', { 'mg-key--fn': k === '-' || k === 'back' }]} data-key={k} aria-label={k === 'back' ? 'Delete' : k === '-' ? 'Plus or minus' : undefined}>
+              {label(k)}
+            </button>
+          ))}
+          <button type="button" class="mg-key mg-key--enter" data-key="enter">
+            Enter
+          </button>
+        </div>
+      ) : (
+        <div class="mg-choices" data-choices />
+      )
+    }
+    <button type="button" class="mg-stop" data-stop>End game</button>
+  </div>
+</div>
+
+<script>
+  import { mountRapid } from '../../scripts/mathgames/rapid.ts';
+  document.querySelectorAll<HTMLElement>('[data-rapid]').forEach(mountRapid);
+</script>

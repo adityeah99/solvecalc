@@ -1,0 +1,65 @@
+{
+  "intro": "Type a linear equation in x, such as 3x + 5 = 20 or 2(x − 1) = x + 4, and get the value of x with each step of the working. If the answer is not a whole number, it is shown as an exact fraction.",
+  "formula": [
+    { "label": "Expanding a bracket", "expr": "a(x + b) = ax + ab", "note": "Multiply every term inside by the number outside." },
+    { "label": "Basic form", "expr": "ax + b = c  →  x = (c − b) ÷ a" },
+    { "label": "x on both sides", "expr": "ax + b = cx + d  →  (a − c)x = d − b  →  x = (d − b) ÷ (a − c)", "note": "This works when a ≠ c." }
+  ],
+  "howItWorks": [
+    "An equation is like a balance: whatever you do to one side, you must do to the other. The solver first expands any brackets, so 2(x − 1) becomes 2x − 2. Then it moves all the x terms to one side and all the plain numbers to the other, and finally divides by the number in front of x.",
+    "Sometimes the x terms cancel out completely. If you are left with something false, like 1 = 2, the equation has no solution. If you are left with something always true, like 2 = 2, then every number is a solution. The solver tells you which case you have.",
+    "When x does not come out as a whole number, you see it as a fraction in lowest terms, such as x = 7/2, so nothing is lost to rounding."
+  ],
+  "example": {
+    "title": "Brackets and x on both sides",
+    "problem": "Solve 3(x + 2) = 5x − 1.",
+    "steps": [
+      "Expand the bracket: 3x + 6 = 5x − 1.",
+      "Take 5x from both sides: 3x − 5x + 6 = −1, so −2x + 6 = −1.",
+      "Take 6 from both sides: −2x = −7.",
+      "Divide both sides by −2: x = −7 ÷ −2 = 7/2.",
+      "Check: 3(3.5 + 2) = 16.5 and 5 × 3.5 − 1 = 16.5. Both sides match."
+    ],
+    "answer": "x = 7/2 (which is 3.5)"
+  },
+  "mistakes": [
+    {
+      "title": "Only multiplying the first term in a bracket",
+      "text": "2(x − 1) is 2x − 2, not 2x − 1. The number outside multiplies every term inside."
+    },
+    {
+      "title": "Forgetting to change the sign",
+      "text": "When you move a term across the equals sign, you do the opposite operation. From 3x + 5 = 20, take 5 from both sides to get 3x = 15, not 3x = 25."
+    },
+    {
+      "title": "Dividing only part of a side",
+      "text": "From 3x + 6 = 12 you cannot jump to x + 6 = 4. Take away 6 first to get 3x = 6, then divide by 3 to get x = 2."
+    },
+    {
+      "title": "Dropping a minus sign in front of a bracket",
+      "text": "A minus in front of a bracket changes every sign inside: −(x − 3) = −x + 3, not −x − 3."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does no solution mean?",
+      "a": "It means no value of x makes both sides equal. For x + 1 = x + 2, taking x from both sides leaves 1 = 2, which is never true."
+    },
+    {
+      "q": "What does every number is a solution mean?",
+      "a": "It means the two sides are the same expression written differently. 2x + 2 = 2(x + 1) is true for any x, because 2(x + 1) expands to 2x + 2."
+    },
+    {
+      "q": "How do I type a fraction of x?",
+      "a": "Use a slash, for example x/3 + 2 = 5. Taking 2 from both sides gives x/3 = 3, and multiplying by 3 gives x = 9."
+    },
+    {
+      "q": "How can I check my answer?",
+      "a": "Put your value of x back into both sides of the original equation. If both sides give the same number, the answer is right."
+    },
+    {
+      "q": "Can it solve equations with x²?",
+      "a": "No. This solver is for linear equations, where x is never raised to a power. For equations like x² − 5x + 6 = 0, use a quadratic solver."
+    }
+  ]
+}

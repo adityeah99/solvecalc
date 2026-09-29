@@ -1,0 +1,77 @@
+{
+  "title": "Geometry Quiz",
+  "description": "Practice perimeter, area, angles, circles, the Pythagorean theorem and volume with ten questions that build up step by step.",
+  "topic": "geometry",
+  "questions": [
+    {
+      "id": "geometry-01",
+      "question": "What is the perimeter of a rectangle that is 7 cm long and 3 cm wide?",
+      "options": ["21 cm", "10 cm", "20 cm", "42 cm"],
+      "answer": 2,
+      "explanation": "Perimeter is the distance all the way around. 7 + 3 + 7 + 3 = 20 cm. 21 is the area, not the perimeter."
+    },
+    {
+      "id": "geometry-02",
+      "question": "What is the area of a rectangle that is 9 m long and 4 m wide?",
+      "options": ["36 m²", "26 m²", "13 m²", "72 m²"],
+      "answer": 0,
+      "explanation": "Area of a rectangle = length × width. 9 × 4 = 36 m². 26 m is the perimeter."
+    },
+    {
+      "id": "geometry-03",
+      "question": "What is the area of a triangle with a base of 10 cm and a height of 6 cm?",
+      "options": ["60 cm²", "30 cm²", "16 cm²", "32 cm²"],
+      "answer": 1,
+      "explanation": "Area of a triangle = ½ × base × height. ½ × 10 × 6 = 30 cm². Getting 60 means you forgot to halve."
+    },
+    {
+      "id": "geometry-04",
+      "question": "Two angles in a triangle are 50° and 60°. What is the third angle?",
+      "options": ["70°", "110°", "250°", "90°"],
+      "answer": 0,
+      "explanation": "The angles in a triangle add up to 180°. 180° − 50° − 60° = 70°."
+    },
+    {
+      "id": "geometry-05",
+      "question": "A circle has a diameter of 10 cm. What is its circumference? Use π ≈ 3.14.",
+      "options": ["78.5 cm", "62.8 cm", "15.7 cm", "31.4 cm"],
+      "answer": 3,
+      "explanation": "Circumference = π × diameter. 3.14 × 10 = 31.4 cm."
+    },
+    {
+      "id": "geometry-06",
+      "question": "A circle has a radius of 3 cm. What is its area? Use π ≈ 3.14.",
+      "options": ["18.84 cm²", "28.26 cm²", "113.04 cm²", "9.42 cm²"],
+      "answer": 1,
+      "explanation": "Area = π × r². 3² = 9, and 3.14 × 9 = 28.26 cm². Using the diameter, 6, instead of the radius gives 113.04, which is four times too big."
+    },
+    {
+      "id": "geometry-07",
+      "question": "A right triangle has shorter sides of 6 cm and 8 cm. How long is the hypotenuse?",
+      "options": ["14 cm", "48 cm", "10 cm", "100 cm"],
+      "answer": 2,
+      "explanation": "Use a² + b² = c². 6² + 8² = 36 + 64 = 100, so c = √100 = 10 cm. Don't forget the square root at the end."
+    },
+    {
+      "id": "geometry-08",
+      "question": "What is the volume of a box that is 5 cm long, 4 cm wide and 3 cm high?",
+      "options": ["12 cm³", "94 cm³", "47 cm³", "60 cm³"],
+      "answer": 3,
+      "explanation": "Volume of a box = length × width × height. 5 × 4 × 3 = 60 cm³."
+    },
+    {
+      "id": "geometry-09",
+      "question": "A right triangle has a hypotenuse of 13 cm and one shorter side of 5 cm. How long is the other shorter side?",
+      "options": ["13.9 cm", "8 cm", "12 cm", "18 cm"],
+      "answer": 2,
+      "explanation": "Subtract the squares, because you are finding a shorter side. 13² − 5² = 169 − 25 = 144, and √144 = 12 cm."
+    },
+    {
+      "id": "geometry-10",
+      "question": "A cylinder has a radius of 2 cm and a height of 10 cm. What is its volume? Use π ≈ 3.14.",
+      "options": ["62.8 cm³", "40 cm³", "502.4 cm³", "125.6 cm³"],
+      "answer": 3,
+      "explanation": "Volume of a cylinder = π × r² × height. 3.14 × 2² × 10 = 3.14 × 4 × 10 = 125.6 cm³."
+    }
+  ]
+}

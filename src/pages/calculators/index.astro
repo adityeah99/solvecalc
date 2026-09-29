@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CALCULATORS } from '../../data/calculators.ts';
+import { TOPICS } from '../../data/topics.ts';
+
+const groups = TOPICS.map((t) => ({ topic: t, items: CALCULATORS.filter((c) => c.topic === t.id) })).filter((g) => g.items.length);
+const firstSentence = (s: string) => s.split(/(?<=\.)\s/)[0];
+---
+
+<BaseLayout
+  title="Math Calculators"
+  description={`${CALCULATORS.length} free math calculators that show their working: fractions, percentages, equations, geometry, statistics, probability and more.`}
+  crumbs={[{ label: 'Calculators' }]}
+>
+  <div class="wrap calc-index">
+    <header class="index-head">
+      <h1>Calculators</h1>
+      <p class="lede">
+        {CALCULATORS.length} calculators, each with the formula, a worked example and the mistakes to watch for. Most show
+        their working step by step.
+      </p>
+    </header>
+
+    {
+      groups.map((g) => (
+        <section class="index-group" id={g.topic.id} aria-labelledby={`h-${g.topic.id}`}>
+          <div class="index-group-head">
+            <h2 id={`h-${g.topic.id}`}>{g.topic.name}</h2>
+            <p class="muted">{g.topic.blurb}</p>
+          </div>
+          <div class="tile-grid">
+            {g.items.map((c) => (
+              <a class="tile" href={`/calculators/${c.slug}`}>
+                <span class="tile-cap" aria-hidden="true">
+                  {c.glyph}
+                </span>
+                <span class="tile-body">
+                  <strong>{c.name}</strong>
+                  <span>{firstSentence(c.description)}</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .calc-index {
+    padding-bottom: 40px;
+  }
+  .index-head {
+    max-width: 760px;
+    margin-bottom: 20px;
+  }
+  .index-group {
+    margin-top: 36px;
+    scroll-margin-top: 90px;
+  }
+  .index-group-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 16px;
+    margin-bottom: 14px;
+  }
+  .index-group-head h2 {
+    margin: 0;
+  }
+  .index-group-head p {
+    margin: 0;
+  }
+</style>

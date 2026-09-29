@@ -1,0 +1,33 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="quadratic">
+  <CalculatorShell id="quad-form" submitLabel="Solve" emptyText="Enter a, b and c to solve the equation.">
+    <p class="quad-form-eq" aria-hidden="true">a<var>x</var>² + b<var>x</var> + c = 0</p>
+    <div class="field-row field-row--tight">
+      <InputField name="a" label="a" placeholder="1" />
+      <InputField name="b" label="b" placeholder="-5" />
+      <InputField name="c" label="c" placeholder="6" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/quadratic.ts';
+</script>
+
+<style>
+  .quad-form-eq {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .quad-form-eq var {
+    font-style: italic;
+    color: var(--blue);
+  }
+</style>

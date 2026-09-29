@@ -1,0 +1,107 @@
+---
+// Every question is rendered into the page (readable without JavaScript, with a
+// "show answer" disclosure). src/scripts/quiz.ts turns it into a one-question-
+// at-a-time quiz with feedback, a score and saved progress.
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPath from '../../components/TopicPath.astro';
+import '../../styles/calc.css';
+import '../../styles/quiz.css';
+import { topicById } from '../../data/topics.ts';
+
+export async function getStaticPaths() {
+  const quizzes = await getCollection('quizzes');
+  return quizzes.map((entry) => ({ params: { topic: entry.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<'quizzes'>;
+}
+const { entry } = Astro.props;
+const { title, description, questions } = entry.data;
+const topic = topicById(entry.data.topic);
+const LETTERS = ['A', 'B', 'C', 'D'];
+---
+
+<BaseLayout title={title} description={description} crumbs={[{ label: 'Quizzes', href: '/quizzes' }, { label: title }]}>
+  <div class="wrap quiz-page">
+    <header class="quiz-head">
+      <h1>{title}</h1>
+      <p class="lede">{description}</p>
+    </header>
+
+    <section class="quiz" data-quiz={entry.id} aria-label={title}>
+      <div class="quiz-bar" data-bar hidden>
+        <p class="quiz-progress-text" data-progress-text></p>
+        <div class="quiz-meter" aria-hidden="true"><span data-meter></span></div>
+        <p class="quiz-score" data-score></p>
+      </div>
+
+      <ol class="quiz-list" data-list>
+        {
+          questions.map((q, i) => (
+            <li class="q" data-q data-answer={q.answer} id={q.id}>
+              <p class="q-num">
+                Question {i + 1} of {questions.length}
+              </p>
+              <h2 class="q-text">{q.question}</h2>
+              <div class="q-options" role="group" aria-label={`Answer choices for question ${i + 1}`}>
+                {q.options.map((opt, j) => (
+                  <button type="button" class="q-opt" data-i={j}>
+                    <span class="q-letter" aria-hidden="true">
+                      {LETTERS[j]}
+                    </span>
+                    <span class="q-opt-text">{opt}</span>
+                  </button>
+                ))}
+              </div>
+              <details class="q-reveal">
+                <summary>Show the answer</summary>
+                <p>
+                  <strong>
+                    {LETTERS[q.answer]}. {q.options[q.answer]}
+                  </strong>{' '}
+                  {q.explanation}
+                </p>
+              </details>
+              <div class="q-feedback" data-feedback aria-live="polite" hidden>
+                <p class="q-verdict" data-verdict></p>
+                <p class="q-explain">{q.explanation}</p>
+              </div>
+              <div class="q-nav" data-nav hidden>
+                <button type="button" class="key key--hi" data-next>
+                  Next question
+                </button>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+
+      <div class="quiz-done sheet" data-done hidden tabindex="-1">
+        <p class="eyebrow">Quiz finished</p>
+        <p class="quiz-final" data-final></p>
+        <p data-final-msg></p>
+        <p class="muted" data-best-line></p>
+        <div class="quiz-review" data-review hidden>
+          <h2>Worth another look</h2>
+          <ul data-review-list></ul>
+        </div>
+        <div class="quiz-done-actions">
+          <button type="button" class="key key--hi" data-restart>Try again</button>
+          {topic.lesson && <a class="key key--ghost" href={`/learn/${topic.id}`}>Read the {topic.name.toLowerCase()} lesson</a>}
+        </div>
+      </div>
+    </section>
+
+    <div class="quiz-after">
+      <TopicPath topic={entry.data.topic} current="practice" />
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import { mountQuiz } from '../../scripts/quiz.ts';
+  const root = document.querySelector<HTMLElement>('[data-quiz]');
+  if (root) mountQuiz(root);
+</script>

@@ -1,0 +1,96 @@
+---
+// Page template for every calculator: breadcrumb, H1, intro, the calculator
+// (slot), formula, how it works, worked example, mistakes, next steps,
+// related tools and articles, FAQ. Copy comes from src/data/calculator-content.
+import { getEntry } from 'astro:content';
+import '../styles/calc.css';
+import BaseLayout from './BaseLayout.astro';
+import FormulaBlock from '../components/calc/FormulaBlock.astro';
+import ExampleBox from '../components/calc/ExampleBox.astro';
+import FAQSection from '../components/calc/FAQSection.astro';
+import RelatedTools from '../components/RelatedTools.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import TopicPath from '../components/TopicPath.astro';
+import { calculatorBySlug } from '../data/calculators.ts';
+import { SITE } from '../config/site.ts';
+
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+const meta = calculatorBySlug(slug);
+if (!meta) throw new Error(`Unknown calculator "${slug}" (add it to src/data/calculators.ts)`);
+const entry = await getEntry('calculatorContent', slug);
+if (!entry) throw new Error(`Missing copy: src/data/calculator-content/${slug}.json`);
+const c = entry.data;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: meta.name,
+    description: meta.description,
+    url: new URL(`/calculators/${slug}`, SITE.url).href,
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Any',
+    browserRequirements: 'Requires JavaScript',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: c.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  description={meta.description}
+  crumbs={[{ label: 'Calculators', href: '/calculators' }, { label: meta.name }]}
+  jsonLd={jsonLd}
+>
+  <div class="wrap calc-page">
+    <header class="calc-head">
+      <h1>{meta.name}</h1>
+      <p class="lede">{c.intro}</p>
+    </header>
+
+    <slot />
+
+    <div class="calc-doc">
+      <FormulaBlock formula={c.formula} />
+
+      <section class="doc-section" aria-labelledby="how">
+        <h2 id="how">How it works</h2>
+        <div class="prose">{c.howItWorks.map((p) => <p>{p}</p>)}</div>
+      </section>
+
+      <ExampleBox example={c.example} />
+
+      <section class="doc-section" aria-labelledby="mistakes">
+        <h2 id="mistakes">Common mistakes</h2>
+        <ul class="mistakes">
+          {
+            c.mistakes.map((m) => (
+              <li>
+                <h3>{m.title}</h3>
+                <p>{m.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <TopicPath topic={meta.topic} current="calculate" calculatorHref={`/calculators/${slug}`} />
+
+      <RelatedTools slugs={meta.related} />
+      <RelatedArticles slugs={meta.articles} heading="Related articles" />
+      <FAQSection faqs={c.faqs} />
+    </div>
+  </div>
+</BaseLayout>

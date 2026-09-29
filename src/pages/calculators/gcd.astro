@@ -1,0 +1,16 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="gcd">
+  <CalculatorShell id="gcd-form" emptyText="Enter two or more whole numbers.">
+    <InputField name="nums" label="Whole numbers" placeholder="48, 36" inputmode="text" hint="Two or more positive whole numbers, separated by commas or spaces." />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import { mountGcdLcm } from '../../scripts/calculators/gcd-lcm.ts';
+  mountGcdLcm('gcd');
+</script>

@@ -1,0 +1,77 @@
+{
+  "title": "Multiplication Quiz",
+  "description": "Practice times tables, multiplying two-digit numbers, spotting multiples and quick multiplication facts, with questions that get harder as you go.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "mul-01",
+      "question": "What is 7 × 8?",
+      "options": ["54", "56", "48", "63"],
+      "answer": 1,
+      "explanation": "Seven eights are 56. A handy check: 7 × 8 is one more group of 7 than 7 × 7 = 49, and 49 + 7 = 56."
+    },
+    {
+      "id": "mul-02",
+      "question": "What is 9 × 6?",
+      "options": ["45", "56", "54", "63"],
+      "answer": 2,
+      "explanation": "Nine sixes are 54. You can also do 10 × 6 = 60 and take away one 6: 60 − 6 = 54."
+    },
+    {
+      "id": "mul-03",
+      "question": "What is 12 × 5?",
+      "options": ["60", "55", "50", "72"],
+      "answer": 0,
+      "explanation": "Twelve fives are 60. Counting in fives, twelve steps lands on 60. You can also do 12 × 10 = 120 and halve it."
+    },
+    {
+      "id": "mul-04",
+      "question": "Which of these numbers is a multiple of 7?",
+      "options": ["50", "39", "44", "42"],
+      "answer": 3,
+      "explanation": "A multiple of 7 is a number you reach by counting in sevens. 6 × 7 = 42, so 42 is a multiple of 7. The others do not divide by 7 exactly."
+    },
+    {
+      "id": "mul-05",
+      "question": "What is 25 × 4?",
+      "options": ["90", "100", "75", "125"],
+      "answer": 1,
+      "explanation": "Four lots of 25 make 100, the same as four quarters making one whole hundred."
+    },
+    {
+      "id": "mul-06",
+      "question": "What is 11 × 12?",
+      "options": ["121", "144", "132", "123"],
+      "answer": 2,
+      "explanation": "Split it up: 11 × 12 = 11 × 10 + 11 × 2 = 110 + 22 = 132. Note that 121 is 11 × 11 and 144 is 12 × 12."
+    },
+    {
+      "id": "mul-07",
+      "question": "What is 23 × 4?",
+      "options": ["92", "82", "86", "96"],
+      "answer": 0,
+      "explanation": "Break 23 into 20 and 3. Then 20 × 4 = 80 and 3 × 4 = 12, and 80 + 12 = 92."
+    },
+    {
+      "id": "mul-08",
+      "question": "What is 15 × 6?",
+      "options": ["65", "96", "80", "90"],
+      "answer": 3,
+      "explanation": "Break 15 into 10 and 5. Then 10 × 6 = 60 and 5 × 6 = 30, and 60 + 30 = 90."
+    },
+    {
+      "id": "mul-09",
+      "question": "What is 8 × 7 × 0?",
+      "options": ["56", "15", "0", "1"],
+      "answer": 2,
+      "explanation": "Anything multiplied by 0 is 0. Even though 8 × 7 = 56, multiplying that by 0 gives 0."
+    },
+    {
+      "id": "mul-10",
+      "question": "What is 24 × 3?",
+      "options": ["72", "62", "96", "68"],
+      "answer": 0,
+      "explanation": "Break 24 into 20 and 4. Then 20 × 3 = 60 and 4 × 3 = 12, and 60 + 12 = 72."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+---
+// Small, original spot illustrations for blog covers — inline SVG (no image
+// files), each with a gentle animation that stops under prefers-reduced-motion.
+export type ArtName = 'notepad' | 'lightbulb' | 'spark' | 'grid' | 'family' | 'target' | 'magnifier';
+interface Props {
+  name: ArtName;
+  size?: number;
+}
+const { name, size = 76 } = Astro.props;
+const C = { ink: '#16202c', blue: '#2340b8', hi: '#f2dd3d', red: '#b83226', ok: '#1b7443', paper: '#fff' };
+---
+
+<span class={`blog-art art-${name}`} style={`--s:${size}px`} aria-hidden="true">
+  {
+    name === 'notepad' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <rect x="14" y="10" width="34" height="44" rx="5" fill={C.paper} stroke={C.ink} stroke-width="3" />
+        <path class="ln" d="M21 22h20M21 30h20M21 38h13" stroke={C.ink} stroke-width="3" stroke-linecap="round" opacity="0.35" />
+        <path class="check" d="M23 40l6 6 12-14" stroke={C.ok} stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        <g class="pencil">
+          <rect x="44" y="30" width="7" height="24" rx="2" transform="rotate(38 47 42)" fill={C.hi} stroke={C.ink} stroke-width="2.5" />
+          <path d="M40 52l3-6 4 2z" fill={C.ink} />
+        </g>
+      </svg>
+    )
+  }
+  {
+    name === 'lightbulb' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <g class="rays" stroke={C.hi} stroke-width="3.5" stroke-linecap="round">
+          <path d="M32 5v6M13 13l4 4M51 13l-4 4M8 33h6M50 33h6" />
+        </g>
+        <path d="M22 40a13 13 0 1 1 20 0c-2 2.5-3 4-3 7H25c0-3-1-4.5-3-7z" fill={C.hi} stroke={C.ink} stroke-width="3" />
+        <path d="M26 51h12M27 56h10" stroke={C.ink} stroke-width="3" stroke-linecap="round" />
+        <path class="smile" d="M28 34q4 4 8 0" stroke={C.ink} stroke-width="2.5" stroke-linecap="round" />
+      </svg>
+    )
+  }
+  {
+    name === 'spark' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <path class="bolt" d="M35 6L16 36h12l-5 22 22-32H31l6-20z" fill={C.hi} stroke={C.ink} stroke-width="3" stroke-linejoin="round" />
+        <g class="sparkle" fill={C.blue}>
+          <path d="M50 12l1.5 4 4 1.5-4 1.5L50 23l-1.5-4-4-1.5 4-1.5z" />
+        </g>
+      </svg>
+    )
+  }
+  {
+    name === 'grid' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <rect x="10" y="10" width="44" height="44" rx="7" fill={C.paper} stroke={C.ink} stroke-width="3" />
+        <path d="M10 25h44M10 39h44M25 10v44M39 10v44" stroke={C.ink} stroke-width="2" opacity="0.3" />
+        <rect class="cell" x="26" y="26" width="12" height="12" rx="2" fill={C.blue} />
+        <text x="17.5" y="21" font-family="monospace" font-size="9" font-weight="700" fill={C.ink}>×</text>
+      </svg>
+    )
+  }
+  {
+    name === 'family' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <g class="big">
+          <circle cx="24" cy="20" r="8" fill={C.blue} stroke={C.ink} stroke-width="3" />
+          <path d="M12 52c0-8 5.4-13 12-13s12 5 12 13z" fill={C.blue} stroke={C.ink} stroke-width="3" />
+        </g>
+        <g class="kid">
+          <circle cx="44" cy="27" r="6" fill={C.hi} stroke={C.ink} stroke-width="3" />
+          <path d="M35 52c0-6 4-9.5 9-9.5s9 3.5 9 9.5z" fill={C.hi} stroke={C.ink} stroke-width="3" />
+        </g>
+      </svg>
+    )
+  }
+  {
+    name === 'target' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <circle cx="30" cy="34" r="20" fill={C.paper} stroke={C.ink} stroke-width="3" />
+        <circle cx="30" cy="34" r="12" fill="none" stroke={C.red} stroke-width="3" />
+        <circle class="bull" cx="30" cy="34" r="4.5" fill={C.red} />
+        <g class="arrow">
+          <path d="M54 10L33 31" stroke={C.ink} stroke-width="3.5" stroke-linecap="round" />
+          <path d="M54 10l-1 7 7-1z" fill={C.blue} />
+          <path d="M31 29l4 4" stroke={C.blue} stroke-width="4" stroke-linecap="round" />
+        </g>
+      </svg>
+    )
+  }
+  {
+    name === 'magnifier' && (
+      <svg viewBox="0 0 64 64" fill="none">
+        <rect x="10" y="14" width="34" height="30" rx="5" fill={C.paper} stroke={C.ink} stroke-width="3" />
+        <path d="M17 24h14M17 31h20M17 38h10" stroke={C.ink} stroke-width="3" stroke-linecap="round" opacity="0.35" />
+        <g class="glass">
+          <circle cx="38" cy="38" r="12" fill="rgba(35,64,184,0.12)" stroke={C.blue} stroke-width="4" />
+          <path d="M47 47l9 9" stroke={C.blue} stroke-width="5" stroke-linecap="round" />
+        </g>
+      </svg>
+    )
+  }
+</span>
+
+<style>
+  .blog-art {
+    display: inline-block;
+    line-height: 0;
+    width: var(--s);
+  }
+  .blog-art svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  [class*='art-'] g,
+  [class*='art-'] path,
+  [class*='art-'] rect {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .art-notepad .pencil {
+      transform-origin: bottom left;
+      animation: nod 2.6s ease-in-out infinite;
+    }
+    .art-notepad .check {
+      stroke-dasharray: 34;
+      animation: draw 2.6s ease-in-out infinite;
+    }
+    .art-lightbulb .rays {
+      animation: pulse 2.2s ease-in-out infinite;
+    }
+    .art-spark .bolt {
+      animation: flick 2.4s ease-in-out infinite;
+    }
+    .art-spark .sparkle {
+      animation: twinkle 2.4s ease-in-out infinite;
+    }
+    .art-grid .cell {
+      animation: hop 2.8s ease-in-out infinite;
+    }
+    .art-family .kid {
+      animation: bob 2.4s ease-in-out infinite;
+    }
+    .art-family .big {
+      animation: bob 2.4s ease-in-out infinite 0.3s;
+    }
+    .art-target .arrow {
+      animation: shoot 3s ease-in-out infinite;
+    }
+    .art-target .bull {
+      animation: ping 3s ease-in-out infinite;
+    }
+    .art-magnifier .glass {
+      animation: scan 3s ease-in-out infinite;
+    }
+  }
+  @keyframes nod {
+    50% {
+      transform: rotate(-7deg) translateY(-1px);
+    }
+  }
+  @keyframes draw {
+    0%, 30% {
+      stroke-dashoffset: 34;
+    }
+    70%, 100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes pulse {
+    50% {
+      opacity: 0.4;
+      transform: scale(0.92);
+    }
+  }
+  @keyframes flick {
+    50% {
+      transform: scale(1.08) rotate(-3deg);
+    }
+  }
+  @keyframes twinkle {
+    50% {
+      opacity: 0.2;
+      transform: scale(0.7);
+    }
+  }
+  @keyframes hop {
+    50% {
+      transform: translate(14px, 14px);
+    }
+  }
+  @keyframes bob {
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+  @keyframes shoot {
+    0%, 100% {
+      transform: translate(4px, -4px);
+    }
+    55%, 80% {
+      transform: translate(0, 0);
+    }
+  }
+  @keyframes ping {
+    60%, 75% {
+      transform: scale(1.25);
+    }
+  }
+  @keyframes scan {
+    50% {
+      transform: translate(-14px, -6px);
+    }
+  }
+</style>

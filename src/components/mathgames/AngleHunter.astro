@@ -1,0 +1,46 @@
+---
+---
+
+<div class="mg" data-angle-game role="region" aria-label="Angle Hunter game">
+  <div class="mg-hud">
+    <span class="mg-stat"><span class="mg-stat-label">Round</span><b data-round>0/10</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Score</span><b data-score>0</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Best</span><b data-best>–</b></span>
+  </div>
+
+  <div class="mg-screen lcd">
+    <div class="mg-view mg-start" data-view="start">
+      <p class="mg-title">Angle Hunter</p>
+      <p class="mg-blurb">Ten angles. Guess each one by eye. Within 2° scores the full 100.</p>
+      <button type="button" class="key key--hi mg-go" data-start>Start</button>
+      <p class="mg-best-line" data-best-line></p>
+    </div>
+    <div class="mg-view ang-play" data-view="play" hidden>
+      <svg class="ang-svg" viewBox="-120 -120 240 240" data-svg role="img" aria-label="An angle to estimate"></svg>
+      <p class="mg-flash" data-result aria-live="polite"></p>
+    </div>
+    <div class="mg-view mg-end" data-view="end" hidden>
+      <p class="mg-sub">Final score</p>
+      <p class="mg-final" data-final></p>
+      <p data-final-line></p>
+      <button type="button" class="key key--hi mg-go" data-again>Play again</button>
+    </div>
+  </div>
+
+  <div class="mg-pad ang-controls" data-pad hidden>
+    <label class="ang-label" for="ang-slider">Your guess: <output data-out>90°</output></label>
+    <input id="ang-slider" class="ang-slider" type="range" min="0" max="360" step="1" value="90" data-slider />
+    <div class="ang-row">
+      <label class="visually-hidden" for="ang-num">Guess in degrees</label>
+      <input id="ang-num" class="input ang-num" type="number" min="0" max="360" step="1" value="90" inputmode="numeric" data-num />
+      <button type="button" class="key key--hi" data-lock>Lock in</button>
+      <button type="button" class="key" data-next hidden>Next angle</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { mountAngle } from '../../scripts/mathgames/angle.ts';
+  const root = document.querySelector<HTMLElement>('[data-angle-game]');
+  if (root) mountAngle(root);
+</script>

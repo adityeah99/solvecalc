@@ -1,0 +1,61 @@
+{
+  "intro": "Work out the probability of a single event with its complement and odds, combine two independent events, or count combinations and permutations. Answers are shown as fractions, decimals and percents where it makes sense.",
+  "formula": [
+    { "label": "Single event", "expr": "P(A) = favourable outcomes ÷ total outcomes, P(not A) = 1 − P(A)", "note": "Only when every outcome is equally likely." },
+    { "label": "Odds", "expr": "odds for = favourable : unfavourable, odds against = unfavourable : favourable" },
+    { "label": "Two independent events", "expr": "P(A and B) = P(A) × P(B), P(A or B) = P(A) + P(B) − P(A) × P(B)" },
+    { "label": "Combinations and permutations", "expr": "nCr = n! ÷ (r! × (n − r)!), nPr = n! ÷ (n − r)!" }
+  ],
+  "howItWorks": [
+    "In single event mode, you give the number of favourable outcomes and the total number of equally likely outcomes. The probability is one divided by the other, shown as a fraction, a decimal and a percent. You also get the complement, the chance it does not happen, and the odds for and against.",
+    "In two events mode, you give P(A) and P(B) for two independent events, meaning one does not change the chance of the other. You get the chance that both happen, that at least one happens, that neither happens, and that exactly one happens.",
+    "In counting mode, nCr counts the ways to choose r items from n when order does not matter, like picking a team. nPr counts the ways when order does matter, like first, second and third place."
+  ],
+  "example": {
+    "title": "A dice roll and a coin flip",
+    "problem": "You roll a fair die and flip a fair coin. Let A be rolling a 6, so P(A) = 1/6, and B be getting heads, so P(B) = 1/2.",
+    "steps": [
+      "Both: P(A and B) = 1/6 × 1/2 = 1/12 ≈ 0.0833.",
+      "At least one: P(A or B) = 1/6 + 1/2 − 1/12 = 2/12 + 6/12 − 1/12 = 7/12 ≈ 0.5833.",
+      "Neither: P(not A) × P(not B) = 5/6 × 1/2 = 5/12 ≈ 0.4167.",
+      "Exactly one: P(A or B) − P(A and B) = 7/12 − 1/12 = 6/12 = 1/2."
+    ],
+    "answer": "Both 1/12, at least one 7/12, neither 5/12, exactly one 1/2."
+  },
+  "mistakes": [
+    {
+      "title": "Adding without taking away the overlap",
+      "text": "P(A or B) is not just P(A) + P(B). For the die and coin, 1/6 + 1/2 = 8/12 counts rolling a 6 with heads twice, so take away 1/12 to get 7/12."
+    },
+    {
+      "title": "Mixing up odds and probability",
+      "text": "A probability of 1/4 means 1 favourable outcome out of 4. The odds for are 1 : 3, because there is 1 favourable outcome to 3 unfavourable ones, not 1 : 4."
+    },
+    {
+      "title": "Assuming outcomes are equally likely",
+      "text": "Favourable ÷ total only works when every outcome has the same chance. Tomorrow it either rains or it doesn't, but that does not make the chance of rain 1/2."
+    },
+    {
+      "title": "Using nPr when order doesn't matter",
+      "text": "Choosing 3 students from 5 for a team gives 5C3 = 10 ways. Using 5P3 = 60 counts the same team several times in different orders."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between combinations and permutations?",
+      "a": "In a combination order does not matter, and in a permutation it does. Picking 3 books from 5 to take on holiday is 5C3 = 10, but lining 3 of the 5 up on a shelf is 5P3 = 60."
+    },
+    {
+      "q": "What does independent mean?",
+      "a": "Two events are independent if one happening does not change the chance of the other. A coin flip and a die roll are independent; drawing two cards without putting the first back is not."
+    },
+    {
+      "q": "Can a probability be bigger than 1?",
+      "a": "No. Probabilities go from 0 (impossible) to 1 (certain), or 0% to 100%. If you get more than 1, something in the working has gone wrong."
+    },
+    {
+      "q": "Why is 0! equal to 1?",
+      "a": "There is exactly one way to arrange nothing, so 0! = 1. This also makes nCr work at the ends, for example 5C5 = 5! ÷ (5! × 0!) = 1."
+    }
+  ]
+}

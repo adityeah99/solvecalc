@@ -1,0 +1,67 @@
+{
+  "intro": "Add, subtract, multiply or divide two fractions or mixed numbers. You get the answer as a simplified fraction, as a mixed number and as a decimal, with every step shown.",
+  "formula": [
+    { "label": "Mixed number to improper fraction", "expr": "w n/d = (w × d + n) / d", "note": "For example, 2 3/4 = (2 × 4 + 3)/4 = 11/4." },
+    { "label": "Adding and subtracting", "expr": "a/b ± c/d: write both over L = LCM(b, d), then add or subtract the numerators", "note": "The denominator stays as L." },
+    { "label": "Multiplying", "expr": "a/b × c/d = (a × c) / (b × d)" },
+    { "label": "Dividing", "expr": "a/b ÷ c/d = a/b × d/c = (a × d) / (b × c)" }
+  ],
+  "howItWorks": [
+    "Each input has three parts: a whole number, a numerator and a denominator. Mixed numbers are first turned into improper fractions, because they are much easier to work with.",
+    "To add or subtract, the calculator finds the least common multiple (LCM) of the two denominators and rewrites both fractions over it. To multiply, it multiplies the tops together and the bottoms together. To divide, it flips the second fraction and multiplies.",
+    "At the end it divides the top and bottom by their greatest common divisor (GCD), so the fraction is in its simplest form. It also shows the answer as a mixed number when the top is bigger than the bottom, and as a decimal you can compare or round."
+  ],
+  "example": {
+    "title": "Adding two mixed numbers",
+    "problem": "Work out 1 5/6 + 2 3/10.",
+    "steps": [
+      "Change to improper fractions: 1 5/6 = (1 × 6 + 5)/6 = 11/6 and 2 3/10 = (2 × 10 + 3)/10 = 23/10.",
+      "Find the LCM of the denominators 6 and 10. It is 30.",
+      "Rewrite over 30: 11/6 = 55/30 and 23/10 = 69/30.",
+      "Add the numerators: 55 + 69 = 124, so the sum is 124/30.",
+      "The GCD of 124 and 30 is 2. Divide both by 2 to get 62/15.",
+      "62 ÷ 15 = 4 remainder 2, so 62/15 = 4 2/15 ≈ 4.1333."
+    ],
+    "answer": "1 5/6 + 2 3/10 = 62/15 = 4 2/15 ≈ 4.1333"
+  },
+  "mistakes": [
+    {
+      "title": "Adding the denominators",
+      "text": "1/2 + 1/3 is not 2/5. The pieces are different sizes, so first rewrite them as 3/6 + 2/6, which gives 5/6."
+    },
+    {
+      "title": "Flipping the wrong fraction",
+      "text": "When dividing, only the second fraction is turned upside down. 3/4 ÷ 1/2 = 3/4 × 2/1 = 6/4 = 3/2, not 4/3 × 1/2."
+    },
+    {
+      "title": "Multiplying mixed numbers part by part",
+      "text": "2 1/2 × 1 1/2 is not 2 × 1 plus 1/2 × 1/2. Change them to 5/2 × 3/2 first, which gives 15/4 = 3 3/4."
+    },
+    {
+      "title": "Stopping before the fraction is simplified",
+      "text": "An answer like 12/18 is correct but not finished. Divide the top and bottom by their GCD, 6, to get 2/3."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why use the LCM and not just multiply the denominators?",
+      "a": "Multiplying the denominators also works, but the numbers can get big. Using the LCM keeps them as small as possible, so there is less to simplify at the end."
+    },
+    {
+      "q": "What does simplest form mean?",
+      "a": "A fraction is in simplest form when the top and bottom have no common factor except 1. For example, 8/12 simplifies to 2/3 because both 8 and 12 divide by 4."
+    },
+    {
+      "q": "How do I turn a fraction into a decimal?",
+      "a": "Divide the numerator by the denominator. For example, 3/8 = 3 ÷ 8 = 0.375."
+    },
+    {
+      "q": "Why does the decimal sometimes go on forever?",
+      "a": "If the simplified denominator has a prime factor other than 2 or 5, the decimal repeats. For example, 1/3 = 0.333… and 2/15 = 0.1333…"
+    },
+    {
+      "q": "Can the answer be negative?",
+      "a": "Yes. If you subtract a bigger fraction from a smaller one, the result is negative. For example, 1/4 − 3/4 = −1/2."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RapidGame from '../../components/mathgames/RapidGame.astro';
+import AngleHunter from '../../components/mathgames/AngleHunter.astro';
+import Make24 from '../../components/mathgames/Make24.astro';
+import MathGameCard from '../../components/mathgames/MathGameCard.astro';
+import TopicPath from '../../components/TopicPath.astro';
+import RelatedTools from '../../components/RelatedTools.astro';
+import '../../styles/mathgames.css';
+import '../../styles/calc.css';
+import { MATH_GAMES, type MathGame } from '../../data/math-games.ts';
+import { SITE } from '../../config/site.ts';
+
+export function getStaticPaths() {
+  return MATH_GAMES.map((game) => ({ params: { slug: game.slug }, props: { game } }));
+}
+
+interface Props {
+  game: MathGame;
+}
+const { game } = Astro.props;
+const others = MATH_GAMES.filter((g) => g.slug !== game.slug).slice(0, 4);
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': ['VideoGame', 'LearningResource'],
+    name: game.name,
+    description: game.blurb,
+    url: new URL(`/games/${game.slug}`, SITE.url).href,
+    genre: 'Educational',
+    gamePlatform: 'Web browser',
+    isAccessibleForFree: true,
+    learningResourceType: 'Game',
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  },
+];
+---
+
+<BaseLayout
+  title={`${game.name}: Math Game`}
+  description={`${game.blurb} A free math game that runs in your browser.`}
+  crumbs={[{ label: 'Games', href: '/games' }, { label: game.name }]}
+  jsonLd={jsonLd}
+>
+  <div class="wrap game-page">
+    <header class="game-head">
+      <h1>{game.name}</h1>
+      <p class="lede">{game.blurb}</p>
+    </header>
+
+    <div class="game-layout">
+      <section class="game-stage" aria-label="Game">
+        {game.kind === 'rapid' && <RapidGame game={game} />}
+        {game.kind === 'angle' && <AngleHunter />}
+        {game.kind === 'make24' && <Make24 />}
+      </section>
+
+      <div class="game-side">
+        <section class="doc-section" aria-labelledby="how-to-play">
+          <h2 id="how-to-play">How to play</h2>
+          <ol class="steps-list">{game.howTo.map((s) => <li>{s}</li>)}</ol>
+        </section>
+        <section class="doc-section" aria-labelledby="math">
+          <h2 id="math">The math behind it</h2>
+          <div class="prose">{game.math.map((p) => <p>{p}</p>)}</div>
+        </section>
+      </div>
+    </div>
+
+    <div class="game-after">
+      <TopicPath topic={game.topic} current="play" />
+      <RelatedTools slugs={[game.calculator]} heading="Check your working" />
+      <section class="doc-section">
+        <h2>More math games</h2>
+        <ul class="mg-grid">{others.map((g) => <MathGameCard game={g} />)}</ul>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .game-page {
+    padding-bottom: 40px;
+  }
+  .game-head {
+    max-width: 760px;
+    margin-bottom: 20px;
+  }
+  .game-layout {
+    display: grid;
+    gap: 32px;
+    align-items: start;
+  }
+  @media (min-width: 1000px) {
+    .game-layout {
+      grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+      gap: 40px;
+    }
+  }
+  .game-stage {
+    display: flex;
+    justify-content: center;
+  }
+  .game-side {
+    display: grid;
+    gap: 32px;
+    min-width: 0;
+  }
+  .game-side .steps-list li {
+    font-family: var(--font-body);
+    font-size: 1rem;
+  }
+  .game-after {
+    display: grid;
+    gap: 40px;
+    margin-top: 48px;
+    max-width: 1100px;
+  }
+</style>

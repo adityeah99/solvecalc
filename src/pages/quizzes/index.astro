@@ -1,0 +1,103 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { TOPICS } from '../../data/topics.ts';
+
+const quizzes = await getCollection('quizzes');
+const order = TOPICS.map((t) => t.id);
+quizzes.sort((a, b) => order.indexOf(a.data.topic) - order.indexOf(b.data.topic));
+---
+
+<BaseLayout
+  title="Math Quizzes"
+  description="Quick multiple-choice quizzes on arithmetic, fractions, algebra, geometry, statistics and probability, with an explanation for every answer."
+  crumbs={[{ label: 'Quizzes' }]}
+>
+  <div class="wrap quiz-index">
+    <header class="index-head">
+      <h1>Quizzes</h1>
+      <p class="lede">
+        Ten questions each, with instant feedback and a short explanation after every answer. Your progress and best score
+        are saved in this browser.
+      </p>
+    </header>
+    <ul class="quiz-grid">
+      {
+        quizzes.map((q) => (
+          <li>
+            <a class="quiz-card sheet" href={`/quizzes/${q.id}`} data-quiz-card={q.id} data-total={q.data.questions.length}>
+              <span class="quiz-count">{q.data.questions.length} questions</span>
+              <h2>{q.data.title}</h2>
+              <p>{q.data.description}</p>
+              <span class="quiz-best" data-best>Not tried yet</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+<script>
+  import { readQuizState } from '../../scripts/quiz-store.ts';
+  document.querySelectorAll<HTMLElement>('[data-quiz-card]').forEach((card) => {
+    const s = readQuizState(card.dataset.quizCard!);
+    const total = Number(card.dataset.total);
+    const answered = s.answers.filter((a) => a !== null).length;
+    const out = card.querySelector('[data-best]')!;
+    if (s.best !== null) out.textContent = `Best score: ${s.best}/${total}`;
+    else if (answered) out.textContent = `In progress: ${answered}/${total} answered`;
+  });
+</script>
+
+<style>
+  .quiz-index {
+    padding-bottom: 40px;
+  }
+  .index-head {
+    max-width: 760px;
+    margin-bottom: 24px;
+  }
+  .quiz-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 18px;
+  }
+  .quiz-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .quiz-card:hover {
+    color: var(--ink);
+    background: #fff;
+  }
+  .quiz-card h2 {
+    font-size: 1.35rem;
+  }
+  .quiz-card p {
+    color: var(--ink-2);
+    flex: 1;
+  }
+  .quiz-count {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--lcd);
+    color: var(--lcd-ink);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .quiz-best {
+    font-weight: 700;
+    color: var(--blue);
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+
+const shapes = [
+  { value: 'circle', label: 'Circle' },
+  { value: 'rectangle', label: 'Rectangle' },
+  { value: 'square', label: 'Square' },
+  { value: 'triangle', label: 'Triangle (base, height)' },
+  { value: 'triangle3', label: 'Triangle (3 sides)' },
+  { value: 'trapezoid', label: 'Trapezoid' },
+  { value: 'cube', label: 'Cube' },
+  { value: 'cuboid', label: 'Box (cuboid)' },
+  { value: 'cylinder', label: 'Cylinder' },
+  { value: 'sphere', label: 'Sphere' },
+  { value: 'cone', label: 'Cone' },
+];
+---
+
+<CalculatorLayout slug="geometry">
+  <CalculatorShell id="geo-form">
+    <Segmented name="shape" legend="Shape" options={shapes} />
+    <div class="field-row">
+      <InputField name="r" label="Radius (r)" placeholder="5" when="shape:circle|cylinder|sphere|cone" />
+      <InputField name="l" label="Length (l)" placeholder="8" when="shape:rectangle|cuboid" />
+      <InputField name="w" label="Width (w)" placeholder="3" when="shape:rectangle|cuboid" />
+      <InputField name="s" label="Side (s)" placeholder="4" when="shape:square|cube" />
+      <InputField name="base" label="Base (b)" placeholder="10" when="shape:triangle" />
+      <InputField name="sa" label="Side a" placeholder="3" when="shape:triangle3|trapezoid" />
+      <InputField name="sb" label="Side b" placeholder="4" when="shape:triangle3|trapezoid" />
+      <InputField name="sc" label="Side c" placeholder="5" when="shape:triangle3" />
+      <InputField name="h" label="Height (h)" placeholder="6" when="shape:triangle|trapezoid|cuboid|cylinder|cone" />
+    </div>
+    <p class="hint muted" data-when="shape:trapezoid">Sides a and b are the two parallel sides.</p>
+    <div class="field unit-field">
+      <label for="f-unit">Units (optional)</label>
+      <select class="select" id="f-unit" name="unit">
+        <option value="">No units</option>
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="km">km</option>
+        <option value="in">in</option>
+        <option value="ft">ft</option>
+        <option value="yd">yd</option>
+      </select>
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/geometry.ts';
+</script>
+
+<style>
+  .unit-field {
+    max-width: 220px;
+  }
+</style>

@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site.ts';
+import { CALCULATORS } from '../data/calculators.ts';
+import { MATH_GAMES } from '../data/math-games.ts';
+---
+
+<BaseLayout
+  title="About"
+  description={`What ${SITE.name} is, how the calculators work, and how the games and your data are handled.`}
+  crumbs={[{ label: 'About' }]}
+>
+  <div class="wrap reading">
+    <article class="reading-main">
+      <header class="reading-head">
+        <h1>About {SITE.name}</h1>
+        <p class="lede">{SITE.tagline}</p>
+      </header>
+      <div class="prose">
+        <p>
+          {SITE.name} is a set of math tools in one place, built around a simple idea: an answer is more useful when you can
+          see how it was reached, practice it, and then take a break.
+        </p>
+        <h2>What is here</h2>
+        <ul>
+          <li><a href="/calculators">{CALCULATORS.length} calculators</a>, each with the formula, a worked example and common mistakes.</li>
+          <li><a href="/learn">Lessons</a> and <a href="/articles">articles</a> that explain one idea at a time.</li>
+          <li><a href="/quizzes">Quizzes</a> with an explanation after every answer.</li>
+          <li><a href="/games">{MATH_GAMES.length} math games</a> that practice one skill each.</li>
+        </ul>
+        <h2>How the calculators work</h2>
+        <p>
+          Everything is worked out in your browser. The scientific calculator reads your expression with its own parser, so
+          it only understands numbers, operators and math functions, never code. Fractions and equations are solved with
+          exact fractions, and decimals are rounded to hide the tiny errors that computers make with floating-point numbers.
+        </p>
+        <h2>About the games</h2>
+        <p>
+          The math games are built into {SITE.name} and run entirely in your browser. Each one practices a single skill, like
+          mental arithmetic, comparing fractions or estimating angles, and explains the math behind it.
+        </p>
+        <h2>Your data</h2>
+        <p>
+          There are no accounts. Calculator history, quiz progress and game scores are saved in your browser's own storage on
+          your device and are never sent anywhere.
+        </p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

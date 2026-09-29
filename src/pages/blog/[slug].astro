@@ -1,0 +1,89 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RelatedTools from '../../components/RelatedTools.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
+import PostCard from '../../components/PostCard.astro';
+import BlogArt from '../../components/BlogArt.astro';
+import '../../styles/blog.css';
+import '../../styles/calc.css';
+import { SITE } from '../../config/site.ts';
+import { blogCategory } from '../../data/blog.ts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const cat = blogCategory(entry.data.category);
+const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length;
+const minutes = Math.max(1, Math.round(words / 200));
+const { published, updated } = entry.data;
+const fmtDate = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+
+const all = await getCollection('blog');
+const related = entry.data.related.map((s) => all.find((p) => p.id === s)).filter((p) => p !== undefined).slice(0, 3);
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: entry.data.title,
+    description: entry.data.description,
+    url: new URL(`/blog/${entry.id}`, SITE.url).href,
+    datePublished: published.toISOString().slice(0, 10),
+    dateModified: (updated ?? published).toISOString().slice(0, 10),
+    inLanguage: SITE.lang,
+    author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  },
+];
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  ogType="article"
+  crumbs={[{ label: 'Blog', href: '/blog' }, { label: entry.data.title }]}
+  jsonLd={jsonLd}
+>
+  <div class="wrap reading">
+    <article class="reading-main">
+      <header class="reading-head post-head">
+        <span class={`post-hero-art tone-${entry.data.tone}`}><BlogArt name={entry.data.icon} size={88} /></span>
+        <p class="post-badge">{cat?.label}</p>
+        <h1>{entry.data.title}</h1>
+        <p class="lede">{entry.data.description}</p>
+        <p class="post-date muted">
+          <time datetime={published.toISOString().slice(0, 10)}>{fmtDate(published)}</time>
+          · {minutes} min read
+          {updated && <span> · Updated <time datetime={updated.toISOString().slice(0, 10)}>{fmtDate(updated)}</time></span>}
+        </p>
+      </header>
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+    <div class="reading-after">
+      <RelatedTools slugs={entry.data.calculators} heading="Handy calculators" />
+      <RelatedArticles slugs={entry.data.articles} heading="Related guides" />
+      {
+        related.length > 0 && (
+          <section class="doc-section">
+            <h2>More from the blog</h2>
+            <ul class="post-grid">
+              {related.map((post) => (
+                <PostCard post={post} />
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

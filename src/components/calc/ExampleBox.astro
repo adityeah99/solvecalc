@@ -1,0 +1,18 @@
+---
+import StepByStep from './StepByStep.astro';
+
+interface Props {
+  example: { title: string; problem: string; steps: string[]; answer: string };
+}
+const { example } = Astro.props;
+---
+
+<section class="doc-section" aria-labelledby="example">
+  <h2 id="example">Worked example</h2>
+  <div class="example sheet">
+    <h3>{example.title}</h3>
+    <p class="example-problem">{example.problem}</p>
+    <StepByStep steps={example.steps} />
+    <p class="example-answer"><span class="eyebrow">Answer</span>{example.answer}</p>
+  </div>
+</section>

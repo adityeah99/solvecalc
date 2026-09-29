@@ -1,0 +1,77 @@
+{
+  "title": "Integers Quiz",
+  "description": "Practice adding, subtracting, multiplying and dividing negative numbers, plus ordering integers and moving along the number line.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "int-01",
+      "question": "What is −8 + 5?",
+      "options": ["−3", "3", "−13", "13"],
+      "answer": 0,
+      "explanation": "Start at −8 on the number line and move 5 steps right. You land on −3."
+    },
+    {
+      "id": "int-02",
+      "question": "What is −4 − 6?",
+      "options": ["10", "−10", "2", "−2"],
+      "answer": 1,
+      "explanation": "Subtracting 6 moves you 6 steps further left from −4. That lands you on −10."
+    },
+    {
+      "id": "int-03",
+      "question": "What is 7 − (−3)?",
+      "options": ["4", "−10", "10", "−4"],
+      "answer": 2,
+      "explanation": "Subtracting a negative is the same as adding. So 7 − (−3) becomes 7 + 3 = 10."
+    },
+    {
+      "id": "int-04",
+      "question": "What is −5 × 3?",
+      "options": ["15", "8", "−8", "−15"],
+      "answer": 3,
+      "explanation": "A negative times a positive gives a negative. 5 × 3 = 15, so −5 × 3 = −15."
+    },
+    {
+      "id": "int-05",
+      "question": "What is −12 ÷ (−4)?",
+      "options": ["3", "−3", "−48", "48"],
+      "answer": 0,
+      "explanation": "A negative divided by a negative gives a positive. 12 ÷ 4 = 3, so −12 ÷ (−4) = 3."
+    },
+    {
+      "id": "int-06",
+      "question": "Which of these is the smallest number: −7, −2, 0, 3?",
+      "options": ["−2", "−7", "0", "3"],
+      "answer": 1,
+      "explanation": "On a number line the smallest number is the one furthest to the left. −7 is further left than −2, so −7 is the smallest."
+    },
+    {
+      "id": "int-07",
+      "question": "What is −6 × (−4)?",
+      "options": ["−24", "10", "24", "−10"],
+      "answer": 2,
+      "explanation": "A negative times a negative gives a positive. 6 × 4 = 24, so −6 × (−4) = 24."
+    },
+    {
+      "id": "int-08",
+      "question": "What is 4 + (−9)?",
+      "options": ["13", "5", "−13", "−5"],
+      "answer": 3,
+      "explanation": "Adding −9 means moving 9 steps left from 4. You pass zero and land on −5."
+    },
+    {
+      "id": "int-09",
+      "question": "Starting at 3 on a number line, you move 7 steps left. Where do you land?",
+      "options": ["−4", "4", "10", "−10"],
+      "answer": 0,
+      "explanation": "Moving left means subtracting: 3 − 7. Three steps take you to 0, and four more take you to −4."
+    },
+    {
+      "id": "int-10",
+      "question": "What is (−2) × (−3) × (−1)?",
+      "options": ["6", "5", "−6", "−5"],
+      "answer": 2,
+      "explanation": "Work in order: (−2) × (−3) = 6, then 6 × (−1) = −6. With an odd number of negative signs, the result is negative."
+    }
+  ]
+}

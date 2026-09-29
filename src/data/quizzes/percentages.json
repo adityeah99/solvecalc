@@ -1,0 +1,77 @@
+{
+  "title": "Percentages Quiz",
+  "description": "Practice finding a percent of a number, percentage increase and decrease, discounts, and converting between fractions, decimals and percents.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "pct-01",
+      "question": "What is 10% of 250?",
+      "options": ["2.5", "25", "250", "2500"],
+      "answer": 1,
+      "explanation": "To find 10%, divide by 10. 250 ÷ 10 = 25."
+    },
+    {
+      "id": "pct-02",
+      "question": "Write 50% as a fraction in its simplest form.",
+      "options": ["1/2", "5/10", "1/5", "2/1"],
+      "answer": 0,
+      "explanation": "Percent means out of 100, so 50% is 50/100. Divide the top and bottom by 50 to get 1/2."
+    },
+    {
+      "id": "pct-03",
+      "question": "Convert 0.25 to a percentage.",
+      "options": ["2.5%", "250%", "25%", "0.25%"],
+      "answer": 2,
+      "explanation": "To turn a decimal into a percent, multiply by 100. 0.25 × 100 = 25%."
+    },
+    {
+      "id": "pct-04",
+      "question": "What is 20% of 60?",
+      "options": ["3", "30", "1.2", "12"],
+      "answer": 3,
+      "explanation": "10% of 60 is 6, so 20% is double that: 6 × 2 = 12. You can also do 0.2 × 60 = 12."
+    },
+    {
+      "id": "pct-05",
+      "question": "An $80 jacket has 25% off. How much money is taken off the price?",
+      "options": ["$20", "$60", "$55", "$2"],
+      "answer": 0,
+      "explanation": "25% is one quarter, so the discount is 80 ÷ 4 = $20. The sale price would then be $60, but the question asks for the amount taken off."
+    },
+    {
+      "id": "pct-06",
+      "question": "A number goes up from 40 to 50. What is the percentage increase?",
+      "options": ["20%", "50%", "25%", "10%"],
+      "answer": 2,
+      "explanation": "The rise is 50 − 40 = 10. Divide by the original amount: 10 ÷ 40 = 0.25, which is 25%. Dividing by 50 instead of 40 wrongly gives 20%."
+    },
+    {
+      "id": "pct-07",
+      "question": "What is 15% of 200?",
+      "options": ["15", "3", "300", "30"],
+      "answer": 3,
+      "explanation": "10% of 200 is 20 and 5% is half of that, which is 10. Add them: 20 + 10 = 30."
+    },
+    {
+      "id": "pct-08",
+      "question": "Write 3/4 as a percentage.",
+      "options": ["34%", "75%", "0.75%", "43%"],
+      "answer": 1,
+      "explanation": "3/4 as a decimal is 0.75. Multiply by 100 to get a percent: 0.75 × 100 = 75%."
+    },
+    {
+      "id": "pct-09",
+      "question": "A shirt costs $50 and is reduced by 30%. What is the sale price?",
+      "options": ["$20", "$15", "$35", "$47"],
+      "answer": 2,
+      "explanation": "30% of 50 is 15, so that much comes off. The sale price is 50 − 15 = $35. Stopping at $15 gives only the discount, not the price."
+    },
+    {
+      "id": "pct-10",
+      "question": "After a 20% rise, a jacket costs $360. What was the original price?",
+      "options": ["$300", "$288", "$432", "$340"],
+      "answer": 0,
+      "explanation": "A 20% rise means $360 is 120% of the original. Divide by 1.2: 360 ÷ 1.2 = $300. Taking 20% off $360 is a different sum and gives the wrong answer."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { topicById } from '../../data/topics.ts';
+
+const lessons = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout
+  title="Learn Math"
+  description="Short, plain-English lessons on algebra, fractions, geometry, statistics, probability and trigonometry, with worked examples."
+  crumbs={[{ label: 'Learn' }]}
+>
+  <div class="wrap learn-index">
+    <header class="index-head">
+      <h1>Learn math</h1>
+      <p class="lede">Each lesson covers the big ideas of one topic with small worked examples, then points you to the right calculator and quiz.</p>
+    </header>
+    <ul class="lesson-grid">
+      {
+        lessons.map((l) => (
+          <li>
+            <a class="lesson-card sheet" href={`/learn/${l.id}`}>
+              <span class="eyebrow">{topicById(l.data.topic).name}</span>
+              <h2>{l.data.title}</h2>
+              <p>{l.data.description}</p>
+              <span class="lesson-go">Start the lesson →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .learn-index {
+    padding-bottom: 40px;
+  }
+  .index-head {
+    max-width: 760px;
+    margin-bottom: 24px;
+  }
+  .lesson-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 18px;
+  }
+  .lesson-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: transform 60ms ease, box-shadow 60ms ease;
+  }
+  .lesson-card:hover {
+    color: var(--ink);
+    background: #fff;
+  }
+  .lesson-card:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--ink);
+  }
+  .lesson-card h2 {
+    font-size: 1.4rem;
+  }
+  .lesson-card p {
+    color: var(--ink-2);
+    flex: 1;
+  }
+  .lesson-go {
+    font-weight: 700;
+    color: var(--blue);
+  }
+</style>

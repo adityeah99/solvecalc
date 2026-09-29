@@ -1,0 +1,40 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="average">
+  <CalculatorShell id="avg-form" emptyText="Enter some numbers to see the average.">
+    <Segmented
+      name="mode"
+      legend="Type of average"
+      options={[
+        { value: 'simple', label: 'Simple average' },
+        { value: 'weighted', label: 'Weighted average' },
+      ]}
+    />
+    <InputField
+      name="values"
+      label="Numbers"
+      multiline
+      rows={4}
+      placeholder="72, 85, 90, 64"
+      hint="Separate numbers with commas, spaces or new lines."
+    />
+    <InputField
+      name="weights"
+      label="Weights"
+      multiline
+      rows={3}
+      placeholder="1, 2, 2, 1"
+      hint="One weight for each number, in the same order."
+      when="mode:weighted"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/average.ts';
+</script>

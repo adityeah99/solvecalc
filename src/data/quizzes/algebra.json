@@ -1,0 +1,77 @@
+{
+  "title": "Algebra Quiz",
+  "description": "Practice substituting values, simplifying expressions and solving one-step, two-step and simple quadratic equations.",
+  "topic": "algebra",
+  "questions": [
+    {
+      "id": "algebra-01",
+      "question": "If x = 4, what is 3x + 2?",
+      "options": ["36", "9", "14", "12"],
+      "answer": 2,
+      "explanation": "3x means 3 times x, so 3x = 3 × 4 = 12. Then 12 + 2 = 14."
+    },
+    {
+      "id": "algebra-02",
+      "question": "Solve x + 7 = 12.",
+      "options": ["19", "5", "7", "−5"],
+      "answer": 1,
+      "explanation": "Subtract 7 from both sides to get x on its own. x = 12 − 7 = 5."
+    },
+    {
+      "id": "algebra-03",
+      "question": "Solve 6x = 42.",
+      "options": ["7", "36", "48", "252"],
+      "answer": 0,
+      "explanation": "x is being multiplied by 6, so divide both sides by 6. x = 42 ÷ 6 = 7."
+    },
+    {
+      "id": "algebra-04",
+      "question": "Expand 3(x + 5).",
+      "options": ["3x + 5", "x + 15", "3x + 8", "3x + 15"],
+      "answer": 3,
+      "explanation": "Multiply everything inside the bracket by 3. 3 × x = 3x and 3 × 5 = 15, so you get 3x + 15."
+    },
+    {
+      "id": "algebra-05",
+      "question": "Simplify 5a + 3b − 2a + b.",
+      "options": ["7a + 4b", "3a + 4b", "3a + 3b", "7ab"],
+      "answer": 1,
+      "explanation": "Combine like terms. 5a − 2a = 3a and 3b + b = 4b, so the answer is 3a + 4b."
+    },
+    {
+      "id": "algebra-06",
+      "question": "Solve 2x − 3 = 11.",
+      "options": ["4", "8.5", "7", "14"],
+      "answer": 2,
+      "explanation": "Add 3 to both sides: 2x = 14. Then divide both sides by 2: x = 7."
+    },
+    {
+      "id": "algebra-07",
+      "question": "Solve x/3 + 4 = 10.",
+      "options": ["18", "2", "42", "6"],
+      "answer": 0,
+      "explanation": "Subtract 4 from both sides: x/3 = 6. Then multiply both sides by 3: x = 18."
+    },
+    {
+      "id": "algebra-08",
+      "question": "A taxi charges $3 plus $2 for every mile. A ride costs $19. How many miles long was it?",
+      "options": ["11", "9.5", "16", "8"],
+      "answer": 3,
+      "explanation": "Let m be the number of miles, so 2m + 3 = 19. Subtract 3 to get 2m = 16, then divide by 2 to get m = 8."
+    },
+    {
+      "id": "algebra-09",
+      "question": "Solve 5x + 2 = 3x + 14.",
+      "options": ["2", "8", "6", "1.5"],
+      "answer": 2,
+      "explanation": "Subtract 3x from both sides: 2x + 2 = 14. Subtract 2: 2x = 12. Divide by 2: x = 6."
+    },
+    {
+      "id": "algebra-10",
+      "question": "What are the solutions of x² − 5x + 6 = 0?",
+      "options": ["x = −2 or x = −3", "x = 2 or x = 3", "x = 1 or x = 6", "x = −1 or x = 6"],
+      "answer": 1,
+      "explanation": "Find two numbers that multiply to 6 and add to −5: they are −2 and −3. So (x − 2)(x − 3) = 0, which gives x = 2 or x = 3."
+    }
+  ]
+}

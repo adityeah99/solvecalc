@@ -1,0 +1,60 @@
+{
+  "intro": "Enter two or more positive whole numbers to find their greatest common divisor, the biggest number that divides into all of them exactly. You also see the Euclidean algorithm steps and the prime factorisation of each number.",
+  "formula": [
+    { "label": "Euclidean algorithm", "expr": "GCD(a, b) = GCD(b, a mod b), and GCD(a, 0) = a", "note": "a mod b is the remainder when a is divided by b." },
+    { "label": "More than two numbers", "expr": "GCD(a, b, c) = GCD(GCD(a, b), c)" },
+    { "label": "From prime factors", "expr": "GCD = product of the shared primes, each to its lowest power", "note": "72 = 2³ × 3² and 60 = 2² × 3 × 5, so GCD = 2² × 3 = 12." }
+  ],
+  "howItWorks": [
+    "The Euclidean algorithm divides the bigger number by the smaller one and keeps only the remainder. Then it repeats with the smaller number and that remainder. When the remainder reaches 0, the last divisor you used is the GCD. Each line looks like 48 = 1 × 36 + 12, then 36 = 3 × 12 + 0, which gives a GCD of 12.",
+    "The prime factorisations give a second way to see the same answer. Write each number as a product of primes, pick out the primes they all share, and use the smallest power of each. With more than two numbers, the calculator finds the GCD of the first two, then the GCD of that result with the next number, and so on."
+  ],
+  "example": {
+    "title": "GCD of 252 and 198",
+    "problem": "Find the greatest common divisor of 252 and 198.",
+    "steps": [
+      "252 = 1 × 198 + 54",
+      "198 = 3 × 54 + 36",
+      "54 = 1 × 36 + 18",
+      "36 = 2 × 18 + 0. The remainder is 0, so the GCD is the last divisor, 18.",
+      "Check with primes: 252 = 2² × 3² × 7 and 198 = 2 × 3² × 11. Shared primes at their lowest powers: 2 × 3² = 18."
+    ],
+    "answer": "GCD(252, 198) = 18"
+  },
+  "mistakes": [
+    {
+      "title": "Taking the answer from the wrong line",
+      "text": "The GCD is the last non-zero remainder, which is the divisor in the final line. In 36 = 2 × 18 + 0, the GCD is 18, not 0 and not 2."
+    },
+    {
+      "title": "Using the highest powers of the primes",
+      "text": "For the GCD, use the lowest power of each shared prime. Using the highest powers and every prime gives the LCM instead."
+    },
+    {
+      "title": "Thinking unrelated numbers have a GCD of 0",
+      "text": "Every whole number is divisible by 1, so the GCD is never less than 1. For 8 and 15, which share no prime factors, the GCD is 1."
+    },
+    {
+      "title": "Mixing up GCD and LCM",
+      "text": "The GCD divides into your numbers, so it is never bigger than the smallest one. The LCM is a multiple of your numbers, so it is never smaller than the largest one."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the GCD the same as the HCF?",
+      "a": "Yes. Greatest common divisor (GCD), highest common factor (HCF) and greatest common factor (GCF) are three names for the same thing."
+    },
+    {
+      "q": "How does the GCD help me simplify fractions?",
+      "a": "Divide the top and bottom by their GCD and the fraction is fully simplified in one step. For 18/24, the GCD is 6, so 18/24 = 3/4."
+    },
+    {
+      "q": "What does it mean if the GCD is 1?",
+      "a": "It means the numbers share no common factor other than 1. They are called coprime, like 8 and 15."
+    },
+    {
+      "q": "Why does the Euclidean algorithm work?",
+      "a": "Any number that divides both a and b also divides the remainder a − (multiple of b). So the pair (b, remainder) has exactly the same common divisors as (a, b), just with smaller numbers."
+    }
+  ]
+}

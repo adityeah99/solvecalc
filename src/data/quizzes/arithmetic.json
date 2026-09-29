@@ -1,0 +1,77 @@
+{
+  "title": "Arithmetic Quiz",
+  "description": "Practice order of operations, percentages, ratios, negative numbers, factors, GCD, LCM and rounding with ten questions that get harder as you go.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "arithmetic-01",
+      "question": "What is 7 + 3 × 2?",
+      "options": ["20", "13", "12", "23"],
+      "answer": 1,
+      "explanation": "Multiply before you add. 3 × 2 = 6, then 7 + 6 = 13. Getting 20 means you added 7 + 3 first."
+    },
+    {
+      "id": "arithmetic-02",
+      "question": "Round 3.476 to one decimal place.",
+      "options": ["3.4", "3.48", "3.5", "3.47"],
+      "answer": 2,
+      "explanation": "Look at the digit after the first decimal place, which is 7. Because 7 is 5 or more, the 4 rounds up to 5, giving 3.5."
+    },
+    {
+      "id": "arithmetic-03",
+      "question": "What is −8 + 5?",
+      "options": ["−3", "3", "−13", "13"],
+      "answer": 0,
+      "explanation": "Start at −8 on a number line and move 5 steps to the right. You land on −3."
+    },
+    {
+      "id": "arithmetic-04",
+      "question": "What is 25% of 80?",
+      "options": ["25", "32", "40", "20"],
+      "answer": 3,
+      "explanation": "25% is the same as one quarter. 80 ÷ 4 = 20."
+    },
+    {
+      "id": "arithmetic-05",
+      "question": "Which of these numbers is a factor of 36?",
+      "options": ["72", "8", "9", "14"],
+      "answer": 2,
+      "explanation": "A factor divides into 36 exactly. 36 ÷ 9 = 4 with nothing left over. 72 is a multiple of 36, not a factor."
+    },
+    {
+      "id": "arithmetic-06",
+      "question": "Ali and Ben share $40 in the ratio 3 : 5. How much does Ben get?",
+      "options": ["$25", "$15", "$24", "$8"],
+      "answer": 0,
+      "explanation": "There are 3 + 5 = 8 parts, so each part is $40 ÷ 8 = $5. Ben gets 5 parts, which is 5 × $5 = $25."
+    },
+    {
+      "id": "arithmetic-07",
+      "question": "What is 18 − 12 ÷ 3 + 2²?",
+      "options": ["10", "16", "6", "18"],
+      "answer": 3,
+      "explanation": "Do the power first: 2² = 4. Then divide: 12 ÷ 3 = 4. Finally work left to right: 18 − 4 + 4 = 18."
+    },
+    {
+      "id": "arithmetic-08",
+      "question": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "options": ["6", "12", "72", "4"],
+      "answer": 1,
+      "explanation": "The factors of 24 are 1, 2, 3, 4, 6, 8, 12 and 24. The biggest of these that also divides 36 is 12. 72 is the lowest common multiple, not the GCD."
+    },
+    {
+      "id": "arithmetic-09",
+      "question": "What is the lowest common multiple (LCM) of 6 and 8?",
+      "options": ["48", "2", "24", "14"],
+      "answer": 2,
+      "explanation": "Multiples of 6 are 6, 12, 18, 24 and so on, and multiples of 8 are 8, 16, 24 and so on. The first number in both lists is 24. 48 is a common multiple, but not the lowest."
+    },
+    {
+      "id": "arithmetic-10",
+      "question": "A price drops from $50 to $40. What is the percentage decrease?",
+      "options": ["20%", "25%", "10%", "80%"],
+      "answer": 0,
+      "explanation": "The price drops by $50 − $40 = $10. Divide by the original price: 10 ÷ 50 = 0.2, which is 20%. Dividing by the new price gives 25%, which is wrong."
+    }
+  ]
+}

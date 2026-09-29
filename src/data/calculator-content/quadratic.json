@@ -1,0 +1,66 @@
+{
+  "intro": "Enter a, b and c for ax² + bx + c = 0 and get the roots, the discriminant, the vertex and the axis of symmetry. When the roots are rational you also get the factored form.",
+  "formula": [
+    { "label": "Quadratic formula", "expr": "x = (−b ± √(b² − 4ac)) ÷ (2a)", "note": "a must not be 0." },
+    { "label": "Discriminant", "expr": "D = b² − 4ac", "note": "D positive: two real roots. D = 0: one repeated root. D negative: two complex roots." },
+    { "label": "Vertex and axis of symmetry", "expr": "vertex = (−b ÷ (2a), f(−b ÷ (2a))), axis: x = −b ÷ (2a)" },
+    { "label": "Complex roots (D negative)", "expr": "x = −b ÷ (2a) ± (√(−D) ÷ (2a)) i" }
+  ],
+  "howItWorks": [
+    "First the solver works out the discriminant, b² − 4ac. This one number tells you what kind of answer to expect. If it is positive there are two different real roots, if it is 0 there is one repeated root, and if it is negative the roots are complex numbers that use i, where i² = −1.",
+    "Next it puts a, b and the discriminant into the quadratic formula and shows each step. The vertex is the turning point of the curve y = ax² + bx + c. Its x value is −b ÷ (2a), and the axis of symmetry is the vertical line through it.",
+    "If the roots are whole numbers or fractions, the equation can also be written in factored form, such as 2(x − 3)(x + 1). This is a quick way to check the roots, because each bracket is zero at one of them."
+  ],
+  "example": {
+    "title": "Two real roots",
+    "problem": "Solve 2x² − 4x − 6 = 0 and find its vertex.",
+    "steps": [
+      "Read off the values: a = 2, b = −4, c = −6.",
+      "Discriminant: D = (−4)² − 4 × 2 × (−6) = 16 + 48 = 64. It is positive, so there are two real roots.",
+      "Formula: x = (4 ± √64) ÷ 4 = (4 ± 8) ÷ 4.",
+      "So x = 12 ÷ 4 = 3 or x = −4 ÷ 4 = −1.",
+      "Vertex: x = −(−4) ÷ (2 × 2) = 1, and y = 2(1)² − 4(1) − 6 = −8. The axis of symmetry is x = 1."
+    ],
+    "answer": "x = 3 or x = −1, vertex (1, −8), factored form 2(x − 3)(x + 1)."
+  },
+  "mistakes": [
+    {
+      "title": "Squaring a negative b wrongly",
+      "text": "If b = −4, then b² = (−4)² = 16, not −16. A negative number squared is always positive."
+    },
+    {
+      "title": "Forgetting the minus in −b",
+      "text": "The formula starts with −b. When b = −4, −b is +4, so the top becomes 4 ± √D."
+    },
+    {
+      "title": "Dividing only the square root by 2a",
+      "text": "The whole top, −b ± √D, is divided by 2a. For the example, (4 + 8) ÷ 4 = 3, not 4 + 8 ÷ 4 = 6."
+    },
+    {
+      "title": "Not rearranging to = 0 first",
+      "text": "For x² = 5x − 6, move everything to one side first: x² − 5x + 6 = 0. Only then is a = 1, b = −5 and c = 6, giving roots 2 and 3."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does the discriminant tell me?",
+      "a": "It tells you how many real roots there are. Positive means two, zero means one repeated root, and negative means no real roots but two complex ones."
+    },
+    {
+      "q": "What are complex roots?",
+      "a": "They are roots that use i, the number whose square is −1. For x² + 2x + 5 = 0, D = 4 − 20 = −16, so the roots are x = −1 + 2i and x = −1 − 2i."
+    },
+    {
+      "q": "Why can't a be 0?",
+      "a": "If a = 0, the x² term disappears and you are left with a linear equation like bx + c = 0. That is not a quadratic, and the formula would mean dividing by zero."
+    },
+    {
+      "q": "What does the vertex mean on a graph?",
+      "a": "It is the turning point of the curve. If a is positive the curve opens upwards and the vertex is the lowest point; if a is negative it is the highest point."
+    },
+    {
+      "q": "Why is there no factored form for some equations?",
+      "a": "The factored form is shown only when the roots are rational, meaning whole numbers or fractions. For x² − 2 = 0 the roots are ±√2, which are not fractions, so there is no neat factored form with rational numbers."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="exponents">
+  <CalculatorShell id="exp-form">
+    <div class="field-row">
+      <InputField name="base" label="Base (a)" placeholder="2" />
+      <InputField name="exp" label="Exponent (n)" placeholder="10" hint="Whole, negative, decimal or a fraction like 2/3." inputmode="text" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/exponents.ts';
+</script>

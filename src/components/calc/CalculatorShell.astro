@@ -1,0 +1,24 @@
+---
+// Form + result area shared by every form-based calculator.
+// The page's script calls mountForm() from src/scripts/calc-form.ts.
+import ResultCard from './ResultCard.astro';
+
+interface Props {
+  id: string;
+  submitLabel?: string;
+  emptyText?: string;
+}
+const { id, submitLabel = 'Calculate', emptyText } = Astro.props;
+---
+
+<section class="calc-panel" aria-labelledby={`${id}-title`}>
+  <h2 id={`${id}-title`} class="visually-hidden">Calculator</h2>
+  <form class="calc-form sheet" id={id} data-calc-form novalidate>
+    <slot />
+    <div class="calc-buttons">
+      <button type="submit" class="key key--hi">{submitLabel}</button>
+      <button type="reset" class="key key--ghost">Reset</button>
+    </div>
+  </form>
+  <ResultCard for={id} emptyText={emptyText} />
+</section>

@@ -1,0 +1,65 @@
+{
+  "intro": "Convert between metric and imperial units for length, mass, temperature, area, volume, speed and time. Choose a category, pick the units you are converting from and to, and enter a value.",
+  "formula": [
+    { "label": "Length", "expr": "1 in = 2.54 cm exactly, so 1 ft = 30.48 cm and 1 mi = 1.609344 km" },
+    { "label": "Mass", "expr": "1 lb = 0.45359237 kg exactly, and 1 stone = 14 lb" },
+    { "label": "Celsius to Fahrenheit", "expr": "°F = °C × 9/5 + 32, and °C = (°F − 32) × 5/9" },
+    { "label": "Celsius to kelvin", "expr": "K = °C + 273.15" }
+  ],
+  "howItWorks": [
+    "Most units in a category are just different sizes of the same thing, so converting means multiplying by a fixed number. For example, every length can be written in metres, so feet to inches can be thought of as feet to metres, then metres to inches. That is why the exact factors, like 1 in = 2.54 cm, matter.",
+    "Temperature is different, because the scales start from different zero points. Converting between °C and °F needs a multiply and an add or subtract, not just a multiply. Kelvin uses the same step size as °C but starts at absolute zero, so you only add 273.15.",
+    "Area and volume units grow faster than length units. Because 1 m = 100 cm, 1 m² = 100 × 100 = 10,000 cm² and 1 m³ = 1,000,000 cm³. In the time category, a year counts as 365 days."
+  ],
+  "example": {
+    "title": "Room temperature in three scales",
+    "problem": "A room is at 68 °F. What is that in °C and in kelvin?",
+    "steps": [
+      "Take away 32: 68 − 32 = 36.",
+      "Multiply by 5/9: 36 × 5 ÷ 9 = 20, so it is 20 °C.",
+      "Add 273.15 for kelvin: 20 + 273.15 = 293.15 K.",
+      "Check backwards: 20 × 9/5 + 32 = 36 + 32 = 68 °F."
+    ],
+    "answer": "68 °F = 20 °C = 293.15 K"
+  },
+  "mistakes": [
+    {
+      "title": "Treating temperature like other units",
+      "text": "Doubling a temperature in °C does not double it in °F. 10 °C is 50 °F, but 20 °C is 68 °F, not 100 °F."
+    },
+    {
+      "title": "Using the length factor for area",
+      "text": "1 m = 100 cm, but 1 m² = 10,000 cm², not 100 cm². For area, square the length factor. For volume, cube it."
+    },
+    {
+      "title": "Mixing up US and UK gallons",
+      "text": "They are different sizes. A US gallon is 3.785411784 L and a UK gallon is 4.54609 L, so pick the one your question uses."
+    },
+    {
+      "title": "Confusing ounces and fluid ounces",
+      "text": "An ounce (oz) measures mass and is in the mass category. A fluid ounce (fl oz) measures volume and is in the volume category. You cannot convert one into the other without knowing the density."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is an inch exactly 2.54 cm?",
+      "a": "In 1959 several countries agreed to define the inch as exactly 2.54 cm and the pound as exactly 0.45359237 kg. Since then these are definitions, not measurements."
+    },
+    {
+      "q": "How do I change m/s to km/h quickly?",
+      "a": "Multiply by 3.6, because 1 m/s is 3600 m in an hour, which is 3.6 km. So 10 m/s = 36 km/h."
+    },
+    {
+      "q": "What is a knot?",
+      "a": "A knot is one nautical mile per hour, which is exactly 1.852 km/h. It is used for ships and aircraft."
+    },
+    {
+      "q": "Why does kelvin not use a degree sign?",
+      "a": "Kelvin is an absolute scale, where 0 K is absolute zero, −273.15 °C, the coldest possible temperature. Its unit is simply called the kelvin, written K."
+    },
+    {
+      "q": "Does a year of 365 days include leap years?",
+      "a": "No. Here a year is always 365 days, which is 31,536,000 seconds. A leap year has one extra day, so real calendar years can be a little longer."
+    }
+  ]
+}

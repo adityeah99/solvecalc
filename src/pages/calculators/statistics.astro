@@ -1,0 +1,22 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="statistics">
+  <CalculatorShell id="stats-form" emptyText="Enter some numbers to see the statistics.">
+    <InputField
+      name="data"
+      label="Your numbers"
+      multiline
+      rows={5}
+      placeholder="4, 8, 15, 16, 23, 42"
+      hint="Separate numbers with commas, spaces or new lines."
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/statistics.ts';
+</script>

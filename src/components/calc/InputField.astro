@@ -1,0 +1,67 @@
+---
+interface Props {
+  name: string;
+  label: string;
+  id?: string;
+  hint?: string;
+  placeholder?: string;
+  value?: string | number;
+  inputmode?: 'decimal' | 'numeric' | 'text';
+  multiline?: boolean;
+  rows?: number;
+  /** Shown only while the named radio group has one of these values, e.g. "mode:of|change" */
+  when?: string;
+  class?: string;
+}
+const {
+  name,
+  label,
+  id = `f-${name}`,
+  hint,
+  placeholder,
+  value,
+  inputmode = 'decimal',
+  multiline = false,
+  rows = 4,
+  when,
+  class: cls,
+} = Astro.props;
+const hintId = hint ? `${id}-hint` : undefined;
+const errId = `${id}-err`;
+const describedBy = [hintId, errId].filter(Boolean).join(' ');
+---
+
+<div class:list={['field', cls]} data-when={when}>
+  <label for={id}>{label}</label>
+  {
+    multiline ? (
+      <textarea
+        class="textarea"
+        id={id}
+        name={name}
+        rows={rows}
+        placeholder={placeholder}
+        aria-describedby={describedBy}
+        spellcheck="false"
+        autocomplete="off"
+      >
+        {value}
+      </textarea>
+    ) : (
+      <input
+        class="input"
+        id={id}
+        name={name}
+        type="text"
+        inputmode={inputmode}
+        placeholder={placeholder}
+        value={value}
+        aria-describedby={describedBy}
+        autocomplete="off"
+        spellcheck="false"
+      />
+    )
+  }
+  {hint && <p class="hint" id={hintId}>{hint}</p>}
+  <p class="field-error" id={errId} data-field-error hidden></p>
+</div>

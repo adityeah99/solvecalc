@@ -1,0 +1,16 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import ScientificCalculator from '../../components/calc/ScientificCalculator.astro';
+---
+
+<CalculatorLayout slug="scientific">
+  <section class="sci-section" aria-label="Scientific calculator">
+    <ScientificCalculator id="sci-main" layout="full" globalKeys autofocus />
+  </section>
+</CalculatorLayout>
+
+<style>
+  .sci-section {
+    margin-bottom: 48px;
+  }
+</style>

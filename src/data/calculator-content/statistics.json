@@ -1,0 +1,62 @@
+{
+  "intro": "Paste a list of numbers and get the main summary statistics in one go: count, sum, mean, median, mode, range, quartiles, IQR, variance and standard deviation.",
+  "formula": [
+    { "label": "Mean", "expr": "x̄ = Σx ÷ n", "note": "Add up all the values and divide by how many there are." },
+    { "label": "Population variance and standard deviation", "expr": "σ² = Σ(x − x̄)² ÷ n, σ = √σ²" },
+    { "label": "Sample variance and standard deviation", "expr": "s² = Σ(x − x̄)² ÷ (n − 1), s = √s²" },
+    { "label": "Range and interquartile range", "expr": "range = max − min, IQR = Q3 − Q1" }
+  ],
+  "howItWorks": [
+    "You can separate the numbers with commas, spaces or new lines. The list is sorted from smallest to largest first. The median is the middle value, or the mean of the two middle values when the count is even. The mode is the value that appears most often. There can be more than one mode, and if every value appears only once you will see no mode.",
+    "Q1 is the median of the lower half of the sorted list and Q3 is the median of the upper half. When the count is odd, the middle value is left out of both halves. The IQR, Q3 − Q1, tells you how spread out the middle half of the data is.",
+    "Standard deviation measures how far values usually sit from the mean. Use the population version (divide by n) when your list is the whole group you care about. Use the sample version (divide by n − 1) when your list is a sample taken from a bigger group."
+  ],
+  "example": {
+    "title": "Eight quiz scores",
+    "problem": "Eight students scored 2, 4, 4, 4, 5, 5, 7 and 9 on a quiz. Find the mean, median, mode, quartiles and standard deviations.",
+    "steps": [
+      "The list is already sorted. Count n = 8, sum = 40, so the mean is 40 ÷ 8 = 5.",
+      "The two middle values are 4 and 5, so the median is 4.5. The value 4 appears three times, so the mode is 4.",
+      "Lower half: 2, 4, 4, 4, so Q1 = 4. Upper half: 5, 5, 7, 9, so Q3 = 6. IQR = 6 − 4 = 2.",
+      "Squared distances from the mean: 9, 1, 1, 1, 0, 0, 4, 16. Their total is 32.",
+      "Population: σ² = 32 ÷ 8 = 4, so σ = 2. Sample: s² = 32 ÷ 7 ≈ 4.571, so s ≈ 2.138."
+    ],
+    "answer": "Mean 5, median 4.5, mode 4, Q1 4, Q3 6, IQR 2, σ = 2, s ≈ 2.138."
+  },
+  "mistakes": [
+    {
+      "title": "Finding the median without sorting",
+      "text": "The median is the middle of the sorted list. For 7, 2, 9, the middle number as typed is 2, but sorted it is 2, 7, 9, so the median is 7."
+    },
+    {
+      "title": "Using the wrong standard deviation",
+      "text": "Divide by n for a whole population and by n − 1 for a sample. For 2, 4, 4, 4, 5, 5, 7, 9 that is the difference between 2 and about 2.138."
+    },
+    {
+      "title": "Putting commas inside big numbers",
+      "text": "Commas are read as separators, so 1,500 is read as two numbers, 1 and 500. Type 1500 instead."
+    },
+    {
+      "title": "Expecting every quartile method to agree",
+      "text": "There are several ways to find quartiles, and they can give slightly different answers for the same list. Here the middle value is left out of both halves when the count is odd, so check which method your class uses."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When should I use sample or population standard deviation?",
+      "a": "Use population if your numbers are every member of the group, like all 30 test scores in your class. Use sample if they are a few picked from a bigger group, like 30 students surveyed from a whole school."
+    },
+    {
+      "q": "What does standard deviation actually tell me?",
+      "a": "It tells you how spread out the values are around the mean. A small standard deviation means the values are close together; a large one means they are spread out."
+    },
+    {
+      "q": "Can a list have more than one mode?",
+      "a": "Yes. In 1, 2, 2, 3, 3, 4 both 2 and 3 appear twice, so both are modes. If every value appears just once, there is no mode."
+    },
+    {
+      "q": "Why is my textbook's Q1 different?",
+      "a": "Different books use different rules for splitting the list, especially when the count is odd. This calculator leaves the middle value out of both halves, which is one common method."
+    }
+  ]
+}

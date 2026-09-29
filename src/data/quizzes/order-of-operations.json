@@ -1,0 +1,77 @@
+{
+  "title": "Order of Operations Quiz",
+  "description": "Practice PEMDAS and BODMAS: work out brackets and exponents first, then multiplication and division, then addition and subtraction left to right.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "ooo-01",
+      "question": "What is 2 + 3 × 4?",
+      "options": ["20", "14", "24", "10"],
+      "answer": 1,
+      "explanation": "Multiplication comes before addition. 3 × 4 = 12, then 2 + 12 = 14. Getting 20 means you added 2 + 3 first, which is the wrong order."
+    },
+    {
+      "id": "ooo-02",
+      "question": "What is 10 − 6 ÷ 2?",
+      "options": ["2", "4", "8", "7"],
+      "answer": 3,
+      "explanation": "Divide before you subtract. 6 ÷ 2 = 3, then 10 − 3 = 7. Working strictly left to right would wrongly give 10 − 6 = 4, then 4 ÷ 2 = 2."
+    },
+    {
+      "id": "ooo-03",
+      "question": "What is (4 + 2) × 3?",
+      "options": ["18", "10", "24", "14"],
+      "answer": 0,
+      "explanation": "Do the brackets first. 4 + 2 = 6, then 6 × 3 = 18. Ignoring the brackets and doing 2 × 3 first would give 10, which is wrong."
+    },
+    {
+      "id": "ooo-04",
+      "question": "What is 5 + 2²?",
+      "options": ["49", "14", "9", "20"],
+      "answer": 2,
+      "explanation": "The exponent comes first. 2² = 4, then 5 + 4 = 9. The answer 49 comes from adding 5 + 2 to get 7 and then squaring it."
+    },
+    {
+      "id": "ooo-05",
+      "question": "What is 20 ÷ 4 × 2?",
+      "options": ["10", "2.5", "40", "2"],
+      "answer": 0,
+      "explanation": "Division and multiplication rank equally, so go left to right. 20 ÷ 4 = 5, then 5 × 2 = 10. Doing 4 × 2 = 8 first would wrongly give 2.5."
+    },
+    {
+      "id": "ooo-06",
+      "question": "What is 3 × (8 − 5)²?",
+      "options": ["81", "19", "36", "27"],
+      "answer": 3,
+      "explanation": "Brackets first: 8 − 5 = 3. Then the exponent: 3² = 9. Finally 3 × 9 = 27. The 3 outside is not squared, so the answer is not 81."
+    },
+    {
+      "id": "ooo-07",
+      "question": "What is 12 + 8 ÷ 4 − 3?",
+      "options": ["2", "14", "11", "5"],
+      "answer": 2,
+      "explanation": "Divide first: 8 ÷ 4 = 2. Then work left to right: 12 + 2 − 3 = 11. Doing everything left to right from the start would wrongly give 2."
+    },
+    {
+      "id": "ooo-08",
+      "question": "What is 2 × 3 + 4 × 5?",
+      "options": ["50", "26", "70", "46"],
+      "answer": 1,
+      "explanation": "Do both multiplications first: 2 × 3 = 6 and 4 × 5 = 20. Then add: 6 + 20 = 26. Working purely left to right would wrongly give 50."
+    },
+    {
+      "id": "ooo-09",
+      "question": "What is 36 ÷ (2 + 4) × 3?",
+      "options": ["2", "54", "18", "6"],
+      "answer": 2,
+      "explanation": "Brackets first: 2 + 4 = 6. Then left to right: 36 ÷ 6 = 6, and 6 × 3 = 18. Dividing by 3 last instead of multiplying would wrongly give 2."
+    },
+    {
+      "id": "ooo-10",
+      "question": "What is 4 + 3 × (10 − 2²) ÷ 2?",
+      "options": ["9", "21", "6", "13"],
+      "answer": 3,
+      "explanation": "Inside the brackets, 2² = 4 and 10 − 4 = 6. Then 3 × 6 = 18 and 18 ÷ 2 = 9. Finally 4 + 9 = 13. Forgetting to add the 4 gives 9."
+    }
+  ]
+}

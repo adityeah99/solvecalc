@@ -1,0 +1,60 @@
+{
+  "intro": "Find a percentage of a number, work out what percent one number is of another, or see how much a value has gone up or down in percent. Pick the question you need and fill in the numbers.",
+  "formula": [
+    { "label": "P% of N", "expr": "P% of N = (P ÷ 100) × N", "note": "25% of 80 = 0.25 × 80 = 20" },
+    { "label": "A is what percent of B", "expr": "percent = (A ÷ B) × 100", "note": "15 out of 60 = 0.25 × 100 = 25%" },
+    { "label": "Percentage change", "expr": "change % = (new − old) ÷ old × 100", "note": "A positive answer is an increase, a negative answer is a decrease." }
+  ],
+  "howItWorks": [
+    "Percent means out of 100, so every percentage is really a fraction with 100 on the bottom. The first mode turns P% into a decimal by dividing by 100 and then multiplies by your number. The second mode divides A by B and multiplies by 100.",
+    "The third mode finds the difference between the new value and the old value, divides it by the old value, and multiplies by 100. We always divide by the old value because the change is measured from where you started. If the answer is positive it is an increase; if it is negative it is a decrease."
+  ],
+  "example": {
+    "title": "A price cut in a sale",
+    "problem": "A bike used to cost $250. In a sale it costs $215. By what percentage did the price fall?",
+    "steps": [
+      "The old value is 250 and the new value is 215.",
+      "Find the change: 215 − 250 = −35.",
+      "Divide by the old value: −35 ÷ 250 = −0.14.",
+      "Multiply by 100: −0.14 × 100 = −14%.",
+      "The minus sign tells you it is a decrease."
+    ],
+    "answer": "The price fell by 14%."
+  },
+  "mistakes": [
+    {
+      "title": "Dividing by the new value",
+      "text": "Percentage change is always measured from the starting value. For 250 to 215, divide 35 by 250 to get 14%, not by 215, which would give about 16.3%."
+    },
+    {
+      "title": "Swapping A and B",
+      "text": "15 is 25% of 60, but 60 is 400% of 15. Put the part first and the whole second."
+    },
+    {
+      "title": "Expecting the same percent to undo itself",
+      "text": "If 100 goes up 10% you get 110. Taking 10% off 110 gives 99, not 100, because the second 10% is taken from a bigger number."
+    },
+    {
+      "title": "Mixing up percent and percentage points",
+      "text": "If a rate goes from 4% to 5%, it has risen by 1 percentage point. As a percentage change that is (5 − 4) ÷ 4 × 100 = 25%."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can a percentage be more than 100?",
+      "a": "Yes. If something more than doubles, the change is over 100%. Going from 20 to 50 is a 150% increase, and 60 is 400% of 15."
+    },
+    {
+      "q": "How can I find 15% of a number in my head?",
+      "a": "Find 10% by dividing by 10, then add half of that for 5%. For 80, 10% is 8 and 5% is 4, so 15% is 12."
+    },
+    {
+      "q": "How do I add a percentage to a number in one go?",
+      "a": "Multiply by 1 plus the percent as a decimal. To add 20% to 45, work out 45 × 1.2 = 54."
+    },
+    {
+      "q": "Why can't I find a percentage change when the old value is 0?",
+      "a": "The formula divides by the old value, and you cannot divide by zero. So a change that starts from 0 cannot be written as a percentage."
+    }
+  ]
+}

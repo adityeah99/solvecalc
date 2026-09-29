@@ -1,0 +1,61 @@
+{
+  "intro": "Enter a base and an exponent to raise a number to a power. The exponent can be a whole number, a negative number, a decimal or a fraction like 2/3, and the steps show what that exponent means.",
+  "formula": [
+    { "label": "Positive whole exponent", "expr": "aⁿ = a × a × … × a (n times)", "note": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32" },
+    { "label": "Zero exponent", "expr": "a⁰ = 1 (for a ≠ 0)" },
+    { "label": "Negative exponent", "expr": "a⁻ⁿ = 1 ÷ aⁿ", "note": "2⁻³ = 1 ÷ 2³ = 1/8" },
+    { "label": "Fractional exponent", "expr": "a^(m/n) = (ⁿ√a)ᵐ", "note": "The bottom of the fraction is the root, the top is the power." }
+  ],
+  "howItWorks": [
+    "For a positive whole exponent, the base is multiplied by itself that many times. Any non-zero number to the power 0 is 1. A negative exponent means take the reciprocal: work out the positive power, then put 1 over it.",
+    "A fractional exponent is a root. The bottom number of the fraction tells you which root to take, and the top number is the power. So a^(1/2) is the square root of a, and a^(2/3) is the cube root of a, squared. Decimal exponents work the same way, because 0.5 = 1/2 and 1.5 = 3/2.",
+    "A negative base with a fractional exponent whose bottom number is even, like (−4)^(1/2), would need an even root of a negative number. No real number squared gives a negative, so the calculator reports it as not a real number."
+  ],
+  "example": {
+    "title": "A negative fractional exponent",
+    "problem": "Work out 27^(−2/3).",
+    "steps": [
+      "The exponent is negative, so take the reciprocal: 27^(−2/3) = 1 ÷ 27^(2/3).",
+      "The bottom of the fraction is 3, so take the cube root: ∛27 = 3.",
+      "The top of the fraction is 2, so square it: 3² = 9.",
+      "Put it back under the 1: 1 ÷ 9 = 1/9 ≈ 0.1111."
+    ],
+    "answer": "27^(−2/3) = 1/9 ≈ 0.1111"
+  },
+  "mistakes": [
+    {
+      "title": "Multiplying the base by the exponent",
+      "text": "2³ means 2 × 2 × 2 = 8, not 2 × 3 = 6."
+    },
+    {
+      "title": "Thinking a negative exponent makes the answer negative",
+      "text": "A negative exponent means a reciprocal, not a negative number. 2⁻³ = 1/8 = 0.125, not −8."
+    },
+    {
+      "title": "Reading a half power as halving",
+      "text": "16^(1/2) is the square root of 16, which is 4. It is not 16 ÷ 2 = 8."
+    },
+    {
+      "title": "Losing the brackets on a negative base",
+      "text": "(−2)⁴ = 16 because the minus is part of the base. −2⁴ = −16 because only the 2 is raised to the power and the minus is applied after."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is any number to the power 0 equal to 1?",
+      "a": "Look at the pattern: 2³ = 8, 2² = 4, 2¹ = 2. Each step down divides by 2, so the next step is 2⁰ = 2 ÷ 2 = 1. The same thing happens for any non-zero base."
+    },
+    {
+      "q": "What does a decimal exponent mean?",
+      "a": "Turn the decimal into a fraction. 4^1.5 = 4^(3/2), which is the square root of 4 cubed: 2³ = 8."
+    },
+    {
+      "q": "Why is (−4)^(1/2) not a real number?",
+      "a": "It asks for the square root of −4, and no real number times itself gives a negative answer. A cube root is different: (−8)^(1/3) = −2, because (−2)³ = −8."
+    },
+    {
+      "q": "Is a^(m/n) the same as the n-th root of a to the power m?",
+      "a": "Yes. You can take the root first or the power first. For 8^(2/3), the cube root of 8 is 2 and 2² = 4, or 8² = 64 and the cube root of 64 is 4."
+    }
+  ]
+}

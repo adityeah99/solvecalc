@@ -1,0 +1,77 @@
+{
+  "title": "Statistics Quiz",
+  "description": "Practice finding the mean, median, mode and range, and choosing the right average for a set of data.",
+  "topic": "statistics",
+  "questions": [
+    {
+      "id": "statistics-01",
+      "question": "What is the mean of 2, 4, 6 and 8?",
+      "options": ["20", "4", "5", "6"],
+      "answer": 2,
+      "explanation": "Add them up: 2 + 4 + 6 + 8 = 20. There are 4 numbers, so the mean is 20 ÷ 4 = 5."
+    },
+    {
+      "id": "statistics-02",
+      "question": "What is the median of 3, 9, 4, 7, 5?",
+      "options": ["4", "5", "7", "5.6"],
+      "answer": 1,
+      "explanation": "Put the numbers in order first: 3, 4, 5, 7, 9. The middle value is 5. Picking 4 means you forgot to sort them."
+    },
+    {
+      "id": "statistics-03",
+      "question": "What is the mode of 2, 5, 3, 5, 7, 2, 5?",
+      "options": ["3", "2", "7", "5"],
+      "answer": 3,
+      "explanation": "The mode is the value that appears most often. 5 appears three times, more than any other number."
+    },
+    {
+      "id": "statistics-04",
+      "question": "What is the range of 12, 4, 19, 8, 15?",
+      "options": ["15", "3", "11.6", "19"],
+      "answer": 0,
+      "explanation": "Range = largest value − smallest value. 19 − 4 = 15."
+    },
+    {
+      "id": "statistics-05",
+      "question": "What is the median of 8, 2, 10, 6?",
+      "options": ["6", "6.5", "8", "7"],
+      "answer": 3,
+      "explanation": "In order, the numbers are 2, 6, 8, 10. There are two middle values, 6 and 8, so the median is (6 + 8) ÷ 2 = 7."
+    },
+    {
+      "id": "statistics-06",
+      "question": "The mean of five numbers is 12. What do the five numbers add up to?",
+      "options": ["17", "2.4", "60", "12"],
+      "answer": 2,
+      "explanation": "Mean = total ÷ how many numbers, so total = mean × how many numbers. 12 × 5 = 60."
+    },
+    {
+      "id": "statistics-07",
+      "question": "On one street, most houses cost about the same but one house costs far more than the rest. Which average gives the fairest picture of a typical house price?",
+      "options": ["The mean", "The median", "The range", "The largest value"],
+      "answer": 1,
+      "explanation": "One very high price pulls the mean up a lot. The median is just the middle value, so it hardly changes. The range is not an average at all."
+    },
+    {
+      "id": "statistics-08",
+      "question": "Four test scores have a mean of 15. Three of the scores are 12, 18 and 14. What is the fourth score?",
+      "options": ["16", "15", "44", "14.7"],
+      "answer": 0,
+      "explanation": "The four scores must add up to 15 × 4 = 60. The three you know add up to 12 + 18 + 14 = 44. So the fourth score is 60 − 44 = 16."
+    },
+    {
+      "id": "statistics-09",
+      "question": "For the numbers 4, 7, 7, 10, 22, what are the mean and the median?",
+      "options": ["Mean 10, median 7", "Mean 7, median 10", "Mean 10, median 10", "Mean 12.5, median 7"],
+      "answer": 0,
+      "explanation": "The total is 4 + 7 + 7 + 10 + 22 = 50, and 50 ÷ 5 = 10, so the mean is 10. The numbers are already in order, and the middle one is 7, so the median is 7."
+    },
+    {
+      "id": "statistics-10",
+      "question": "A class of 10 students has a mean test score of 70. A new student joins and scores 92. What is the new mean for all 11 students?",
+      "options": ["81", "79.2", "72", "92"],
+      "answer": 2,
+      "explanation": "The 10 students scored 10 × 70 = 700 in total. Adding 92 gives 792. There are now 11 students, so the new mean is 792 ÷ 11 = 72."
+    }
+  ]
+}

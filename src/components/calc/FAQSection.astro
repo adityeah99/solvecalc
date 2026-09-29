@@ -1,0 +1,23 @@
+---
+// Renders questions as disclosures. The matching FAQPage JSON-LD is built by the
+// page layout from the same data, so the two never drift apart.
+interface Props {
+  faqs: { q: string; a: string }[];
+  heading?: string;
+}
+const { faqs, heading = 'Questions people ask' } = Astro.props;
+---
+
+<section class="doc-section" aria-labelledby="faq">
+  <h2 id="faq">{heading}</h2>
+  <div class="faq-list">
+    {
+      faqs.map((f) => (
+        <details class="faq">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))
+    }
+  </div>
+</section>

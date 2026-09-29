@@ -1,0 +1,21 @@
+---
+interface Props {
+  formula: { label: string; expr: string; note?: string }[];
+}
+const { formula } = Astro.props;
+---
+
+<section class="doc-section" aria-labelledby="formula">
+  <h2 id="formula">Formula</h2>
+  <div class="formula-list">
+    {
+      formula.map((f) => (
+        <figure class="formula">
+          <figcaption>{f.label}</figcaption>
+          <p class="formula-expr">{f.expr}</p>
+          {f.note && <p class="formula-note">{f.note}</p>}
+        </figure>
+      ))
+    }
+  </div>
+</section>

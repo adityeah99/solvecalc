@@ -1,0 +1,22 @@
+---
+interface Props {
+  for: string;
+  emptyText?: string;
+}
+const { for: formId, emptyText = 'Fill in the values to see the answer.' } = Astro.props;
+---
+
+<div class="result-col" data-result-for={formId}>
+  <div class="result lcd" aria-live="polite" aria-atomic="true">
+    <p class="result-label">Result</p>
+    <p class="result-empty" data-empty>{emptyText}</p>
+    <dl class="result-lines" data-lines hidden></dl>
+    <p class="result-note" data-note hidden></p>
+    <p class="result-error" data-err role="alert" hidden></p>
+    <button type="button" class="result-copy" data-copy hidden>Copy answer</button>
+  </div>
+  <div class="steps-card" data-steps-wrap hidden>
+    <h3>Working</h3>
+    <ol class="steps-list" data-steps></ol>
+  </div>
+</div>

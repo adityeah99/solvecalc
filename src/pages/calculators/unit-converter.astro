@@ -1,0 +1,54 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+import { UNIT_CATEGORIES } from '../../lib/math/units.ts';
+
+const first = UNIT_CATEGORIES[0];
+---
+
+<CalculatorLayout slug="unit-converter">
+  <CalculatorShell id="unit-form" submitLabel="Convert" emptyText="Enter a value to convert.">
+    <Segmented name="cat" legend="Measure" options={UNIT_CATEGORIES.map((c) => ({ value: c.id, label: c.label }))} />
+    <InputField name="value" label="Value" placeholder="10" />
+    <div class="unit-row">
+      <div class="field">
+        <label for="f-from">From</label>
+        <select class="select" id="f-from" name="from">
+          {first.units.map((u) => <option value={u.id} selected={u.id === first.defaults[0]}>{u.label}</option>)}
+        </select>
+      </div>
+      <button type="button" class="key key--sm swap" data-swap aria-label="Swap units">⇄</button>
+      <div class="field">
+        <label for="f-to">To</label>
+        <select class="select" id="f-to" name="to">
+          {first.units.map((u) => <option value={u.id} selected={u.id === first.defaults[1]}>{u.label}</option>)}
+        </select>
+      </div>
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/unit-converter.ts';
+</script>
+
+<style>
+  .unit-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    align-items: end;
+  }
+  @media (min-width: 560px) {
+    .unit-row {
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    }
+  }
+  .swap {
+    justify-self: center;
+    min-width: 46px;
+    font-size: 1.2rem;
+  }
+</style>

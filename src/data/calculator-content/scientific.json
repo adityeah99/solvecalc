@@ -1,0 +1,66 @@
+{
+  "intro": "Type or tap a calculation with trig, logs, powers, roots or factorials and get the answer straight away. Your recent calculations stay in a history list so you can look back at them or copy a result.",
+  "formula": [
+    { "label": "Order of operations", "expr": "brackets → powers and roots → × and ÷ (left to right) → + and − (left to right)", "note": "So 2 + 3 × 4 = 14, not 20." },
+    { "label": "Percent sign", "expr": "P% = P ÷ 100, so 200 × 15% = 200 × 0.15 = 30" },
+    { "label": "Degrees and radians", "expr": "radians = degrees × π ÷ 180, so 180° = π rad" },
+    { "label": "Factorial", "expr": "n! = n × (n − 1) × … × 2 × 1, so 5! = 120", "note": "0! is defined as 1." }
+  ],
+  "howItWorks": [
+    "You build a calculation the same way you would write it on paper. Use the buttons, or type on your keyboard, for example sin(30), sqrt(16), 2^10, 5! or 200*15%, then press = or Enter. You can leave out the × sign in places like 2π or 3(4+1), and it is still read as multiplication.",
+    "The calculator follows the usual order of operations: brackets first, then powers and roots, then multiplication and division, then addition and subtraction. The % sign simply divides the number in front of it by 100. log means log base 10 and ln means the natural log, which uses the number e.",
+    "The DEG/RAD switch decides how angles are read by sin, cos and tan, and what unit sin⁻¹, cos⁻¹ and tan⁻¹ give back. It starts on DEG, which is what most school problems use. AC clears everything and ⌫ removes the last thing you typed."
+  ],
+  "example": {
+    "title": "How high does the ladder reach?",
+    "problem": "A 10 m ladder leans against a wall and makes an angle of 60° with the ground. How far up the wall does it reach?",
+    "steps": [
+      "The ladder is the hypotenuse and the height is the side opposite the 60° angle, so height = 10 × sin(60°).",
+      "Check that the angle switch shows DEG, because the angle is in degrees.",
+      "Tap 10 × sin(60), or type 10*sin(60) on your keyboard, then press = or Enter.",
+      "sin(60°) ≈ 0.8660, so the screen shows about 8.660254.",
+      "Round to a sensible accuracy: about 8.66 m."
+    ],
+    "answer": "The ladder reaches about 8.66 m up the wall."
+  },
+  "mistakes": [
+    {
+      "title": "Using the wrong angle mode",
+      "text": "If the switch is on RAD, sin(30) gives about −0.988 instead of 0.5, because 30 is read as 30 radians. If a trig answer looks strange, check DEG or RAD first."
+    },
+    {
+      "title": "Treating % like a shop discount",
+      "text": "Here % just means divide by 100, so 200 + 15% gives 200.15, not 230. To add 15% to 200, type 200 + 200 × 15% or 200 × 1.15, which both give 230."
+    },
+    {
+      "title": "Leaving out brackets",
+      "text": "1 ÷ 2 × 4 is worked left to right and gives 2. If you meant one over (2 × 4), type 1 ÷ (2 × 4), which gives 0.125."
+    },
+    {
+      "title": "Reading sin⁻¹ as 1 ÷ sin",
+      "text": "sin⁻¹ is the inverse sine: it finds the angle that has a given sine. In DEG mode, sin⁻¹(0.5) = 30°. It is not the same as 1 ÷ sin(0.5)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does sin(30) give −0.988 and not 0.5?",
+      "a": "The calculator is set to RAD, so it reads 30 as 30 radians. Switch to DEG and sin(30) gives 0.5."
+    },
+    {
+      "q": "What is the difference between log and ln?",
+      "a": "log is base 10, so log(100) = 2 because 10² = 100. ln is base e (about 2.718), so ln(100) ≈ 4.605."
+    },
+    {
+      "q": "Do I have to type the × sign every time?",
+      "a": "No. Writing a number right next to π, e or a bracket is read as multiplication, so 2π and 3(4+1) both work. 3(4+1) gives 15."
+    },
+    {
+      "q": "How do I find a square root or a power from the keyboard?",
+      "a": "Type sqrt(16) for a square root, which gives 4, and use ^ for powers, so 2^10 gives 1024. Press Enter to see the answer."
+    },
+    {
+      "q": "What does 5! mean?",
+      "a": "It is 5 factorial: 5 × 4 × 3 × 2 × 1 = 120. It counts how many ways you can arrange 5 different things in a row."
+    }
+  ]
+}

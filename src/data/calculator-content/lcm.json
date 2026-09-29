@@ -1,0 +1,55 @@
+{
+  "intro": "Enter two or more positive whole numbers to find their least common multiple, the smallest number that all of them divide into exactly. You see how it is worked out from the GCD, plus the prime factorisation of each number.",
+  "formula": [
+    { "label": "LCM of two numbers", "expr": "LCM(a, b) = a × b ÷ GCD(a, b)", "note": "LCM(12, 18) = 216 ÷ 6 = 36" },
+    { "label": "More than two numbers", "expr": "LCM(a, b, c) = LCM(LCM(a, b), c)" },
+    { "label": "From prime factors", "expr": "LCM = product of every prime that appears, each to its highest power" }
+  ],
+  "howItWorks": [
+    "For two numbers, the calculator multiplies them together and divides by their greatest common divisor. Multiplying gives a common multiple, and dividing by the GCD removes the factors that were counted twice, which leaves the smallest one.",
+    "For three or more numbers, it works in pairs: first the LCM of the first two, then the LCM of that answer with the next number, and so on. The prime factorisations show the same answer another way: take every prime that appears in any of the numbers, at the highest power it appears."
+  ],
+  "example": {
+    "title": "LCM of 12, 18 and 30",
+    "problem": "Find the least common multiple of 12, 18 and 30.",
+    "steps": [
+      "GCD(12, 18) = 6, so LCM(12, 18) = 12 × 18 ÷ 6 = 216 ÷ 6 = 36.",
+      "GCD(36, 30) = 6, so LCM(36, 30) = 36 × 30 ÷ 6 = 1080 ÷ 6 = 180.",
+      "Check with primes: 12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5.",
+      "Highest powers: 2² × 3² × 5 = 4 × 9 × 5 = 180."
+    ],
+    "answer": "LCM(12, 18, 30) = 180"
+  },
+  "mistakes": [
+    {
+      "title": "Just multiplying the numbers",
+      "text": "12 × 18 = 216 is a common multiple, but not the least one. You must divide by the GCD, 6, to get 36."
+    },
+    {
+      "title": "Using the formula on three numbers at once",
+      "text": "a × b × c ÷ GCD(a, b, c) does not give the LCM. For 12, 18 and 30 it gives 6480 ÷ 6 = 1080, but the real LCM is 180. Work in pairs instead."
+    },
+    {
+      "title": "Taking the lowest powers of the primes",
+      "text": "The lowest powers of the shared primes give the GCD. For the LCM, take every prime at its highest power."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When is the LCM just the two numbers multiplied?",
+      "a": "When the numbers share no common factor except 1, so their GCD is 1. For example, LCM(4, 9) = 36."
+    },
+    {
+      "q": "How is the LCM used with fractions?",
+      "a": "The LCM of the denominators is the lowest common denominator. To add 1/4 + 1/6, use LCM(4, 6) = 12, so the sum is 3/12 + 2/12 = 5/12."
+    },
+    {
+      "q": "Where would I use the LCM in real life?",
+      "a": "It tells you when repeating things line up again. If one bus comes every 12 minutes and another every 18 minutes, and they leave together, they next leave together after 36 minutes."
+    },
+    {
+      "q": "Can the LCM be smaller than one of the numbers?",
+      "a": "No. It is a multiple of every number, so it is always at least as big as the largest one."
+    }
+  ]
+}

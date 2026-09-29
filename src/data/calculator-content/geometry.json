@@ -1,0 +1,62 @@
+{
+  "intro": "Pick a shape, enter its measurements, and get the area and perimeter of a flat shape or the volume and surface area of a solid. The formula used is shown next to the answer.",
+  "formula": [
+    { "label": "Circle", "expr": "A = πr², C = 2πr", "note": "r is the radius, which is half the diameter." },
+    { "label": "Triangle from three sides (Heron's formula)", "expr": "s = (a + b + c) ÷ 2, A = √(s(s − a)(s − b)(s − c))", "note": "s is half the perimeter." },
+    { "label": "Cylinder", "expr": "V = πr²h, SA = 2πr² + 2πrh" },
+    { "label": "Cone", "expr": "l = √(r² + h²), V = (1/3)πr²h, SA = πr² + πrl", "note": "l is the slant height, h is the straight-up height." }
+  ],
+  "howItWorks": [
+    "For flat (2D) shapes you get the area, which is the space inside, and the perimeter, which is the distance around the edge. For a circle the distance around is called the circumference. You can use a circle, rectangle, square, a triangle by base and height, a triangle by its three sides, or a trapezoid. The base-and-height triangle and the trapezoid give the area only: a triangle's area is ½ × base × height, and a trapezoid's area is ½ × (a + b) × h.",
+    "For solid (3D) shapes you get the volume, which is the space inside, and the surface area, which is the total area of all the outside faces. The solids are the cube, the cuboid (rectangular prism), the cylinder, the sphere and the cone. For a sphere, V = (4/3)πr³ and SA = 4πr².",
+    "Answers are in the same unit you type in. If your lengths are in cm, the perimeter is in cm, the area is in cm² and the volume is in cm³. Answers that use π are worked with π to many decimal places (3.14159…), so they can differ a little from working done with 3.14."
+  ],
+  "example": {
+    "title": "A triangle with no height given",
+    "problem": "A triangle has sides 13 cm, 14 cm and 15 cm. Find its perimeter and its area.",
+    "steps": [
+      "Perimeter: 13 + 14 + 15 = 42 cm.",
+      "Half the perimeter: s = 42 ÷ 2 = 21.",
+      "Work out each bracket: s − a = 21 − 13 = 8, s − b = 21 − 14 = 7, s − c = 21 − 15 = 6.",
+      "Multiply: 21 × 8 × 7 × 6 = 7056.",
+      "Take the square root: √7056 = 84."
+    ],
+    "answer": "Perimeter = 42 cm, area = 84 cm²."
+  },
+  "mistakes": [
+    {
+      "title": "Using the diameter instead of the radius",
+      "text": "A circle 10 cm across has a radius of 5 cm. Its area is π × 5² ≈ 78.54 cm². Using 10 as the radius gives about 314.16 cm², four times too big."
+    },
+    {
+      "title": "Mixing units",
+      "text": "Put every length in the same unit before you start. A rectangle 2 m by 50 cm is 200 cm by 50 cm, so its area is 10,000 cm² or 1 m², not 100."
+    },
+    {
+      "title": "Mixing up height and slant height in a cone",
+      "text": "The volume uses the straight-up height h, and the curved surface uses the slant height l. For r = 3 and h = 4, the slant height is √(9 + 16) = 5."
+    },
+    {
+      "title": "Sides that cannot make a triangle",
+      "text": "The two shorter sides must add up to more than the longest side. Sides 3, 4 and 8 fail, because 3 + 4 = 7 is less than 8, and Heron's formula would need the square root of a negative number."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is area in square units and volume in cubic units?",
+      "a": "Area counts how many 1 × 1 squares fit inside a shape, so it is in units like cm². Volume counts how many 1 × 1 × 1 cubes fit inside a solid, so it is in units like cm³."
+    },
+    {
+      "q": "What is the difference between perimeter and circumference?",
+      "a": "They both mean the distance around a shape. Circumference is the special name used for a circle."
+    },
+    {
+      "q": "How do I find a triangle's area if I don't know its height?",
+      "a": "If you know all three sides, use the three-sides option. It uses Heron's formula, so sides 13, 14 and 15 give an area of 84."
+    },
+    {
+      "q": "What is the slant height of a cone?",
+      "a": "It is the distance from the tip of the cone down its sloping side to the edge of the base. It is found with Pythagoras: l = √(r² + h²)."
+    }
+  ]
+}

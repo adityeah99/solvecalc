@@ -1,0 +1,77 @@
+{
+  "title": "Decimals Quiz",
+  "description": "Practice rounding, comparing, adding, subtracting and multiplying decimals, plus place value and switching between decimals and fractions.",
+  "topic": "fractions",
+  "questions": [
+    {
+      "id": "dec-01",
+      "question": "Which is larger, 0.6 or 0.45?",
+      "options": ["0.45", "0.6", "They are equal", "0.045"],
+      "answer": 1,
+      "explanation": "Write 0.6 as 0.60. Comparing 0.60 with 0.45, six tenths beats four tenths, so 0.6 is larger. More digits does not mean a bigger number."
+    },
+    {
+      "id": "dec-02",
+      "question": "Round 4.83 to the nearest whole number.",
+      "options": ["5", "4", "4.8", "6"],
+      "answer": 0,
+      "explanation": "Look at the tenths digit, which is 8. Because 8 is 5 or more, the 4 rounds up to 5. So 4.83 rounds to 5."
+    },
+    {
+      "id": "dec-03",
+      "question": "What is 0.3 + 0.45?",
+      "options": ["0.48", "0.15", "0.75", "0.9"],
+      "answer": 2,
+      "explanation": "Line up the decimal points and treat 0.3 as 0.30. Then 0.30 + 0.45 = 0.75. Adding 3 and 45 to get 0.48 ignores place value."
+    },
+    {
+      "id": "dec-04",
+      "question": "What is 0.7 − 0.25?",
+      "options": ["0.5", "0.55", "0.65", "0.45"],
+      "answer": 3,
+      "explanation": "Write 0.7 as 0.70, then line up the points. 0.70 − 0.25 = 0.45."
+    },
+    {
+      "id": "dec-05",
+      "question": "Round 3.476 to two decimal places.",
+      "options": ["3.47", "3.48", "3.5", "3.476"],
+      "answer": 1,
+      "explanation": "Look at the third decimal digit, which is 6. Because 6 is 5 or more, the 7 rounds up to 8, giving 3.48."
+    },
+    {
+      "id": "dec-06",
+      "question": "What is 0.2 × 0.4?",
+      "options": ["0.8", "0.6", "0.08", "0.008"],
+      "answer": 2,
+      "explanation": "Multiply the digits: 2 × 4 = 8. Each number has one decimal place, so the answer has two decimal places: 0.08."
+    },
+    {
+      "id": "dec-07",
+      "question": "Write 3/4 as a decimal.",
+      "options": ["0.75", "0.34", "0.43", "0.7"],
+      "answer": 0,
+      "explanation": "Divide the top by the bottom: 3 ÷ 4 = 0.75. It helps to know that one quarter is 0.25, so three quarters is 0.75."
+    },
+    {
+      "id": "dec-08",
+      "question": "Write 0.6 as a fraction in its simplest form.",
+      "options": ["6/10", "1/6", "2/3", "3/5"],
+      "answer": 3,
+      "explanation": "0.6 is six tenths, or 6/10. Divide the top and bottom by 2 to simplify: 6/10 = 3/5."
+    },
+    {
+      "id": "dec-09",
+      "question": "In the number 5.208, which digit is in the hundredths place?",
+      "options": ["2", "8", "0", "5"],
+      "answer": 2,
+      "explanation": "After the point the places are tenths, then hundredths, then thousandths. The 2 is tenths, the 0 is hundredths, and the 8 is thousandths."
+    },
+    {
+      "id": "dec-10",
+      "question": "What is 1.25 × 4?",
+      "options": ["4.25", "5.25", "4.5", "5"],
+      "answer": 3,
+      "explanation": "Multiply 125 × 4 = 500, then place two decimal places to match 1.25: that gives 5.00, which is 5. You can also see four lots of 1.25 make 5."
+    }
+  ]
+}

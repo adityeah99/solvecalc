@@ -1,0 +1,77 @@
+{
+  "title": "Fractions Quiz",
+  "description": "Practice adding, simplifying, multiplying and dividing fractions, and switching between fractions, decimals and percentages.",
+  "topic": "fractions",
+  "questions": [
+    {
+      "id": "fractions-01",
+      "question": "What is 1/2 + 1/4?",
+      "options": ["2/6", "3/4", "1/8", "2/4"],
+      "answer": 1,
+      "explanation": "Rewrite 1/2 as 2/4 so both fractions have the same denominator. Then 2/4 + 1/4 = 3/4."
+    },
+    {
+      "id": "fractions-02",
+      "question": "What is 6/8 in its simplest form?",
+      "options": ["4/6", "3/8", "1/2", "3/4"],
+      "answer": 3,
+      "explanation": "Both 6 and 8 can be divided by 2. 6 ÷ 2 = 3 and 8 ÷ 2 = 4, so 6/8 = 3/4."
+    },
+    {
+      "id": "fractions-03",
+      "question": "What is 3/5 as a decimal?",
+      "options": ["0.35", "0.6", "0.53", "1.67"],
+      "answer": 1,
+      "explanation": "Divide the top by the bottom: 3 ÷ 5 = 0.6."
+    },
+    {
+      "id": "fractions-04",
+      "question": "What is 0.45 as a percentage?",
+      "options": ["45%", "4.5%", "0.45%", "450%"],
+      "answer": 0,
+      "explanation": "To change a decimal into a percentage, multiply by 100. 0.45 × 100 = 45, so it's 45%."
+    },
+    {
+      "id": "fractions-05",
+      "question": "What is 2/3 − 1/4?",
+      "options": ["1/7", "1/12", "5/12", "3/7"],
+      "answer": 2,
+      "explanation": "Use 12 as the common denominator. 2/3 = 8/12 and 1/4 = 3/12, so 8/12 − 3/12 = 5/12."
+    },
+    {
+      "id": "fractions-06",
+      "question": "What is 3/4 × 2/5?",
+      "options": ["3/10", "5/9", "15/8", "6/9"],
+      "answer": 0,
+      "explanation": "Multiply the tops and multiply the bottoms: 3 × 2 = 6 and 4 × 5 = 20. So you get 6/20, which simplifies to 3/10."
+    },
+    {
+      "id": "fractions-07",
+      "question": "What is 20% of 45?",
+      "options": ["25", "4.5", "90", "9"],
+      "answer": 3,
+      "explanation": "20% as a decimal is 0.2, and 0.2 × 45 = 9. Another way: 10% of 45 is 4.5, so 20% is double that, which is 9."
+    },
+    {
+      "id": "fractions-08",
+      "question": "What is 1/2 ÷ 1/4?",
+      "options": ["1/8", "2", "1/2", "4"],
+      "answer": 1,
+      "explanation": "Dividing by a fraction is the same as multiplying by it flipped over. 1/2 × 4/1 = 4/2 = 2. You can also think of it as how many quarters fit into a half, which is 2."
+    },
+    {
+      "id": "fractions-09",
+      "question": "A jacket's price goes up from $60 to $75. What is the percentage increase?",
+      "options": ["20%", "15%", "25%", "125%"],
+      "answer": 2,
+      "explanation": "The increase is $75 − $60 = $15. Divide by the original price: 15 ÷ 60 = 0.25, which is 25%. Dividing by the new price gives 20%, which is a common mistake."
+    },
+    {
+      "id": "fractions-10",
+      "question": "Which of these is the largest?",
+      "options": ["0.6", "62%", "5/8", "3/5"],
+      "answer": 2,
+      "explanation": "Turn them all into decimals: 0.6, 62% = 0.62, 5/8 = 0.625 and 3/5 = 0.6. The largest is 0.625, which is 5/8."
+    }
+  ]
+}

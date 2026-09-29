@@ -1,0 +1,36 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="probability">
+  <CalculatorShell id="prob-form">
+    <Segmented
+      name="mode"
+      legend="What do you want to work out?"
+      options={[
+        { value: 'single', label: 'One event' },
+        { value: 'two', label: 'Two independent events' },
+        { value: 'count', label: 'Combinations & permutations' },
+      ]}
+    />
+    <div class="field-row" data-when="mode:single">
+      <InputField name="fav" label="Favorable outcomes" placeholder="1" inputmode="numeric" hint="Ways the event can happen" />
+      <InputField name="total" label="Total outcomes" placeholder="6" inputmode="numeric" hint="All equally likely outcomes" />
+    </div>
+    <div class="field-row" data-when="mode:two">
+      <InputField name="pa" label="P(A)" placeholder="0.5" inputmode="text" hint="Decimal, fraction or percent" />
+      <InputField name="pb" label="P(B)" placeholder="1/6" inputmode="text" hint="Decimal, fraction or percent" />
+    </div>
+    <div class="field-row" data-when="mode:count">
+      <InputField name="n" label="n (items to choose from)" placeholder="52" inputmode="numeric" />
+      <InputField name="r" label="r (items chosen)" placeholder="5" inputmode="numeric" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/probability.ts';
+</script>

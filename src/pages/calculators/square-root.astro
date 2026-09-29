@@ -1,0 +1,15 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="square-root">
+  <CalculatorShell id="sqrt-form">
+    <InputField name="x" label="Number" placeholder="72" />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/square-root.ts';
+</script>

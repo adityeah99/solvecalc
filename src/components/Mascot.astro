@@ -1,0 +1,136 @@
+---
+// Cal, the friendly calculator mascot. Pure inline SVG (no image files), so it
+// scales, themes and animates without weight. Idle bob + blink + wave, all
+// switched off under prefers-reduced-motion.
+interface Props {
+  mood?: 'wave' | 'think' | 'cheer';
+  size?: number;
+  class?: string;
+  /** Decorative by default; give a label to announce it. */
+  label?: string;
+}
+const { mood = 'wave', size = 140, class: cls, label } = Astro.props;
+const mouths: Record<string, string> = {
+  wave: 'M44 52 q16 12 32 0',
+  think: 'M46 54 q14 -6 28 0',
+  cheer: 'M44 50 q16 16 32 0 q-16 6 -32 0 Z',
+};
+---
+
+<span class:list={['mascot', `mascot--${mood}`, cls]} style={`--m: ${size}px`}>
+  <svg viewBox="0 0 120 148" width={size} height={(size * 148) / 120} role={label ? 'img' : 'presentation'} aria-label={label} aria-hidden={label ? undefined : 'true'}>
+    <!-- shadow -->
+    <ellipse class="m-shadow" cx="60" cy="140" rx="34" ry="6"></ellipse>
+    <g class="m-body">
+      <!-- left arm (waves) -->
+      <g class="m-arm">
+        <rect x="6" y="70" width="20" height="9" rx="4.5" transform="rotate(-18 16 74)"></rect>
+        <circle cx="9" cy="66" r="6"></circle>
+      </g>
+      <!-- right arm holding a pencil -->
+      <g class="m-arm-r">
+        <rect x="94" y="72" width="20" height="9" rx="4.5" transform="rotate(20 104 76)"></rect>
+        <g transform="rotate(38 108 74)">
+          <rect x="104" y="44" width="7" height="34" rx="2" fill="var(--hi)"></rect>
+          <path d="M104 44 h7 l-3.5 -7 Z" fill="var(--ink)"></path>
+          <rect x="104" y="74" width="7" height="5" fill="#e79a3c"></rect>
+        </g>
+      </g>
+      <!-- calculator body -->
+      <rect x="20" y="14" width="80" height="118" rx="20" fill="var(--body)" stroke="var(--ink)" stroke-width="3"></rect>
+      <!-- screen / face -->
+      <rect x="31" y="26" width="58" height="38" rx="9" fill="var(--lcd)" stroke="rgba(0,0,0,0.35)" stroke-width="2"></rect>
+      <g class="m-eyes" fill="var(--lcd-ink)">
+        <circle cx="48" cy="41" r="5"></circle>
+        <circle cx="72" cy="41" r="5"></circle>
+      </g>
+      <path class="m-mouth" d={mouths[mood]} fill={mood === 'cheer' ? 'var(--lcd-ink)' : 'none'} stroke="var(--lcd-ink)" stroke-width="3.5" stroke-linecap="round"></path>
+      <!-- keypad -->
+      <g class="m-keys">
+        <rect x="34" y="74" width="15" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="53" y="74" width="15" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="72" y="74" width="14" height="13" rx="3" fill="var(--blue)"></rect>
+        <rect x="34" y="92" width="15" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="53" y="92" width="15" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="72" y="92" width="14" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="34" y="110" width="34" height="13" rx="3" fill="var(--key-num)"></rect>
+        <rect x="72" y="110" width="14" height="13" rx="3" fill="var(--hi)"></rect>
+      </g>
+      <!-- feet -->
+      <rect x="36" y="130" width="16" height="8" rx="4" fill="var(--ink)"></rect>
+      <rect x="68" y="130" width="16" height="8" rx="4" fill="var(--ink)"></rect>
+    </g>
+  </svg>
+</span>
+
+<style>
+  .mascot {
+    display: inline-block;
+    line-height: 0;
+    width: var(--m);
+  }
+  .mascot svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .m-shadow {
+    fill: rgba(21, 32, 46, 0.16);
+  }
+  .m-body {
+    transform-box: fill-box;
+    transform-origin: bottom center;
+  }
+  .m-arm {
+    transform-box: fill-box;
+    transform-origin: 90% 90%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .m-body {
+      animation: m-bob 3.4s ease-in-out infinite;
+    }
+    .m-eyes {
+      animation: m-blink 4.5s infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .mascot--wave .m-arm {
+      animation: m-wave 2.4s ease-in-out infinite;
+    }
+    .m-shadow {
+      animation: m-shadow 3.4s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+  @keyframes m-bob {
+    50% {
+      transform: translateY(-6px) rotate(-1deg);
+    }
+  }
+  @keyframes m-shadow {
+    50% {
+      transform: scaleX(0.9);
+      opacity: 0.7;
+    }
+  }
+  @keyframes m-blink {
+    0%, 92%, 100% {
+      transform: scaleY(1);
+    }
+    96% {
+      transform: scaleY(0.1);
+    }
+  }
+  @keyframes m-wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-16deg);
+    }
+    60% {
+      transform: rotate(6deg);
+    }
+  }
+</style>

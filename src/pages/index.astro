@@ -1,0 +1,559 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ScientificCalculator from '../components/calc/ScientificCalculator.astro';
+import MathGameCard from '../components/mathgames/MathGameCard.astro';
+import PostCard from '../components/PostCard.astro';
+import FAQSection from '../components/calc/FAQSection.astro';
+import Mascot from '../components/Mascot.astro';
+import '../styles/mathgames.css';
+import '../styles/calc.css';
+import '../styles/blog.css';
+import { SITE } from '../config/site.ts';
+import { CALCULATORS } from '../data/calculators.ts';
+import { TOPICS } from '../data/topics.ts';
+import { MATH_GAMES } from '../data/math-games.ts';
+
+const popular = CALCULATORS.filter((c) => c.popular);
+const lessons = (await getCollection('learn')).sort((a, b) => a.data.order - b.data.order);
+const quizzes = await getCollection('quizzes');
+const articles = await getCollection('articles');
+const blogPosts = (await getCollection('blog')).sort((a, b) => +b.data.published - +a.data.published).slice(0, 3);
+const firstSentence = (s: string) => s.split(/(?<=\.)\s/)[0];
+const starterArticles = [
+  'how-to-calculate-a-percentage',
+  'how-to-add-fractions',
+  'how-to-solve-a-linear-equation',
+  'area-of-a-circle',
+  'mean-vs-median',
+  'how-to-calculate-probability',
+]
+  .map((s) => articles.find((a) => a.id === s))
+  .filter((a) => a !== undefined);
+const quizOrder = TOPICS.map((t) => t.id);
+quizzes.sort((a, b) => quizOrder.indexOf(a.data.topic) - quizOrder.indexOf(b.data.topic));
+
+const steps = [
+  { verb: 'Calculate', text: `${CALCULATORS.length} calculators that show their working`, href: '/calculators' },
+  { verb: 'Understand', text: `${lessons.length} lessons and ${articles.length} articles in plain English`, href: '/learn' },
+  { verb: 'Practice', text: `${quizzes.length} quizzes with an explanation for every answer`, href: '/quizzes' },
+  { verb: 'Play', text: `${MATH_GAMES.length} math games to sharpen your skills`, href: '/games' },
+];
+
+const faqs = [
+  {
+    q: `Is ${SITE.name} free?`,
+    a: 'Yes. Every calculator, lesson, quiz and game is free to use, and there is no account to create.',
+  },
+  {
+    q: 'Do the calculators show how they got the answer?',
+    a: 'Most of them do. The fraction, equation, quadratic, statistics, ratio, GCD, LCM and exponent calculators list each step, and every calculator page explains the formula with a worked example.',
+  },
+  {
+    q: 'What is Code Mode on the calculator?',
+    a: 'Every math game has a 4-digit code on its card. Switch on Code Mode, type the code, and the game opens. Switch it off, or press Esc, to get your calculation back exactly as you left it.',
+  },
+  {
+    q: 'What are the games?',
+    a: 'Short math games built into this site, like timed mental arithmetic, comparing fractions and estimating angles. They run in your browser and each one explains the math it practices.',
+  },
+  {
+    q: 'Is anything saved about me?',
+    a: 'Your calculator history, quiz progress and game scores are saved only in your own browser, so they stay on your device. Clearing your browser data removes them.',
+  },
+  {
+    q: 'Does it work on a phone or Chromebook?',
+    a: 'Yes. The site works in any modern browser, and the calculator keys are sized for touch screens.',
+  },
+];
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url, description: SITE.description },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.name,
+    url: SITE.url,
+    logo: new URL('/favicon.svg', SITE.url).href,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+
+<BaseLayout title={`${SITE.name}: Math Calculators, Lessons, Quizzes and Games`} description={SITE.description} bareTitle jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="hero-greet">
+          <Mascot mood="wave" size={68} />
+          <p class="eyebrow">Free math toolkit</p>
+        </div>
+        <h1>Work it out. Then <span class="hl">see why.</span></h1>
+        <p class="lede">
+          Calculators that show their working, short lessons, quick quizzes, and games for when your brain needs a break.
+        </p>
+        <ol class="path">
+          {
+            steps.map((s, i) => (
+              <li>
+                <a class="path-key" href={s.href}>
+                  <span class="path-verb">{s.verb}</span>
+                  <span class="path-text">{s.text}</span>
+                </a>
+                {i < steps.length - 1 && (
+                  <span class="path-arrow" aria-hidden="true">
+                    →
+                  </span>
+                )}
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+      <div class="hero-calc">
+        <h2 class="visually-hidden">Scientific calculator</h2>
+        <ScientificCalculator id="sci-home" layout="compact" />
+        <p class="hero-calc-link"><a href="/calculators/scientific">Open the full scientific calculator</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-popular">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-popular">Popular calculators</h2>
+        <a href="/calculators">All {CALCULATORS.length} calculators →</a>
+      </div>
+      <div class="tile-grid tile-grid--3">
+        {
+          popular.map((c) => (
+            <a class="tile" href={`/calculators/${c.slug}`}>
+              <span class="tile-cap" aria-hidden="true">
+                {c.glyph}
+              </span>
+              <span class="tile-body">
+                <strong>{c.name}</strong>
+                <span>{firstSentence(c.description)}</span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section topics-band" aria-labelledby="h-topics">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-topics">Math topics</h2>
+        <p>Every topic connects a calculator, an explanation, a quiz and something to play.</p>
+      </div>
+      <ul class="topic-table">
+        {
+          TOPICS.map((t) => {
+            const calcs = CALCULATORS.filter((c) => c.topic === t.id || c.slug === t.calculator);
+            return (
+              <li class="topic-row">
+                <div class="topic-name">
+                  <h3>{t.name}</h3>
+                  <p>{t.blurb}</p>
+                </div>
+                <ul class="topic-links" aria-label={`${t.name} links`}>
+                  {calcs.length > 0 && (
+                    <li>
+                      <a href={`/calculators/${calcs[0].slug}`}>
+                        <span>Calculate</span>
+                        {calcs[0].short}
+                      </a>
+                    </li>
+                  )}
+                  <li>
+                    <a href={t.lesson ? `/learn/${t.id}` : `/articles#${t.id}`}>
+                      <span>Understand</span>
+                      {t.lesson ? 'Lesson' : 'Articles'}
+                    </a>
+                  </li>
+                  {t.quiz && (
+                    <li>
+                      <a href={`/quizzes/${t.id}`}>
+                        <span>Practice</span>Quiz
+                      </a>
+                    </li>
+                  )}
+                  <li>
+                    <a href={t.games.href}>
+                      <span>Play</span>
+                      {t.games.label}
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-learn">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-learn">Learn math</h2>
+        <a href="/learn">All lessons →</a>
+      </div>
+      <ul class="lesson-row">
+        {
+          lessons.map((l) => (
+            <li>
+              <a class="lesson-mini" href={`/learn/${l.id}`}>
+                <strong>{l.data.title}</strong>
+                <span>{l.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-quizzes">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-quizzes">Practice quizzes</h2>
+        <p>Ten questions each. Pick an answer and see straight away why it is right or wrong.</p>
+      </div>
+      <ul class="quiz-row">
+        {
+          quizzes.map((q) => (
+            <li>
+              <a class="key quiz-key" href={`/quizzes/${q.id}`}>
+                {q.data.title.replace(/ Quiz$/, '')}
+                <span>{q.data.questions.length} Qs</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section games-band" aria-labelledby="h-games">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Math games &amp; activities</p>
+          <h2 id="h-games">Play to practice</h2>
+        </div>
+        <p>
+          Quick games that each train one skill. Every game has a 4-digit code: switch on <strong>Code Mode</strong> on the
+          calculator and type it to jump straight in.
+        </p>
+      </div>
+      <ul class="mg-grid">
+        {MATH_GAMES.map((g) => <MathGameCard game={g} />)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-articles">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-articles">Articles to start with</h2>
+        <a href="/articles">All articles →</a>
+      </div>
+      <ul class="article-list article-cols">
+        {
+          starterArticles.map((a) => (
+            <li>
+              <a class="article-row" href={`/articles/${a.id}`}>
+                <strong>{a.data.title}</strong>
+                <span class="muted">{a.data.description}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  {
+    blogPosts.length > 0 && (
+      <section class="section" aria-labelledby="h-blog">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="h-blog">From the blog</h2>
+            <a href="/blog">All posts →</a>
+          </div>
+          <ul class="post-grid">
+            {blogPosts.map((post) => (
+              <PostCard post={post} />
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section">
+    <div class="wrap faq-wrap">
+      <FAQSection faqs={faqs} heading="Questions" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-block: clamp(28px, 5vw, 64px) clamp(24px, 4vw, 48px);
+  }
+  .hero-grid {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+  }
+  @media (min-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 56px;
+    }
+  }
+  .hero-greet {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .hero-greet .eyebrow {
+    margin: 0;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 1.6rem + 4.4vw, 4.6rem);
+    font-stretch: 116%;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+  .hero .lede {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+  }
+  .path {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  @media (min-width: 640px) {
+    .path {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .path li {
+    position: relative;
+    display: flex;
+  }
+  .path-key {
+    flex: 1;
+    display: grid;
+    align-content: start;
+    gap: 4px;
+    padding: 12px;
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-key);
+    color: var(--ink);
+    text-decoration: none;
+    transition:
+      transform 60ms ease,
+      box-shadow 60ms ease;
+  }
+  .path-key:hover {
+    color: var(--ink);
+    background: var(--hi);
+  }
+  .path-key:active {
+    transform: translateY(2px);
+    box-shadow: var(--shadow-soft);
+  }
+  .path-verb {
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    font-weight: 800;
+    font-size: 1.05rem;
+  }
+  .path-text {
+    font-size: 0.86rem;
+    line-height: 1.35;
+    color: var(--ink-2);
+  }
+  .path-arrow {
+    display: none;
+  }
+  @media (min-width: 640px) {
+    .path-arrow {
+      display: block;
+      position: absolute;
+      right: -11px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      font-weight: 800;
+      color: var(--blue);
+    }
+  }
+  .hero-calc-link {
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .topics-band {
+    background: var(--paper);
+    border-block: 1px solid var(--border);
+  }
+  .topic-table {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  .topic-row {
+    display: grid;
+    gap: 10px 24px;
+    padding: 16px 0;
+    border-top: 1.5px dashed var(--line);
+  }
+  .topic-row:first-child {
+    border-top: 0;
+  }
+  @media (min-width: 900px) {
+    .topic-row {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      align-items: center;
+    }
+  }
+  .topic-name h3 {
+    margin: 0 0 2px;
+  }
+  .topic-name p {
+    margin: 0;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
+  .topic-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr));
+    gap: 8px;
+  }
+  .topic-links a {
+    display: grid;
+    height: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-s);
+    background: var(--pad);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+  .topic-links a:hover {
+    background: var(--hi);
+  }
+  .topic-links span {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    font-weight: 700;
+  }
+
+  .lesson-row {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 14px;
+  }
+  .lesson-mini {
+    display: grid;
+    gap: 4px;
+    height: 100%;
+    padding: 16px;
+    border-left: 6px solid var(--blue);
+    background: var(--paper);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .lesson-mini:hover {
+    color: var(--ink);
+    border-left-color: var(--hi);
+    background: #fff;
+  }
+  .lesson-mini strong {
+    font-family: var(--font-display);
+    font-stretch: 108%;
+    font-size: 1.1rem;
+  }
+  .lesson-mini span {
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
+
+  .quiz-row {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .quiz-key {
+    gap: 10px;
+  }
+  .quiz-key span {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: var(--lcd);
+    color: var(--lcd-ink);
+  }
+
+  .games-band {
+    background: var(--body);
+    color: #d9e2cc;
+  }
+  .games-band h2 {
+    color: #fff;
+  }
+  .games-band .eyebrow {
+    color: #9fb08d;
+  }
+  .games-band strong {
+    color: var(--hi);
+  }
+  .games-band .section-head p {
+    color: #b6c3a6;
+  }
+  .tile-grid--3 {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  }
+  .article-cols {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  }
+  .faq-wrap {
+    max-width: 880px;
+  }
+</style>

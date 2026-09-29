@@ -1,0 +1,37 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="equation">
+  <CalculatorShell id="eq-form" submitLabel="Solve" emptyText="Type an equation to see the solution.">
+    <InputField
+      name="eq"
+      label="Equation"
+      placeholder="3x + 5 = 20"
+      inputmode="text"
+      hint="Use one letter for the unknown. Brackets, fractions like x/3, and decimals all work."
+    />
+    <div class="examples" role="group" aria-label="Try an example">
+      <span class="muted">Try:</span>
+      <button type="button" class="key key--sm key--ghost" data-example="3x + 5 = 20">3x + 5 = 20</button>
+      <button type="button" class="key key--sm key--ghost" data-example="2(x - 1) = x + 4">2(x − 1) = x + 4</button>
+      <button type="button" class="key key--sm key--ghost" data-example="x/3 + 2 = 5">x/3 + 2 = 5</button>
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/equation.ts';
+</script>
+
+<style>
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+  }
+</style>

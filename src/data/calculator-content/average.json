@@ -1,0 +1,54 @@
+{
+  "intro": "Find the average (mean) of a list of numbers, with the sum and count shown, or work out a weighted average from values and their weights, such as test scores that count for different amounts.",
+  "formula": [
+    { "label": "Simple average (mean)", "expr": "mean = Σx ÷ n", "note": "Σx is the sum of the values and n is how many there are." },
+    { "label": "Weighted average", "expr": "weighted average = Σ(value × weight) ÷ Σweight" }
+  ],
+  "howItWorks": [
+    "For a simple average, the calculator adds up every number in your list and divides by how many numbers there are. You see the sum and the count too, so you can check the working.",
+    "For a weighted average, some values count more than others. Each value is multiplied by its weight, those products are added up, and the total is divided by the sum of the weights. Because it divides by the sum of the weights, the weights do not have to add up to 100."
+  ],
+  "example": {
+    "title": "A course grade",
+    "problem": "Homework is worth 20%, the test 50% and the project 30%. You scored 85 on homework, 72 on the test and 90 on the project. What is your overall grade?",
+    "steps": [
+      "Multiply each score by its weight: 85 × 20 = 1700, 72 × 50 = 3600, 90 × 30 = 2700.",
+      "Add the products: 1700 + 3600 + 2700 = 8000.",
+      "Add the weights: 20 + 50 + 30 = 100.",
+      "Divide: 8000 ÷ 100 = 80."
+    ],
+    "answer": "Your overall grade is 80 (a plain average of the three scores would be about 82.33)."
+  },
+  "mistakes": [
+    {
+      "title": "Dividing by the count instead of the total weight",
+      "text": "In a weighted average you divide by the sum of the weights, not by how many values there are. In the example that is 8000 ÷ 100, not 8000 ÷ 3."
+    },
+    {
+      "title": "Averaging averages from groups of different sizes",
+      "text": "If 20 students average 70 and 30 students average 80, the overall average is not 75. Weight each by its group size: (20 × 70 + 30 × 80) ÷ 50 = 76."
+    },
+    {
+      "title": "Leaving out zeros",
+      "text": "A score of 0 is still a value. The average of 10, 0 and 8 is 18 ÷ 3 = 6, not 18 ÷ 2 = 9."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the average the same as the mean?",
+      "a": "In everyday use, yes. The median and mode are sometimes called averages too, but when people say the average they usually mean the mean."
+    },
+    {
+      "q": "Do the weights have to add up to 100?",
+      "a": "No. The calculator divides by the sum of the weights, so weights of 1, 2 and 2 work just as well as 20, 40 and 40."
+    },
+    {
+      "q": "Can the average be a number that is not in my list?",
+      "a": "Yes, and it often is. The average of 1, 2 and 4 is 7 ÷ 3 ≈ 2.33, which is not in the list."
+    },
+    {
+      "q": "What score do I need on the next test to reach a certain average?",
+      "a": "Multiply the target average by the total number of tests, then take away the sum of the scores you already have. To average 80 over 4 tests after scoring 75, 82 and 78, you need 320 − 235 = 85."
+    }
+  ]
+}

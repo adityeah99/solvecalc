@@ -1,0 +1,31 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="ratio">
+  <CalculatorShell id="ratio-form">
+    <Segmented
+      name="mode"
+      legend="What do you want to do?"
+      options={[
+        { value: 'simplify', label: 'Simplify a ratio' },
+        { value: 'solve', label: 'Solve a : b = c : x' },
+        { value: 'share', label: 'Share an amount' },
+      ]}
+    />
+    <InputField name="ratio" label="Ratio" placeholder="12 : 18" inputmode="text" hint="Two or three parts, separated by colons." when="mode:simplify|share" />
+    <InputField name="amount" label="Amount to share" placeholder="120" when="mode:share" />
+    <div class="field-row field-row--tight" data-when="mode:solve">
+      <InputField name="a" label="a" placeholder="3" />
+      <InputField name="b" label="b" placeholder="4" />
+      <InputField name="c" label="c" placeholder="15" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/ratio.ts';
+</script>

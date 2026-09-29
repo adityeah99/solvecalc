@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../config/site.ts';
+
+const email = SITE.contactEmail;
+---
+
+<BaseLayout title="Contact" description={`How to get in touch with ${SITE.name}.`} crumbs={[{ label: 'Contact' }]}>
+  <div class="wrap reading">
+    <article class="reading-main">
+      <header class="reading-head">
+        <h1>Contact</h1>
+        <p class="lede">Found a wrong answer, a broken game or a confusing explanation? Say so and it will get fixed.</p>
+      </header>
+      <div class="prose">
+        {
+          email ? (
+            <>
+              <p>
+                Email <a href={`mailto:${email}`}>{email}</a>.
+              </p>
+              <p>It helps to include:</p>
+              <ul>
+                <li>the page address (copy it from the address bar),</li>
+                <li>what you typed or clicked,</li>
+                <li>what you expected, and what happened instead.</li>
+              </ul>
+              <p>For a game that won't load, the game's 4-digit code is enough.</p>
+            </>
+          ) : (
+            <p>
+              A contact address hasn't been set up yet. The site owner can add one in <code>src/config/site.ts</code>{' '}
+              (<code>contactEmail</code>), and it will appear here.
+            </p>
+          )
+        }
+      </div>
+    </article>
+  </div>
+</BaseLayout>

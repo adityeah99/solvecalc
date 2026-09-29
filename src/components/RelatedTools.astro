@@ -1,0 +1,33 @@
+---
+import { calculatorBySlug, type CalculatorMeta } from '../data/calculators.ts';
+
+interface Props {
+  slugs: string[];
+  heading?: string;
+  headingLevel?: 'h2' | 'h3';
+}
+const { slugs, heading = 'Related calculators', headingLevel: H = 'h2' } = Astro.props;
+const tools = slugs.map(calculatorBySlug).filter((c): c is CalculatorMeta => Boolean(c));
+const firstSentence = (s: string) => s.split(/(?<=\.)\s/)[0];
+---
+
+{
+  tools.length > 0 && (
+    <section class="doc-section">
+      <H>{heading}</H>
+      <div class="tile-grid">
+        {tools.map((c) => (
+          <a class="tile" href={`/calculators/${c.slug}`}>
+            <span class="tile-cap" aria-hidden="true">
+              {c.glyph}
+            </span>
+            <span class="tile-body">
+              <strong>{c.name}</strong>
+              <span>{firstSentence(c.description)}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

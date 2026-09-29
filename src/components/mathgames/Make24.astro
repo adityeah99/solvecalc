@@ -1,0 +1,37 @@
+---
+---
+
+<div class="mg" data-make24 role="region" aria-label="Make 24 game">
+  <div class="mg-hud">
+    <span class="mg-stat"><span class="mg-stat-label">Solved</span><b data-solved>0</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Streak</span><b data-streak>0</b></span>
+    <span class="mg-stat"><span class="mg-stat-label">Best streak</span><b data-best>–</b></span>
+  </div>
+
+  <div class="mg-screen lcd m24-screen">
+    <p class="m24-target">Make <b>24</b></p>
+    <div class="m24-tiles" data-tiles role="group" aria-label="Numbers"></div>
+    <p class="mg-flash" data-msg aria-live="polite">Tap a number, an operation, then another number.</p>
+  </div>
+
+  <div class="mg-pad m24-pad">
+    <div class="m24-ops" role="group" aria-label="Operations">
+      <button type="button" class="mg-key m24-op" data-op="+" aria-pressed="false">+</button>
+      <button type="button" class="mg-key m24-op" data-op="−" aria-pressed="false" aria-label="minus">−</button>
+      <button type="button" class="mg-key m24-op" data-op="×" aria-pressed="false" aria-label="times">×</button>
+      <button type="button" class="mg-key m24-op" data-op="÷" aria-pressed="false" aria-label="divided by">÷</button>
+    </div>
+    <div class="m24-actions">
+      <button type="button" class="key key--sm" data-undo>Undo</button>
+      <button type="button" class="key key--sm" data-reset>Reset</button>
+      <button type="button" class="key key--sm key--ghost" data-show>Show a solution</button>
+      <button type="button" class="key key--sm key--hi" data-new>New puzzle</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { mountMake24 } from '../../scripts/mathgames/make24-ui.ts';
+  const root = document.querySelector<HTMLElement>('[data-make24]');
+  if (root) mountMake24(root);
+</script>
