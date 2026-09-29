@@ -1,4 +1,4 @@
-# Calcora
+# SolveCalc Hub
 
 Math calculators, lessons, quizzes and a browser-games directory, built as a static
 [Astro](https://astro.build) site. Calculate → understand → practice → play.
@@ -20,7 +20,7 @@ Needs Node 22.12+ (tests use Node's built-in TypeScript support, Node 23.6+).
 ## Folder structure
 
 ```
-calcora/
+solvecalc-hub/
 ├─ scripts/
 │  ├─ sync-games.mjs        games.json → src/generated/games.json + public/thumbs/
 │  ├─ validate-games.mjs    validation report (also compares games.csv)
@@ -192,7 +192,7 @@ It appears on `/articles`, in the sitemap, and wherever a calculator lists it in
 Create `src/data/quizzes/<topic>.json` with `title`, `description`, `topic` and a
 `questions` array of `{ id, question, options: [4 strings], answer: 0-3, explanation }`.
 Set `quiz: true` on the topic in `src/data/topics.ts` so other pages link to it.
-Progress is stored in the browser under `calcora:quiz:<topic>`.
+Progress is stored in the browser under `solvecalc-hub:quiz:<topic>`.
 
 ## Brand
 

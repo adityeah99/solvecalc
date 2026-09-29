@@ -1,12 +1,12 @@
 // Brand + site settings. Change the name, URL or contact details here and
 // every page, meta tag, sitemap entry and the logo wordmark picks it up.
 export const SITE = {
-  name: 'Calcora',
+  name: 'SolveCalc Hub',
   tagline: 'Calculate, understand, practice, play.',
   description:
     'Free math calculators with worked steps, short lessons, practice quizzes and a library of browser games.',
   // Public origin used for canonical URLs, Open Graph and the sitemap.
-  url: 'https://calcora.example',
+  url: 'https://solvecalc-hub.example',
   locale: 'en_US',
   lang: 'en',
   // Left blank on purpose: the contact page shows this address only when it is set.

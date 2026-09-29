@@ -1,5 +1,5 @@
 // Best scores for the math games, kept in this browser only.
-const key = (id: string) => `calcora:mg:${id}`;
+const key = (id: string) => `solvecalc-hub:mg:${id}`;
 
 export function readBest(id: string): number | null {
   try {

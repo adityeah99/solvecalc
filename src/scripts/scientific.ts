@@ -10,7 +10,7 @@ import { evaluate, formatNumber, MathError, type AngleMode } from '../lib/math/e
 import { findGame } from '../lib/games/client.ts';
 
 const LIBRARY_CODE = '0000';
-const HISTORY_KEY = 'calcora:sci-history';
+const HISTORY_KEY = 'solvecalc-hub:sci-history';
 const HISTORY_MAX = 25;
 const OPERATOR_START = /^[+−×÷^%!²]/;
 const FN_TOKEN = /(sin⁻¹|cos⁻¹|tan⁻¹|asin|acos|atan|sin|cos|tan|sqrt|cbrt|log|ln|abs|√)\($/;

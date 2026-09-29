@@ -5,7 +5,7 @@ export interface QuizState {
   attempts: number;
 }
 
-const key = (id: string) => `calcora:quiz:${id}`;
+const key = (id: string) => `solvecalc-hub:quiz:${id}`;
 
 export function readQuizState(id: string, length = 0): QuizState {
   const empty: QuizState = { answers: Array(length).fill(null), best: null, attempts: 0 };

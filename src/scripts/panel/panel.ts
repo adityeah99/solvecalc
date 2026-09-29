@@ -9,7 +9,7 @@ import { categoryLabel, initials, safeGameUrl } from '../../lib/games/types.ts';
 
 const PAGE = 60;
 const SLOW_MS = 12000;
-const FAV_KEY = 'calcora:lib:favs';
+const FAV_KEY = 'solvecalc-hub:lib:favs';
 const FAVS = '__favs__';
 // No allow-top-navigation (a game can't redirect the page) and no allow-popups.
 const SANDBOX = 'allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-orientation-lock allow-modals';
