@@ -1,0 +1,21 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="family-budget">
+  <CalculatorShell id="family-budget-form">
+    <InputField
+      name="pay"
+      label="Monthly take-home pay"
+      placeholder="4500"
+      hint="What lands in your account after taxes, in your currency"
+      inputmode="decimal"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/family-budget.ts';
+</script>

@@ -279,6 +279,109 @@ const jsonLd = [
     </div>
   </section>
 
+  <section class="section" aria-labelledby="h-examples">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-examples">See it in action</h2>
+        <a href="/calculators">All calculators →</a>
+      </div>
+      <p class="lede">Real questions, worked out loud. Every calculator on this site shows steps like these.</p>
+      <div class="example-grid">
+        <article class="sheet example-card">
+          <h3>15% of $80</h3>
+          <ol>
+            <li>Turn 15% into a decimal: 15 ÷ 100 = 0.15.</li>
+            <li>Multiply: 0.15 × 80 = <strong>$12</strong>.</li>
+          </ol>
+          <p><a href="/calculators/percentage">Try the percentage calculator →</a></p>
+        </article>
+        <article class="sheet example-card">
+          <h3>Solve 3x + 5 = 20</h3>
+          <ol>
+            <li>Subtract 5 from both sides: 3x = 15.</li>
+            <li>Divide by 3: <strong>x = 5</strong>.</li>
+          </ol>
+          <p><a href="/calculators/equation">Try the equation solver →</a></p>
+        </article>
+        <article class="sheet example-card">
+          <h3>Area of a circle, r = 7</h3>
+          <ol>
+            <li>Formula: A = πr².</li>
+            <li>A = π × 49 ≈ <strong>153.94</strong>.</li>
+          </ol>
+          <p><a href="/calculators/geometry">Try the geometry calculator →</a></p>
+        </article>
+        <article class="sheet example-card">
+          <h3>$10,000 at 5% for 10 years</h3>
+          <ol>
+            <li>Compound monthly: A = 10000(1 + 0.05/12)<sup>120</sup>.</li>
+            <li>A ≈ <strong>$16,470.09</strong>. Interest earned: $6,470.09.</li>
+          </ol>
+          <p><a href="/calculators/compound-interest">Try the compound interest calculator →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="h-compare">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="h-compare">Why not just use your phone's calculator?</h2>
+      </div>
+      <p class="lede">Your phone gives you an answer. That's where it stops. Here's the difference:</p>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Feature</span></th>
+              <th scope="col">{SITE.name}</th>
+              <th scope="col">Phone calculator</th>
+              <th scope="col">Search engine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Shows every step</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Explains the formula</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Lessons and quizzes on the same topic</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Math games for practice</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+              <td><span class="no" aria-label="no">✕</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Works without an account</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Free forever</th>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+              <td><span class="yes" aria-label="yes">✓</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   {
     blogPosts.length > 0 && (
       <section class="section" aria-labelledby="h-blog">
@@ -337,6 +440,60 @@ const jsonLd = [
   .hero .lede {
     font-size: 1.2rem;
     margin-bottom: 28px;
+  }
+  .example-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  }
+  .example-card {
+    padding: 20px 22px;
+  }
+  .example-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+  }
+  .example-card ol {
+    margin: 0 0 12px;
+    padding-left: 1.3em;
+    display: grid;
+    gap: 6px;
+  }
+  .example-card p {
+    margin: 0;
+  }
+  .compare-wrap {
+    overflow-x: auto;
+  }
+  .compare {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 560px;
+  }
+  .compare th,
+  .compare td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+  .compare thead th {
+    font-size: 1.02rem;
+  }
+  .compare tbody th {
+    font-weight: 600;
+  }
+  .compare td {
+    text-align: center;
+  }
+  .compare .yes {
+    color: var(--green, #15803d);
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+  .compare .no {
+    color: var(--ink-3, #94a3b8);
+    font-weight: 800;
+    font-size: 1.2rem;
   }
   .path {
     list-style: none;

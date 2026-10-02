@@ -1,0 +1,42 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="college-savings">
+  <CalculatorShell id="college-savings-form">
+    <InputField
+      name="current"
+      label="Current savings"
+      placeholder="5000"
+      hint="What is already saved, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="monthly"
+      label="Monthly contribution"
+      placeholder="200"
+      hint="How much you will add each month"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Expected annual return (%)"
+      placeholder="6"
+      hint="As a percent, e.g. 6 for 6%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Years until college"
+      placeholder="12"
+      hint="How long the money stays invested"
+      inputmode="numeric"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/college-savings.ts';
+</script>

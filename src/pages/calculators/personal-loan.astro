@@ -1,0 +1,35 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="personal-loan">
+  <CalculatorShell id="personal-loan-form">
+    <InputField
+      name="loan"
+      label="Loan amount"
+      placeholder="20000"
+      hint="The principal you borrow, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual interest rate (%)"
+      placeholder="7"
+      hint="As a percent, e.g. 7 for 7%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Loan term (years)"
+      placeholder="5"
+      hint="Personal loans are often 2 to 7 years"
+      inputmode="numeric"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/personal-loan.ts';
+</script>

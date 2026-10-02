@@ -1,0 +1,28 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="discount-calculator">
+  <CalculatorShell id="discount-calculator-form">
+    <InputField
+      name="price"
+      label="Original price"
+      placeholder="80"
+      hint="The price before the discount"
+      inputmode="decimal"
+    />
+    <InputField
+      name="discount"
+      label="Discount (%)"
+      placeholder="25"
+      hint="As a percent, e.g. 25 for 25% off"
+      inputmode="decimal"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/discount-calculator.ts';
+</script>

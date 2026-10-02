@@ -1,0 +1,49 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="retirement-savings">
+  <CalculatorShell id="retirement-savings-form">
+    <InputField
+      name="currentAge"
+      label="Your current age"
+      placeholder="30"
+      hint="How old you are now"
+      inputmode="numeric"
+    />
+    <InputField
+      name="retireAge"
+      label="Retirement age"
+      placeholder="65"
+      hint="The age you want to retire at"
+      inputmode="numeric"
+    />
+    <InputField
+      name="savings"
+      label="Current savings"
+      placeholder="10000"
+      hint="What you have saved already, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="monthly"
+      label="Monthly contribution"
+      placeholder="500"
+      hint="How much you add every month"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual return (%)"
+      placeholder="7"
+      hint="Expected yearly growth, e.g. 7 for 7%"
+      inputmode="decimal"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/retirement-savings.ts';
+</script>

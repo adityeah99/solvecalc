@@ -1,0 +1,35 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="debt-payoff">
+  <CalculatorShell id="debt-payoff-form">
+    <InputField
+      name="balance"
+      label="Debt balance"
+      placeholder="5000"
+      hint="What you owe right now, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="apr"
+      label="Annual interest rate (APR %)"
+      placeholder="18"
+      hint="As a percent, e.g. 18 for 18%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="payment"
+      label="Monthly payment"
+      placeholder="150"
+      hint="What you plan to pay each month"
+      inputmode="decimal"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/debt-payoff.ts';
+</script>

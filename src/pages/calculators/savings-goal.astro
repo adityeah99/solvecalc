@@ -1,0 +1,42 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="savings-goal">
+  <CalculatorShell id="savings-goal-form">
+    <InputField
+      name="goal"
+      label="Savings goal"
+      placeholder="50000"
+      hint="The amount you want to have, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="savings"
+      label="Current savings"
+      placeholder="5000"
+      hint="What you have saved already"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual return (%)"
+      placeholder="5"
+      hint="Expected yearly growth, e.g. 5 for 5%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Years to save"
+      placeholder="5"
+      hint="How long you have to reach the goal"
+      inputmode="numeric"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/savings-goal.ts';
+</script>

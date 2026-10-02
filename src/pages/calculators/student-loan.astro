@@ -1,0 +1,35 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="student-loan">
+  <CalculatorShell id="student-loan-form">
+    <InputField
+      name="loan"
+      label="Loan amount"
+      placeholder="35000"
+      hint="The principal you borrow, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual interest rate (%)"
+      placeholder="5.5"
+      hint="As a percent, e.g. 5.5 for 5.5%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Repayment term (years)"
+      placeholder="10"
+      hint="Common terms are 10, 15 or 25 years"
+      inputmode="numeric"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/student-loan.ts';
+</script>

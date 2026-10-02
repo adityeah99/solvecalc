@@ -1,0 +1,48 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="salary-converter">
+  <CalculatorShell id="salary-converter-form">
+    <Segmented
+      name="mode"
+      legend="Which way are you converting?"
+      options={[
+        { value: 'to-annual', label: 'Hourly → annual salary' },
+        { value: 'to-hourly', label: 'Annual → hourly wage' },
+      ]}
+    />
+    <div class="field-row">
+      <InputField
+        name="hourly"
+        label="Hourly wage"
+        placeholder="25"
+        hint="Your pay per hour, before tax"
+        inputmode="decimal"
+        when="mode:to-annual"
+      />
+      <InputField
+        name="annual"
+        label="Annual salary"
+        placeholder="60000"
+        hint="Your yearly pay, before tax"
+        inputmode="decimal"
+        when="mode:to-hourly"
+      />
+      <InputField
+        name="hours"
+        label="Hours per week"
+        placeholder="40"
+        hint="Full-time is usually 40"
+        inputmode="decimal"
+      />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/salary-converter.ts';
+</script>

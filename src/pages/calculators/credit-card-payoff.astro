@@ -1,0 +1,35 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="credit-card-payoff">
+  <CalculatorShell id="credit-card-payoff-form">
+    <InputField
+      name="balance"
+      label="Card balance"
+      placeholder="5000"
+      hint="What you owe right now, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="apr"
+      label="APR (%)"
+      placeholder="19.99"
+      hint="Annual percentage rate, e.g. 19.99 for 19.99%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="payment"
+      label="Monthly payment"
+      placeholder="200"
+      hint="How much you pay each month"
+      inputmode="decimal"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/credit-card-payoff.ts';
+</script>
