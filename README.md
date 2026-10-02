@@ -199,5 +199,24 @@ Progress is stored in the browser under `solvecalc-hub:quiz:<topic>`.
 Name, tagline, site URL, contact email and theme colour live in `src/config/site.ts`.
 Colours and fonts are CSS variables at the top of `src/styles/global.css`. The logo is
 `src/components/Logo.astro` (and `public/favicon.svg`); the social image is
-`public/og.png`. Set `SITE.url` to the real domain before deploying so canonical URLs
-and the sitemap are correct.
+`public/og.png`.
+
+## Site URL (important for SEO)
+
+`SITE.url` is read from the `PUBLIC_SITE_URL` environment variable at build time.
+It drives canonical URLs, Open Graph tags, `robots.txt` and the sitemap, so it
+must be the real public origin:
+
+```bash
+# local preview with the right URLs
+PUBLIC_SITE_URL="https://kaleidoscopic-fox-723dcb.netlify.app" npm run build
+```
+
+On Netlify, set it in `netlify.toml` (`[build.environment]`) or in the Netlify UI
+(Site settings → Environment variables) — the committed default already points at
+the current preview domain. When the production domain is decided, change it in
+one place and redeploy. Without it, the build falls back to the
+`solvecalc-hub.example` placeholder and the sitemap/canonicals will be wrong.
+
+Blog posts show `By <author>` from `SITE.authorName`; set your real name there
+for E-E-A-T, or override per post with an `author:` frontmatter field.

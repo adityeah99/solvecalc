@@ -1,0 +1,13 @@
+# Netlify build configuration for SolveCalc Hub.
+#
+# PUBLIC_SITE_URL is the public origin used for canonical URLs, Open Graph
+# tags, robots.txt and the sitemap. Change it here (or, better, override it
+# in Netlify UI: Site settings -> Environment variables) when the production
+# domain is decided. Never deploy with the solvecalc-hub.example fallback.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  PUBLIC_SITE_URL = "https://kaleidoscopic-fox-723dcb.netlify.app"

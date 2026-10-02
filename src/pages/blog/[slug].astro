@@ -24,6 +24,7 @@ const cat = blogCategory(entry.data.category);
 const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length;
 const minutes = Math.max(1, Math.round(words / 200));
 const { published, updated } = entry.data;
+const authorName = entry.data.author ?? SITE.authorName;
 const fmtDate = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 
 const all = await getCollection('blog');
@@ -39,7 +40,7 @@ const jsonLd = [
     datePublished: published.toISOString().slice(0, 10),
     dateModified: (updated ?? published).toISOString().slice(0, 10),
     inLanguage: SITE.lang,
-    author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    author: { '@type': 'Person', name: authorName },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   },
 ];
@@ -60,7 +61,7 @@ const jsonLd = [
         <h1>{entry.data.title}</h1>
         <p class="lede">{entry.data.description}</p>
         <p class="post-date muted">
-          <time datetime={published.toISOString().slice(0, 10)}>{fmtDate(published)}</time>
+          By {authorName} · <time datetime={published.toISOString().slice(0, 10)}>{fmtDate(published)}</time>
           · {minutes} min read
           {updated && <span> · Updated <time datetime={updated.toISOString().slice(0, 10)}>{fmtDate(updated)}</time></span>}
         </p>

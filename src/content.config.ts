@@ -77,6 +77,8 @@ const blog = defineCollection({
     calculators: z.array(z.string()).default([]),
     articles: z.array(z.string()).default([]),
     related: z.array(z.string()).default([]),
+    // Optional per-post byline override; falls back to SITE.authorName.
+    author: z.string().max(60).optional(),
   }),
 });
 
