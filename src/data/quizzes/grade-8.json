@@ -1,0 +1,127 @@
+{
+  "title": "8th Grade Math Quiz",
+  "description": "Ten questions for 8th graders: two-step equations, the Pythagorean theorem, slope and scientific notation, with explanations.",
+  "topic": "algebra",
+  "questions": [
+    {
+      "id": "grade-8-01",
+      "question": "Solve for x: 3x + 5 = 20.",
+      "options": [
+        "5",
+        "15",
+        "25/3",
+        "45"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 5: 3x = 15. Divide by 3: x = 5."
+    },
+    {
+      "id": "grade-8-02",
+      "question": "A right triangle has legs of 6 and 8. What is the length of the hypotenuse?",
+      "options": [
+        "14",
+        "10",
+        "48",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "a² + b² = c², so c² = 36 + 64 = 100 and c = 10."
+    },
+    {
+      "id": "grade-8-03",
+      "question": "What is the slope of the line through (2, 3) and (6, 11)?",
+      "options": [
+        "2",
+        "4",
+        "1/2",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Slope = (11 − 3) / (6 − 2) = 8/4 = 2."
+    },
+    {
+      "id": "grade-8-04",
+      "question": "Write 0.00045 in scientific notation.",
+      "options": [
+        "4.5 × 10⁴",
+        "45 × 10⁻⁵",
+        "4.5 × 10⁻⁴",
+        "0.45 × 10⁻³"
+      ],
+      "answer": 2,
+      "explanation": "Move the decimal 4 places right to get 4.5, so the power is −4: 4.5 × 10⁻⁴."
+    },
+    {
+      "id": "grade-8-05",
+      "question": "Solve for x: 2(x − 3) = 14.",
+      "options": [
+        "4",
+        "10",
+        "7",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Divide by 2: x − 3 = 7. Add 3: x = 10."
+    },
+    {
+      "id": "grade-8-06",
+      "question": "A right triangle has a hypotenuse of 13 and one leg of 5. What is the other leg?",
+      "options": [
+        "12",
+        "8",
+        "18",
+        "144"
+      ],
+      "answer": 0,
+      "explanation": "b² = 13² − 5² = 169 − 25 = 144, so b = 12."
+    },
+    {
+      "id": "grade-8-07",
+      "question": "What is (2 × 10³) × (3 × 10²)?",
+      "options": [
+        "6 × 10⁵",
+        "5 × 10⁵",
+        "6 × 10⁶",
+        "6 × 10⁻⁵"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the coefficients: 2 × 3 = 6. Add the exponents: 3 + 2 = 5. Result: 6 × 10⁵."
+    },
+    {
+      "id": "grade-8-08",
+      "question": "Solve for x: 5x − 7 = 2x + 8.",
+      "options": [
+        "1",
+        "5",
+        "3",
+        "15"
+      ],
+      "answer": 1,
+      "explanation": "Subtract 2x: 3x − 7 = 8. Add 7: 3x = 15. Divide by 3: x = 5."
+    },
+    {
+      "id": "grade-8-09",
+      "question": "What is the slope of the line y = −2x + 7?",
+      "options": [
+        "2",
+        "7",
+        "−2",
+        "−7"
+      ],
+      "answer": 2,
+      "explanation": "In y = mx + b, m is the slope, so the slope is −2."
+    },
+    {
+      "id": "grade-8-10",
+      "question": "A 10-foot ladder leans against a wall with its foot 6 feet from the wall. How high up the wall does it reach?",
+      "options": [
+        "8 feet",
+        "4 feet",
+        "16 feet",
+        "11.7 feet"
+      ],
+      "answer": 0,
+      "explanation": "The ladder is the hypotenuse: height² = 10² − 6² = 100 − 36 = 64, so the height is 8 feet."
+    }
+  ]
+}

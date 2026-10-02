@@ -88,6 +88,62 @@ If you know the area, you can find the radius by undoing each step. Suppose a ci
 - **Mixing up area and circumference.** The distance around a circle is 2πr. The space inside it is πr².
 - **Forgetting square units.** An area answer should say cm², m² or similar.
 
+## Circumference vs area: don't mix them up
+
+A circle has two numbers people confuse: how far it is **around**, and how much space is **inside**.
+
+- Circumference (the distance around) = 2πr
+- Area (the space inside) = πr²
+
+Here is how to tell them apart in a question:
+
+- Words like "around", "fence", "border", "edge" or "track" mean circumference.
+- Words like "covers", "fills", "inside", "surface" or "area" mean area.
+
+The answers have different units too. Circumference is a length, so it is measured in plain units like meters. Area is measured in square units like m². If your "area" answer is in plain meters, something went wrong.
+
+Quick check with r = 5 m:
+
+- Circumference = 2 × π × 5 ≈ 31.42 m
+- Area = π × 5² = 25π ≈ 78.54 m²
+
+Same circle, very different numbers. If your two answers look suspiciously similar, double-check which formula you used.
+
+## Where you'll use this
+
+Circle area shows up more often than you might think:
+
+- **Food deals.** Comparing pizza sizes (like the example above) tells you which is the better buy.
+- **Gardens.** If one bag of grass seed covers 2 m² and your round flower bed has an area of 12.57 m², you need 7 bags. You cannot buy 6.285 bags, so always round up.
+- **Paint.** A round table top with an area of 1.54 m² needs that much paint per coat, times the number of coats.
+- **Watering.** A sprinkler sprays in a circle of radius 4 m, so it waters π × 16 ≈ 50.27 m² of lawn.
+
+## Extra worked example: area from a fence
+
+A farmer puts up a circular fence that is 25 meters long. How much land does it enclose?
+
+1. The fence is the circumference: 2πr = 25.
+2. Find the radius: r = 25 ÷ (2π) ≈ 3.98 m.
+3. Square the radius: 3.98² ≈ 15.84.
+4. Multiply by π: A ≈ 15.84 × π ≈ 49.76 m².
+
+So about 49.76 m² of land is enclosed. Notice we never needed the diameter — the radius came straight from the circumference.
+
+## Mini FAQs
+
+**What if I only know the circumference?**
+You can still find the area. First find the radius: r = circumference ÷ (2π). A circle with a circumference of 20 m has a radius of 20 ÷ (2π) ≈ 3.18 m, so its area is 100/π ≈ 31.83 m².
+
+**Can an area be negative?**
+No. Area measures a real amount of space, so it is always zero or positive. If you get a negative area, look for a sign error in your working.
+
+**Do I have to use the π button?**
+Not always. Using 3.14 is fine for everyday questions, but school problems often want exact answers like 25π. When in doubt, give the exact answer first and the decimal after.
+
+## Keep going
+
+Try the [geometry calculator](/calculators/geometry) for instant answers, then test yourself with the [geometry quiz](/quizzes/geometry). For the distance around a circle instead of the space inside, see [how to find the perimeter of a rectangle](/articles/perimeter-of-a-rectangle) — rectangles are the other shape worth mastering.
+
 ## Try it yourself
 
 1. Find the area of a circle with radius 3 cm.

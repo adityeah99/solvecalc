@@ -1,0 +1,127 @@
+{
+  "title": "2nd Grade Math Quiz",
+  "description": "Ten questions for 2nd graders: place value, adding and subtracting within 100, halves and simple measurement, with clear explanations.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "grade-2-01",
+      "question": "What is the value of the 7 in the number 74?",
+      "options": [
+        "7",
+        "70",
+        "700",
+        "47"
+      ],
+      "answer": 1,
+      "explanation": "The 7 is in the tens place, so it stands for 7 tens, which is 70."
+    },
+    {
+      "id": "grade-2-02",
+      "question": "What is 47 + 28?",
+      "options": [
+        "65",
+        "75",
+        "715",
+        "66"
+      ],
+      "answer": 1,
+      "explanation": "Add the ones: 7 + 8 = 15, write 5 and carry 1 ten. Then 4 + 2 + 1 = 7 tens. The total is 75."
+    },
+    {
+      "id": "grade-2-03",
+      "question": "What is 83 − 56?",
+      "options": [
+        "37",
+        "27",
+        "33",
+        "47"
+      ],
+      "answer": 1,
+      "explanation": "Borrow 1 ten: 13 − 6 = 7 ones, then 7 − 5 = 2 tens. The answer is 27."
+    },
+    {
+      "id": "grade-2-04",
+      "question": "What is half of 18?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "36"
+      ],
+      "answer": 1,
+      "explanation": "Half means split into 2 equal parts: 18 ÷ 2 = 9."
+    },
+    {
+      "id": "grade-2-05",
+      "question": "Which is longer: 1 meter or 90 centimeters?",
+      "options": [
+        "90 centimeters",
+        "1 meter",
+        "They are the same",
+        "1 centimeter"
+      ],
+      "answer": 1,
+      "explanation": "1 meter is 100 centimeters, and 100 cm is longer than 90 cm."
+    },
+    {
+      "id": "grade-2-06",
+      "question": "35 + ___ = 60. What is the missing number?",
+      "options": [
+        "35",
+        "25",
+        "15",
+        "95"
+      ],
+      "answer": 1,
+      "explanation": "Count up from 35 to 60: 35 to 40 is 5, 40 to 60 is 20, so 5 + 20 = 25."
+    },
+    {
+      "id": "grade-2-07",
+      "question": "What number is 100 less than 342?",
+      "options": [
+        "442",
+        "242",
+        "342",
+        "232"
+      ],
+      "answer": 1,
+      "explanation": "100 less means the hundreds digit drops by 1: 342 becomes 242."
+    },
+    {
+      "id": "grade-2-08",
+      "question": "A ribbon is 45 cm long. You cut off 18 cm. How long is the ribbon now?",
+      "options": [
+        "37 cm",
+        "27 cm",
+        "33 cm",
+        "63 cm"
+      ],
+      "answer": 1,
+      "explanation": "45 − 18 = 27. Cut off means subtract."
+    },
+    {
+      "id": "grade-2-09",
+      "question": "Which number has 5 tens and 3 ones?",
+      "options": [
+        "35",
+        "53",
+        "503",
+        "305"
+      ],
+      "answer": 1,
+      "explanation": "5 tens is 50 and 3 ones is 3, so the number is 53."
+    },
+    {
+      "id": "grade-2-10",
+      "question": "Skip count by 5s: 35, 40, 45, ___",
+      "options": [
+        "46",
+        "50",
+        "55",
+        "49"
+      ],
+      "answer": 1,
+      "explanation": "Each step adds 5: 45 + 5 = 50."
+    }
+  ]
+}

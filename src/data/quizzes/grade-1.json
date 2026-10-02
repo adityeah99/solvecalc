@@ -1,0 +1,127 @@
+{
+  "title": "1st Grade Math Quiz",
+  "description": "Ten questions for 1st graders: adding and subtracting within 20, comparing numbers and simple word problems, with step-by-step explanations.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "grade-1-01",
+      "question": "What is 8 + 7?",
+      "options": [
+        "14",
+        "16",
+        "15",
+        "17"
+      ],
+      "answer": 2,
+      "explanation": "Break 7 into 2 + 5: 8 + 2 = 10, then 10 + 5 = 15."
+    },
+    {
+      "id": "grade-1-02",
+      "question": "What is 16 − 9?",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "Think 9 + ? = 16. Since 9 + 7 = 16, then 16 − 9 = 7."
+    },
+    {
+      "id": "grade-1-03",
+      "question": "Which number is greater: 13 or 31?",
+      "options": [
+        "13",
+        "31",
+        "They are equal",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "31 has 3 tens and 13 has only 1 ten, so 31 is greater even though both use the digits 1 and 3."
+    },
+    {
+      "id": "grade-1-04",
+      "question": "What is 5 + 6 + 4?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Add left to right: 5 + 6 = 11, then 11 + 4 = 15. (Adding 6 + 4 = 10 first also works!)"
+    },
+    {
+      "id": "grade-1-05",
+      "question": "Sara has 12 stickers. She gets 5 more. How many stickers does she have now?",
+      "options": [
+        "16",
+        "17",
+        "7",
+        "18"
+      ],
+      "answer": 1,
+      "explanation": "12 + 5 = 17. If you got 7, you subtracted instead of adding."
+    },
+    {
+      "id": "grade-1-06",
+      "question": "What is 20 − 7?",
+      "options": [
+        "13",
+        "12",
+        "14",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "20 − 10 = 10, so 20 − 7 is 3 more than 10, which is 13."
+    },
+    {
+      "id": "grade-1-07",
+      "question": "What number is 10 more than 45?",
+      "options": [
+        "44",
+        "46",
+        "55",
+        "35"
+      ],
+      "answer": 2,
+      "explanation": "10 more means the tens digit grows by 1: 45 becomes 55."
+    },
+    {
+      "id": "grade-1-08",
+      "question": "Tom had 9 marbles. He lost 4 of them. How many does he have left?",
+      "options": [
+        "13",
+        "5",
+        "6",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "9 − 4 = 5. Lost means take away, so subtract."
+    },
+    {
+      "id": "grade-1-09",
+      "question": "Which sentence is true?",
+      "options": [
+        "14 < 9",
+        "14 = 9",
+        "14 > 9",
+        "9 > 14"
+      ],
+      "answer": 2,
+      "explanation": "14 is bigger than 9, so 14 > 9 is true. The > sign always opens toward the bigger number."
+    },
+    {
+      "id": "grade-1-10",
+      "question": "What is double 9?",
+      "options": [
+        "18",
+        "16",
+        "19",
+        "20"
+      ],
+      "answer": 0,
+      "explanation": "Double 9 means 9 + 9 = 18."
+    }
+  ]
+}

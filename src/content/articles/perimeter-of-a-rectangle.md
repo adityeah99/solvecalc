@@ -97,6 +97,54 @@ If you want to see how area works for a curved shape, read [how to find the area
 - **Multiplying instead of adding.** 8 × 5 gives the area, not the perimeter.
 - **Writing square units.** Perimeter is a distance, so write m or cm, not m² or cm².
 
+## Quick reference: perimeters of common shapes
+
+The rectangle is not the only shape with a perimeter. Here are the formulas you will meet most often:
+
+| Shape | Perimeter formula | Meaning |
+|---|---|---|
+| Square | P = 4 × s | four equal sides |
+| Rectangle | P = 2 × (l + w) | twice length plus width |
+| Triangle | P = a + b + c | add all three sides |
+| Circle | P = 2 × π × r | called the **circumference** |
+
+The idea is always the same: add up every side. The circle is the odd one out, because it has no straight sides, so we use π (about 3.14) instead.
+
+## Example: fencing with a gate
+
+A rectangular garden is 12 m long and 9 m wide. You want to fence it all the way around, but leave a 1.5 m gap for the gate. How much fencing do you need?
+
+1. Find the full perimeter: 2 × (12 + 9) = 2 × 21 = 42 m.
+2. Take away the gate gap: 42 − 1.5 = 40.5 m.
+3. You need 40.5 m of fencing.
+
+Real projects almost always have a gap like this: a door in the skirting board, or a driveway opening in a fence. Work out the full perimeter first, then subtract the gaps.
+
+## When you double the sides
+
+Doubling the sides of a rectangle doubles the perimeter. But watch what happens to the area:
+
+| Rectangle | Perimeter | Area |
+|---|---|---|
+| 4 m by 6 m | 2 × (4 + 6) = 20 m | 4 × 6 = 24 m² |
+| 8 m by 12 m | 2 × (8 + 12) = 40 m | 8 × 12 = 96 m² |
+
+The perimeter doubled from 20 to 40, but the area went from 24 to 96, which is four times bigger. Perimeter grows at the same rate as the sides. Area grows with the square of the sides. This is why a slightly bigger pizza gives you much more food for only a little more crust.
+
+## Quick questions
+
+**Do I have to use the same units everywhere?**
+
+Yes. You cannot add 2 m and 75 cm directly. Convert everything to one unit first, then add, as in the poster example above.
+
+**Can two shapes have the same perimeter but different areas?**
+
+Yes. Earlier in this article, a 6-by-4 and a 9-by-1 rectangle both have a perimeter of 20 m, but areas of 24 m² and 9 m². Of all rectangles with a fixed perimeter, the square holds the most area.
+
+**Is the perimeter of a circle called something special?**
+
+It is called the circumference. The formula is C = 2 × π × r, where r is the radius. For a circle with radius 5 cm, the circumference is about 2 × 3.14 × 5 = 31.4 cm.
+
 ## Try it yourself
 
 1. Find the perimeter of a rectangle that is 12 cm long and 7 cm wide.

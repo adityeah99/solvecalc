@@ -6,7 +6,7 @@ const updated = 'September 2026';
 
 <BaseLayout
   title="Privacy Policy"
-  description={`How ${SITE.name} handles your data: no accounts, no tracking, and everything stored on your own device.`}
+  description={`How ${SITE.name} handles your data: no accounts, everything stored on your own device, and how advertising cookies work.`}
   crumbs={[{ label: 'Privacy Policy' }]}
 >
   <div class="wrap reading">
@@ -31,7 +31,23 @@ const updated = 'September 2026';
         <p>This stays on your device. It is never sent to us or to anyone else, and clearing your browser data removes it.</p>
 
         <h2>Cookies and tracking</h2>
-        <p>{SITE.name} does not set advertising cookies and does not run analytics or tracking scripts.</p>
+        <p>
+          {SITE.name} sets no cookies of its own and runs no analytics scripts. However, the site is funded by advertising
+          through Google AdSense, and Google and its partners may use cookies to serve ads.
+        </p>
+        <p>
+          Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this
+          site and other sites on the internet. Google may use the DART cookie (a DoubleClick cookie) for this purpose.
+          You can opt out of personalized advertising by visiting{' '}
+          <a href="https://www.google.com/settings/ads">Google's Ads Settings</a>. Alternatively, you can opt out of
+          third-party vendors' use of cookies for personalized advertising by visiting{' '}
+          <a href="https://www.aboutads.info/choices/">aboutads.info/choices</a>.
+        </p>
+        <p>
+          You can also control cookies through your browser settings: most browsers let you block or delete cookies, though
+          blocking them may affect how some sites work. Clearing your browser data also removes the calculator history,
+          quiz progress and game scores described above.
+        </p>
 
         <h2>Links to other sites</h2>
         <p>Some pages link to other websites. Once you follow a link, that site's own privacy policy applies. We do not control those sites.</p>

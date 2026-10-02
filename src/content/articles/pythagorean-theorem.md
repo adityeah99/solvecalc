@@ -105,6 +105,57 @@ Any multiple also works. Doubling 3-4-5 gives 6-8-10.
 - **Forgetting the square root.** c² = 25 means c = 5, not 25.
 - **Using it on the wrong triangle.** The rule only works for right triangles.
 
+## Example: how big is a 55-inch TV?
+
+TV sizes are measured diagonally, which hides how wide and tall the screen really is. A 55-inch TV with a 16:9 screen: how wide is it?
+
+The width, height, and diagonal form a right triangle, so:
+
+1. Find the diagonal of a 16-by-9 rectangle: 16² + 9² = 256 + 81 = 337.
+2. Take the square root: √337 ≈ 18.36. So 18.36 ratio-units equal 55 inches.
+3. One ratio-unit is 55 ÷ 18.36 ≈ 3.00 inches.
+4. Width = 16 × 3.00 ≈ 48 inches. Height = 9 × 3.00 ≈ 27 inches.
+
+Check: 48² + 27² = 2304 + 729 = 3033, and √3033 ≈ 55. Correct. So a "55-inch" TV is about 48 inches wide and 27 inches tall. You can use the same trick for any screen size.
+
+## The distance formula is the same idea
+
+On a grid or a map, the distance between two points is just the hypotenuse of a right triangle. The horizontal gap is one leg, the vertical gap is the other.
+
+**Example.** How far is it from point (1, 2) to point (7, 10)?
+
+1. Horizontal gap: 7 − 1 = 6.
+2. Vertical gap: 10 − 2 = 8.
+3. Distance² = 6² + 8² = 36 + 64 = 100.
+4. Distance = √100 = 10.
+
+So the two points are 10 units apart. Map apps use exactly this maths (in fancier form) to measure distances for you.
+
+## Quick reference
+
+| You know | You want | Do this |
+|---|---|---|
+| Both legs a and b | Hypotenuse c | c = √(a² + b²) |
+| Hypotenuse c and leg a | Other leg b | b = √(c² − a²) |
+| All three sides | Is it a right angle? | Check whether a² + b² = c² |
+| Two points on a grid | Distance | d = √((x₂ − x₁)² + (y₂ − y₁)²) |
+
+The second row is just the rule rearranged. If a² + b² = c², then b² = c² − a².
+
+## Quick questions
+
+**Does the theorem work for any triangle?**
+
+No, only right triangles. If there is no 90° angle, the rule does not apply. For other triangles you need the law of cosines, which the [triangle solver](/calculators/triangle-solver) handles for you.
+
+**What if I only know one side?**
+
+That is not enough. Infinitely many right triangles share one side length, so you need at least two sides (or one side and an angle) to pin the triangle down.
+
+**Why is it called a theorem and not a rule?**
+
+A theorem is a statement that has been proved true, not just noticed to work. The Pythagorean theorem has hundreds of known proofs, from ancient Chinese diagrams to a proof by US president James Garfield.
+
 ## Try it yourself
 
 1. A right triangle has legs of 9 cm and 12 cm. Find the hypotenuse.

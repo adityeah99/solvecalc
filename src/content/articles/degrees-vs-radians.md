@@ -103,6 +103,51 @@ Radians are also the standard unit in more advanced math, so it is good to get c
 - **Rounding π too soon.** Keep answers like π/3 exact as long as you can, then round at the end.
 - **Thinking 1 radian is 1°.** One radian is about 57.3°, much bigger than one degree.
 
+## Where you'll use radians
+
+Radians feel abstract until you see them working:
+
+- **Wheels and spinning.** A car wheel, a Ferris wheel, a spinning record — anything that rotates is measured naturally in radians. If a Ferris wheel with a radius of 12 m turns through π/2 radians, each cabin travels along an arc of 12 × π/2 = 6π ≈ 18.85 m.
+- **Robots and games.** Robot arms and video game cameras rotate in radians under the hood, because the math stays simpler that way.
+- **Physics.** The speed of a rotation is measured in radians per second. A wheel turning at 2 radians per second completes about 0.32 of a full turn each second, since one full turn is 2π ≈ 6.28 radians.
+
+## Extra worked example: arc length
+
+A question that ties everything together: find the arc length when a circle of radius 8 cm is swept by an angle of 120°.
+
+1. The arc formula needs radians, so convert first: 120 × π/180 = 2π/3.
+2. Arc length = radius × angle = 8 × 2π/3.
+3. Multiply: 8 × 2π/3 = 16π/3.
+4. As a decimal: 16π/3 ≈ 16.76 cm.
+
+So the arc is 16π/3 cm long, about 16.76 cm.
+
+## A handy way to think about it
+
+When an angle looks strange, think of it as a fraction of a full turn.
+
+- 1/4 turn = 90° = π/2 radians
+- 1/3 turn = 120° = 2π/3 radians
+- 1/2 turn = 180° = π radians
+- 3/4 turn = 270° = 3π/2 radians
+
+Check the pattern: multiply the fraction by 360 for degrees, or by 2π for radians. A 1/6 turn is 360 ÷ 6 = 60° and 2π/6 = π/3 radians. If you can picture the fraction of a turn, both units make sense.
+
+## Mini FAQs
+
+**Why not just use degrees for everything?**
+You can, but the formulas get uglier. In degrees, arc length = radius × degrees × π/180. That extra π/180 is just converting to radians behind the scenes. Radians are the unit the formulas were built for.
+
+**Do I write "radians" after the number?**
+It helps. An answer of "1.05" could mean 1.05 radians or 1.05 degrees — very different angles. Writing "1.05 radians" removes the doubt. Exact answers like π/3 are understood to be radians.
+
+**Which mode should my calculator be in for homework?**
+Match the question. If the angle is written with °, use degree mode. If it involves π or the word "radians", use radian mode. When you switch, say it out loud — "switching to radians" — so you never forget to switch back.
+
+## Keep going
+
+Once conversions feel easy, try them inside real triangle problems with the [geometry quiz](/quizzes/geometry), and use the [scientific calculator](/calculators/scientific) to check sin, cos and tan values in both modes.
+
 ## Try it yourself
 
 1. Convert 120° to radians.

@@ -100,6 +100,55 @@ Solve −2x = 10. Divide both sides by −2 and you get x = −5. Check: −2 ×
 - **Only multiplying the first part of a bracket.** 4(x − 3) is 4x − 12, not 4x − 3.
 - **Skipping the check.** Putting your answer back into the original equation takes a few seconds and catches most mistakes.
 
+## Expressions vs equations: a common mix-up
+
+An **expression** like 3x + 5 has no equals sign. It is a recipe, not a question. You can simplify an expression (2x + 3x becomes 5x), but you cannot "solve" it, because there is nothing to balance. Asking "what is x in 3x + 5?" has no answer: x could be anything.
+
+An **equation** like 3x + 5 = 20 has two sides joined by an equals sign. Now there is something to balance, and exactly one value of x makes it true.
+
+If you ever catch yourself trying to solve something with no equals sign, stop: you are holding an expression. Either simplify it, or check whether part of the equation got left behind.
+
+## Example 6: an equation with decimals
+
+Solve 0.5x + 3 = 9.
+
+Decimals work exactly like whole numbers. Undo in reverse order.
+
+1. Subtract 3 from both sides: 0.5x = 6
+2. Divide both sides by 0.5: x = 12
+
+**Check:** 0.5 × 12 + 3 = 6 + 3 = 9. Correct.
+
+A handy trick: multiplying the whole equation by 10 clears the decimals first. 0.5x + 3 = 9 becomes 5x + 30 = 90, and from there x = 12 falls out quickly.
+
+## Example 7: an age puzzle
+
+Mia is 4 years older than her brother. Together, their ages add up to 28. How old is each of them?
+
+1. Let b stand for the brother's age. Then Mia's age is b + 4.
+2. Write the equation: b + (b + 4) = 28, which simplifies to 2b + 4 = 28
+3. Subtract 4 from both sides: 2b = 24
+4. Divide by 2: b = 12
+5. The brother is 12, and Mia is 12 + 4 = 16.
+
+**Check:** 12 + 16 = 28, and 16 is 4 more than 12. Both conditions hold.
+
+Notice the pattern: name the unknown, translate the words into an equation, solve, then answer the original question in words.
+
+## Quick questions
+
+**What if the x disappears?**
+
+Sometimes the letter cancels out, and the equation tells you something about itself. For 2x + 3 = 2x + 7, subtracting 2x from both sides leaves 3 = 7, which is false. That means no value of x works: there is **no solution**. For 2x + 3 = 2x + 3, you get 3 = 3, which is always true: **every** number works. Both are valid answers.
+
+**Can I start working from the right side?**
+
+Yes. The balance rule works in either direction. For 20 = 3x + 5, subtract 5 from both sides to get 15 = 3x, then divide by 3: 5 = x, so x = 5. Some people find it easier to flip the equation around first, writing 3x + 5 = 20.
+
+**Do I always have to write every step?**
+
+While you are learning, yes. Each written step is a chance to catch a sign slip before it ruins the answer. Once the moves feel automatic, you can combine steps, but keep the check at the end.
+
 ## Try it yourself
 
 1. Solve 6x + 4 = 40.

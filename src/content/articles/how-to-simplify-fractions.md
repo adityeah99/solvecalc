@@ -88,6 +88,45 @@ The same method works when the top is bigger than the bottom. Take 20/8:
 - **Stopping too early.** 12/18 is simpler than 48/72, but it is not the simplest form. Keep going until the only common factor is 1.
 - **Trying to simplify across a plus sign.** You simplify a single fraction, not parts of a sum. Add first, then simplify.
 
+## Simplifying vs equivalent fractions
+
+These two ideas are closely related, and mixing them up causes confusion.
+
+**Equivalent fractions** are different-looking fractions with the same value: 1/2, 2/4, 3/6 and 50/100 are all equivalent. You make them by multiplying or dividing the top and bottom by the same number.
+
+**Simplifying** is the process of finding the simplest equivalent fraction, the one with the smallest numbers. It is one direction: from 50/100 down to 1/2.
+
+When you add fractions with different denominators, you go the other way: you turn both into equivalent fractions with a bigger shared denominator, add, and then simplify the answer back down. So the two skills are partners. One makes fractions bigger to match them up, the other shrinks the answer at the end.
+
+## Quick reference: divisibility tests
+
+| Divide by | Quick test | Example |
+|---|---|---|
+| 2 | Both numbers are even | 36 and 60 are both even |
+| 3 | The digits of each number add to a multiple of 3 | 36: 3 + 6 = 9, so 3 divides 36 |
+| 4 | The last two digits form a multiple of 4 | 36: 36 ÷ 4 = 9 |
+| 5 | Both numbers end in 0 or 5 | 45 and 75 both end in 5 |
+| 6 | Both tests for 2 and 3 pass | 36 and 60 are even and their digits sum to multiples of 3 |
+| 10 | Both numbers end in 0 | 30 and 40 both end in 0 |
+
+## Example: simplify 36/60
+
+1. List the factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36
+2. List the factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60
+3. The biggest shared factor is 12.
+4. Divide both by 12: 36 ÷ 12 = 3 and 60 ÷ 12 = 5
+5. The answer is 3/5.
+
+Check: 3/5 = 0.6 and 36/60 = 0.6. Same value, smaller numbers.
+
+If you had not spotted 12, the small-steps method works too: divide by 2 to get 18/30, by 2 again to get 9/15, then by 3 to get 3/5.
+
+## Where simplifying shows up
+
+- **Cooking.** A recipe calls for 3/4 of a cup, and you want to halve it. Half of 3/4 is 3/8, already simple, but doubling it gives 6/4, which simplifies to 3/2, or 1 1/2 cups.
+- **Test scores.** Getting 18 out of 24 right is 18/24, which simplifies to 3/4, or 75%. Teachers and students both prefer the simple version.
+- **Discounts.** A $20 saving on an $80 item is 20/80 = 1/4, a quarter off. The simplified fraction tells you the deal at a glance.
+
 ## Try it yourself
 
 1. Simplify 30/42.

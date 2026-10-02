@@ -72,6 +72,70 @@ Prime factors are useful for finding a greatest common factor or a lowest common
 - **Forgetting 2 is prime.** It is the only even prime, and it is easy to skip.
 - **Stopping the factor tree too soon.** Keep going until every number at the end is prime.
 
+## Prime vs composite: a quick comparison
+
+It helps to see the three kinds of whole number side by side:
+
+| Type | How many factors | Examples |
+|---|---|---|
+| Prime | Exactly 2 (1 and itself) | 2, 3, 5, 7, 11 |
+| Composite | 3 or more | 4 (1, 2, 4), 8 (1, 2, 4, 8), 9 (1, 3, 9) |
+| Neither | Exactly 1 | 1 |
+
+The test is always the same: count the factors. Exactly two means prime. More than two means composite. The number 1 is in a group of its own.
+
+### Worked example: prime factors of 96
+
+Break 96 into primes with a factor tree:
+
+1. 96 = 2 × 48
+2. 48 = 2 × 24
+3. 24 = 2 × 12
+4. 12 = 2 × 6
+5. 6 = 2 × 3
+
+Collecting the primes: 96 = 2 × 2 × 2 × 2 × 2 × 3, which we write as 2⁵ × 3.
+
+Check by multiplying back: 2⁵ = 32, and 32 × 3 = 96. Correct.
+
+## Where primes show up in real life
+
+Primes are not just a school topic. They quietly protect your everyday life:
+
+- **Online security.** When you log in to your bank or buy something online, the encryption often uses two huge prime numbers multiplied together. Multiplying them is easy, but working backwards to find the two primes is so hard that it keeps your data safe. This is called RSA encryption.
+- **Clocks and calendars.** Numbers like 60 (seconds in a minute) and 360 (degrees in a circle) are composite on purpose. Because 60 = 2² × 3 × 5, it splits neatly into halves, thirds, quarters, fifths, and sixths. A prime number of seconds would be far less handy.
+- **Barcodes and checks.** Prime numbers help build the check digits that catch scanning mistakes on tickets and parcels.
+
+So primes are useful for hiding secrets, and composites are useful for sharing things out fairly.
+
+## Quick questions
+
+**Are there infinitely many primes?**
+
+Yes. The ancient Greek mathematician Euclid proved it about 2,300 years ago. His argument: whatever list of primes you have, multiply them all together and add 1. The result has a prime factor that is not on your list, so the list can never be complete.
+
+**What is the largest known prime?**
+
+It changes every few years as computers search further. The record holders have millions of digits and would fill a small book. You will never need to write one out, but knowing they keep going is the point.
+
+**Is 2 really the only even prime?**
+
+Yes. Every even number bigger than 2 can be divided by 2, so it has at least three factors: 1, 2, and itself. That leaves 2 alone as the odd one out among the evens.
+
+## The sieve of Eratosthenes
+
+There is a neat trick for finding all the primes up to any number. It is called the sieve of Eratosthenes, after the ancient Greek who invented it.
+
+To find the primes up to 30:
+
+1. Write out 2 to 30.
+2. Circle 2, then cross out every multiple of 2 after it (4, 6, 8, …).
+3. Circle 3, then cross out every multiple of 3 left standing (9, 15, 21, 27).
+4. Circle 5, then cross out its multiples (25).
+5. Circle 7. Its next multiple after 7 is 49, which is past 30, so you can stop.
+
+Every circled number is prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Everything else got crossed out. You only need to sieve with primes up to the square root of your limit, which is why the work stops at 7 here (√30 ≈ 5.5, and the next prime after that is 7).
+
 ## Try it yourself
 
 1. Is 91 prime?

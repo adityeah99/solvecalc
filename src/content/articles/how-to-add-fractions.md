@@ -78,6 +78,51 @@ If you want more practice with this step, read [how to simplify fractions](/arti
 - **Using a common denominator that is not common.** Make sure every denominator divides into the one you choose.
 - **Forgetting to simplify.** 3/6 is correct, but 1/2 is the neater final answer.
 
+### Example: adding three fractions
+
+The same method works for three or more fractions. Try 1/2 + 1/3 + 1/6.
+
+1. Find a number all three denominators divide into. The LCM of 2, 3 and 6 is 6.
+2. Rewrite each one: 1/2 = 3/6, 1/3 = 2/6, 1/6 stays as 1/6.
+3. Add the numerators: 3/6 + 2/6 + 1/6 = 6/6.
+4. 6/6 = 1.
+
+So 1/2 + 1/3 + 1/6 = 1. When the pieces fit together into a whole, that is a good sign your arithmetic is right.
+
+## Subtracting works the same way
+
+Subtraction is the mirror image of addition: same denominators, same common-denominator method, but you subtract the top numbers instead of adding them.
+
+### Example: 3/4 − 1/3
+
+1. Find the LCM of 4 and 3: it is 12.
+2. Rewrite 3/4: multiply top and bottom by 3 to get 9/12.
+3. Rewrite 1/3: multiply top and bottom by 4 to get 4/12.
+4. Subtract the numerators: 9/12 − 4/12 = 5/12.
+
+So 3/4 − 1/3 = 5/12. Check with decimals: 0.75 − 0.333… = 0.4166…, and 5/12 ≈ 0.4167. It matches.
+
+## Where you'll use this
+
+- **Cooking.** A recipe needs 3/4 cup of sugar and 1/3 cup of butter. Together that is 9/12 + 4/12 = 13/12 = 1 1/12 cups.
+- **Carpentry.** A board is 2 1/2 feet long and you cut off 3/4 foot. Left over: 5/2 − 3/4 = 10/4 − 3/4 = 7/4 = 1 3/4 feet.
+- **Time.** You ran for 1/2 hour in the morning and 1/4 hour in the evening: 1/2 + 1/4 = 3/4 hour total, which is 45 minutes.
+
+## Mini FAQs
+
+**Can I use any common denominator, not the lowest one?**
+Yes. For 1/3 + 1/4 you can just multiply the denominators: 3 × 4 = 12. For 5/6 + 3/4 you could use 6 × 4 = 24: 20/24 + 18/24 = 38/24 = 19/12. It works, but the numbers are bigger, so there is more to simplify at the end. The LCM keeps things tidy.
+
+**Does the order matter?**
+No. 1/3 + 1/4 is the same as 1/4 + 1/3 — both equal 7/12. Addition is commutative for fractions, just like whole numbers.
+
+**Why can't I add the denominators?**
+Because the denominator names the piece size. Adding 2/8 + 3/8 gives 5/8 — five eighth-sized pieces. If you added the bottoms too, you would get 5/16, which is a smaller amount than what you started with. That can't be right.
+
+## Keep going
+
+Check your answers with the [fractions calculator](/calculators/fractions), or use the [LCM calculator](/calculators/lcm) to find common denominators. Then try the [fractions quiz](/quizzes/fractions) or the full [fractions lesson](/learn/fractions).
+
 ## Try it yourself
 
 1. 2/5 + 1/10

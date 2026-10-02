@@ -108,6 +108,51 @@ In cases like this, the median can be a better summary. You can read more in [me
 - **Rounding too early.** Add everything up first, divide, and only round at the very end.
 - **Adding negatives as positives.** −3 + 2 is −1, not 5.
 
+## Example: mean monthly spending
+
+Priya tracked what she spent on snacks each month: $45, $60, $52, $48 and $55. What was her mean monthly spending?
+
+1. Add them up: 45 + 60 + 52 + 48 + 55 = 260
+2. Count them: 5 months.
+3. Divide: 260 ÷ 5 = 52
+4. Her mean spending was $52 a month.
+
+She can use that number to plan next term's budget: setting aside $52 a month should cover her snack habit on average.
+
+## Mean, median and mode at a glance
+
+| | Mean | Median | Mode |
+|---|---|---|---|
+| How to find it | Add all values, divide by the count | Order the values, take the middle one | Take the value that appears most often |
+| Uses every value | Yes | No | No |
+| Can be a decimal | Yes | Yes, for an even count | No, it is always one of the values |
+| Best when | No extreme values | There are outliers | You want the most popular choice |
+
+For Priya's snack spending (45, 60, 52, 48, 55), the mean is 52, the median is also 52 (the middle of 45, 48, 52, 55, 60), and there is no mode because every value appears once.
+
+## Where you will use the mean
+
+- **Grades.** A final grade is often the mean of your test scores, which is why one bad test can pull it down.
+- **Sports.** A batter's average or a runner's mean time per race lets fans compare players across seasons.
+- **Weather.** The "average July temperature" you hear in forecasts is the mean of many years of daily highs.
+- **Money.** A mean monthly bill helps you budget, even though no single month matches it exactly.
+
+Whenever you see the word "average" in the news, it is almost always the mean.
+
+## Quick questions
+
+**Can the mean be negative?**
+
+Yes. If most of the values are negative, the sum is negative and so is the mean. For −8, −4 and −3: the sum is −15, and −15 ÷ 3 = −5.
+
+**What if the list has only one number?**
+
+The mean of a single value is that value. For the list [9]: the sum is 9, there is 1 value, and 9 ÷ 1 = 9.
+
+**My mean came out as a long decimal. Is that wrong?**
+
+Not necessarily. Means are often not whole numbers, like 3.5 books a month. Just do not round until the final step, and only round if the question asks for it.
+
 ## Try it yourself
 
 1. Find the mean of 12, 15, 9, 14 and 10.

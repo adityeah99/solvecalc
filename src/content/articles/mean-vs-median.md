@@ -97,6 +97,53 @@ There is a third average, the **mode**. It is the value that appears most often.
 - **Picking one of the two middle values.** For an even count, the median is the mean of the two middle values.
 - **Thinking one average is always better.** Each tells you something different. It depends on the data.
 
+## Example: house prices
+
+Five houses on one street sold for these prices: $180,000, $195,000, $210,000, $225,000 and $950,000. The last one is a mansion; the rest are ordinary family homes.
+
+**Mean:**
+
+1. Add: 180,000 + 195,000 + 210,000 + 225,000 + 950,000 = 1,760,000
+2. Divide by 5: 1,760,000 ÷ 5 = 352,000
+3. The mean price is $352,000.
+
+**Median:**
+
+1. They are already in order: 180,000, 195,000, 210,000, 225,000, 950,000
+2. The middle value is $210,000.
+
+The mean says $352,000, but four of the five houses sold for $225,000 or less. The mansion drags the mean up, while the median of $210,000 describes a typical house on the street. This is exactly why property websites and news reports almost always quote the **median** house price.
+
+## Where each average shows up in real life
+
+- **Median in the news.** "Median house price", "median pay", "median rent": journalists use the median because a few very rich earners or luxury homes would make the mean misleading.
+- **Mean in sports.** A cricketer's batting average or a basketball player's points per game is a mean. Fans want the total scoring power, outliers and all.
+- **Mode in shops.** A shoe shop orders more of the most popular size. That is the mode. The mean shoe size of its customers would be useless for stocking shelves.
+- **Mean in science.** An experiment repeated ten times reports the mean result, because averaging smooths out the small random errors in each try.
+
+## A tricky case: when nobody is average
+
+Six runners finished a fun run in these times in minutes: 30, 31, 29, 62, 60, 61. Three fast runners, three slow ones, nobody in the middle.
+
+- Mean: (30 + 31 + 29 + 62 + 60 + 61) ÷ 6 = 273 ÷ 6 = 45.5
+- Median: ordered, the two middle values are 31 and 60, so (31 + 60) ÷ 2 = 45.5
+
+Both give 45.5 minutes, yet nobody ran anything close to 45.5. When data splits into two clear groups, a single average of any kind can mislead. The honest summary here is "three runners around 30 minutes and three around 61", not one number.
+
+## Quick questions
+
+**Can the mean and median differ a lot even without one giant outlier?**
+
+Yes. Any lopsided spread does it. Incomes in a town might run $25k, $28k, $30k, $32k, $35k, $38k, $120k: no single crazy value, but the steady upward stretch still pulls the mean above the median.
+
+**Does the median have to be one of the values?**
+
+With an odd count, yes: it is the middle value itself. With an even count, it is halfway between the two middle values, which can land between them, like 10.5.
+
+**Which average should I report in a school project?**
+
+Report both when you can, and say why they differ. "The mean is 59.4 and the median is 25, because one value of 200 pulls the mean up" shows far more understanding than picking one number silently.
+
 ## Try it yourself
 
 1. Find the mean and median of 15, 3, 9, 21, 6, 12.

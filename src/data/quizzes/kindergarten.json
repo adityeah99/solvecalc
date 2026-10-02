@@ -1,0 +1,127 @@
+{
+  "title": "Kindergarten Math Quiz",
+  "description": "Ten gentle questions for kindergarteners: counting to 20, shapes, more and less, and adding small groups, with friendly explanations.",
+  "topic": "arithmetic",
+  "questions": [
+    {
+      "id": "kindergarten-01",
+      "question": "You count: 12, 13, 14. What number comes next?",
+      "options": [
+        "13",
+        "15",
+        "16",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Count one more after 14: 12, 13, 14, 15. The next number is 15."
+    },
+    {
+      "id": "kindergarten-02",
+      "question": "There are 3 red apples and 2 green apples. How many apples are there altogether?",
+      "options": [
+        "4",
+        "6",
+        "5",
+        "32"
+      ],
+      "answer": 2,
+      "explanation": "Add the two groups: 3 + 2 = 5. There are 5 apples altogether."
+    },
+    {
+      "id": "kindergarten-03",
+      "question": "Which number is bigger: 9 or 14?",
+      "options": [
+        "9",
+        "14",
+        "They are the same",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "14 comes after 9 when you count, so 14 is bigger."
+    },
+    {
+      "id": "kindergarten-04",
+      "question": "Which shape has 3 straight sides?",
+      "options": [
+        "Circle",
+        "Square",
+        "Triangle",
+        "Oval"
+      ],
+      "answer": 2,
+      "explanation": "A triangle has 3 straight sides and 3 corners. A circle has no straight sides at all."
+    },
+    {
+      "id": "kindergarten-05",
+      "question": "You have 8 crayons. You give 3 to a friend. How many crayons do you have now?",
+      "options": [
+        "11",
+        "5",
+        "6",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "Take away 3 from 8: 8 − 3 = 5. You have 5 crayons left."
+    },
+    {
+      "id": "kindergarten-06",
+      "question": "Which group has MORE: 6 cookies or 4 cookies?",
+      "options": [
+        "4 cookies",
+        "6 cookies",
+        "They are the same",
+        "Neither"
+      ],
+      "answer": 1,
+      "explanation": "6 is more than 4, so the group of 6 cookies has more."
+    },
+    {
+      "id": "kindergarten-07",
+      "question": "Count by tens: 10, 20, ___. What comes next?",
+      "options": [
+        "12",
+        "21",
+        "30",
+        "25"
+      ],
+      "answer": 2,
+      "explanation": "Counting by tens adds 10 each time: 10, 20, 30."
+    },
+    {
+      "id": "kindergarten-08",
+      "question": "Which number comes right AFTER 17?",
+      "options": [
+        "16",
+        "19",
+        "18",
+        "71"
+      ],
+      "answer": 2,
+      "explanation": "After 17 comes 18. Watch out for 71 — it looks like 17 backwards!"
+    },
+    {
+      "id": "kindergarten-09",
+      "question": "There are 5 ducks in the pond. 2 more ducks swim over. How many ducks are there now?",
+      "options": [
+        "3",
+        "6",
+        "7",
+        "52"
+      ],
+      "answer": 2,
+      "explanation": "Add the new ducks: 5 + 2 = 7 ducks in all."
+    },
+    {
+      "id": "kindergarten-10",
+      "question": "Which shape is round like a ball?",
+      "options": [
+        "Square",
+        "Circle",
+        "Triangle",
+        "Rectangle"
+      ],
+      "answer": 1,
+      "explanation": "A circle is perfectly round with no corners, just like a ball looks from the side."
+    }
+  ]
+}

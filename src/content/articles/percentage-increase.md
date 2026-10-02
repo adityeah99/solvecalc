@@ -86,6 +86,66 @@ It does not return to $100. The second 10% was taken from $110, which is a bigge
 - **Mixing up "percent" and "percentage points".** If a test pass rate goes from 40% to 50%, that is 10 percentage points, but it is a 25% increase, because 10 ÷ 40 = 0.25.
 - **Losing the sign.** A negative result means a decrease. Say "a 25% decrease" rather than "−25% increase".
 
+## Percentage points vs percent: the difference
+
+These two sound alike but mean different things, and mixing them up is one of the most common mistakes in news headlines.
+
+- A **percentage point** is a simple subtraction of two percentages.
+- A **percent change** compares the difference with the starting value.
+
+Say a test pass rate goes from 40% to 50%:
+
+- In percentage points: 50 − 40 = **10 percentage points**.
+- As a percent increase: 10 ÷ 40 = 0.25 = **25%**.
+
+So the pass rate rose by 10 percentage points, which is a 25% increase. Both are correct, but they answer different questions. Use percentage points when you want the plain gap, and percent when you want to show how big the gap is relative to the start.
+
+| Situation | Percentage points | Percent change |
+|---|---|---|
+| 40% → 50% | 10 | 25% increase |
+| 80% → 60% | 20 | 25% decrease |
+| 5% → 6% | 1 | 20% increase |
+
+Notice the last row. A rise of just 1 percentage point is a 20% increase, because 1 ÷ 5 = 0.2. Small percentage-point moves can be big percent moves when you start from a small number.
+
+## Worked example: a pay rise
+
+Maya earns $2,400 a month. She gets an 8% pay rise. What is her new salary?
+
+1. The new salary is the old 100% plus another 8%, so it is 108% of the original. That means multiply by 1.08.
+2. 2,400 × 1.08 = 2,592.
+3. Her new salary is $2,592 a month.
+
+The rise itself is 2,592 − 2,400 = $192. You can check: 192 ÷ 2,400 = 0.08, which is 8%. Correct.
+
+## Quick reference: one-step multipliers
+
+Instead of finding the percent and then adding or subtracting, use one multiplication:
+
+| What you want | Multiply by |
+|---|---|
+| Increase by 10% | 1.10 |
+| Increase by 25% | 1.25 |
+| Decrease by 10% | 0.90 |
+| Decrease by 40% | 0.60 |
+| Undo a 20% increase | ÷ 1.20 |
+
+The pattern: for an increase, add the percent to 1 (10% → 1.10). For a decrease, subtract it from 1 (10% → 0.90).
+
+## Quick questions
+
+**Can a percentage increase be more than 100%?**
+
+Yes. Going from 50 to 150 is a change of 100, and 100 ÷ 50 = 2, so it is a 200% increase. Anything more than doubling is over 100%.
+
+**What if the original value is 0?**
+
+Then there is no percentage change. The formula divides by the original value, and you cannot divide by zero. A club that goes from 0 members to 10 members just grew by 10 members.
+
+**Does a 50% decrease undo a 50% increase?**
+
+No. Take 200: up 50% gives 300, then down 50% of 300 gives 150. You end below where you started, because the decrease is taken from the bigger number.
+
 ## Try it yourself
 
 1. A plant was 50 cm tall. Now it is 65 cm. What is the percentage increase?

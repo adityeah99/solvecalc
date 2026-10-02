@@ -63,6 +63,61 @@ So the answer is **6 × 10⁷**, which is 60,000,000. Check: 2,000 × 30,000 = 6
 - **Miscounting the places.** Line up your original number and the new decimal position, and count each jump carefully.
 - **Adding exponents when you should not.** You only add exponents when multiplying. To multiply you add; to divide you subtract.
 
+## Scientific notation vs standard form: don't mix them up
+
+These two phrases sound alike but mean opposite things:
+
+- **Scientific notation** is the short form: 4.5 × 10³.
+- **Standard form** (in the UK; "standard notation" in the US) is the ordinary way: 4,500.
+
+So when a question says "write 4.5 × 10³ in standard form", it is asking you to expand it back out: **4,500**. Read the question twice — many students convert the wrong way.
+
+## Quick reference: powers of ten
+
+| Power | Value | Example |
+|-------|-------|---------|
+| 10³ | 1,000 | 4.5 × 10³ = 4,500 |
+| 10² | 100 | 7 × 10² = 700 |
+| 10¹ | 10 | 9.1 × 10¹ = 91 |
+| 10⁰ | 1 | anything × 10⁰ stays the same |
+| 10⁻¹ | 0.1 | 3 × 10⁻¹ = 0.3 |
+| 10⁻² | 0.01 | 3 × 10⁻² = 0.03 |
+| 10⁻³ | 0.001 | 3.2 × 10⁻³ = 0.0032 |
+
+## Worked example: going back the other way
+
+### Example: write 6.8 × 10⁴ as an ordinary number
+
+1. The exponent 4 is positive, so this is a big number: move the decimal point 4 places to the right.
+2. 6.8 → 68 → 680 → 6,800 → 68,000.
+
+So 6.8 × 10⁴ = **68,000**.
+
+### Example: write 7.1 × 10⁻⁴ as an ordinary number
+
+1. The exponent −4 is negative, so move the decimal point 4 places to the left.
+2. 7.1 → 0.71 → 0.071 → 0.0071 → 0.00071.
+
+So 7.1 × 10⁻⁴ = **0.00071**.
+
+## Where you'll use it
+
+- **Space.** The Sun is about 1.5 × 10⁸ km from Earth — far tidier than 150,000,000 km.
+- **Tiny things.** A water molecule is about 2.75 × 10⁻¹⁰ m across.
+- **Computers.** A terabyte is roughly 10¹² bytes.
+- **Your calculator.** When a calculator shows 6.8E4, it means 6.8 × 10⁴.
+
+## Two quick questions
+
+**Can the exponent be zero?**
+Yes. 10⁰ = 1, so 5.2 × 10⁰ is just 5.2. You will rarely see it, but it is valid.
+
+**Is 0.45 × 10³ scientific notation?**
+No — the coefficient 0.45 is less than 1. Fix it by moving the point: 0.45 × 10³ = 4.5 × 10². Whenever the coefficient is out of range, shift the point and adjust the exponent in the opposite direction.
+
+**Why not just write all the zeros?**
+You could, but long strings of zeros are where mistakes hide — it is easy to write one too many or too few. Scientific notation keeps the important digits (the coefficient) separate from the size (the power of ten), so each part can be checked on its own.
+
 ## Try it yourself
 
 1. Write 68,000 in scientific notation.

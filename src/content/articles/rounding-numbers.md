@@ -72,6 +72,54 @@ Sometimes rounding up changes more than one digit. Rounding 396 to the nearest t
 - **Dropping place-holder zeros.** 3,847 to the nearest hundred is 3,800, not 38. The zeros keep the value correct.
 - **Forgetting the carry.** When a 9 rounds up, it becomes 10, which pushes into the next place.
 
+## Rounding vs estimating: what's the difference?
+
+Rounding is the tool; estimating is the job. When you estimate the total of a shopping bill, you **round** each price (to the nearest dollar, say) and then **add** the rounded numbers. Estimating is the whole plan, rounding is one step inside it.
+
+So when a question says "estimate 4.9 × 5.1", it really means "round both numbers first, then multiply": 5 × 5 = 25.
+
+## Quick reference: place values at a glance
+
+| Rounding to... | Look at the... | Example |
+|----------------|----------------|---------|
+| Nearest ten | Ones digit | 47 → 50 |
+| Nearest hundred | Tens digit | 3,847 → 3,800 |
+| Nearest thousand | Hundreds digit | 8,631 → 9,000 |
+| One decimal place | Second decimal digit | 5.462 → 5.5 |
+| Two decimal places | Third decimal digit | 2.678 → 2.68 |
+
+## Worked example: rounding money
+
+Shops round prices in your head the same way. A $4.97 sandwich:
+
+1. You are rounding to the nearest dollar, so look at the first decimal digit: 9.
+2. 9 is 5 or more, so round up: $4.97 → **$5**.
+
+And an estimate: three items at $4.97, $2.49 and $7.95.
+
+1. Round each: $5, $2.50, $8.
+2. Add: 5 + 2.50 + 8 = $15.50.
+
+The real total is $15.41, so the estimate is only 9 cents off.
+
+## Where you'll use rounding
+
+- **Money.** Prices, bills and tips are almost always estimated with rounded numbers.
+- **Measurements.** "About 2.5 metres" is more honest than claiming millimetre precision you did not measure.
+- **Big numbers in the news.** "3.8 million people" is easier to picture than 3,847,211.
+- **Checking your work.** After a long calculation, a quick rounded estimate tells you whether your exact answer is sensible.
+
+## Two quick questions
+
+**Do you round 2.5 up or down?**
+Up, to 3. The rule says 5 or more rounds up. (Some computer systems use "banker's rounding" and go to the even number, but in school maths 2.5 always rounds up.)
+
+**Can rounding change the first digit?**
+Yes. Rounding 96 to the nearest ten gives 100 — the answer has an extra digit. That is correct: 96 is closer to 100 than to 90.
+
+**Why do we round to "nice" numbers like 10 and 100?**
+Because our number system is built on tens. Rounding to a ten, hundred or thousand lines the number up with the place values, which is exactly what makes the rounded version easy to say and easy to use in mental maths.
+
 ## Try it yourself
 
 1. Round 8,631 to the nearest thousand.

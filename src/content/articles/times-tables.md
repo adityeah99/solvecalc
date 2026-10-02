@@ -57,6 +57,40 @@ To multiply by 4, double the number twice. For 4 × 6: double 6 to get 12, then 
 - **Forgetting multiplication is commutative.** 3 × 8 and 8 × 3 both equal 24, so you only really learn each fact once.
 - **Guessing the 12s.** Build them from the 10s: 12 × 7 is 10 × 7 plus 2 × 7, which is 70 + 14 = 84.
 
+## Taming the hard ones: 6s, 7s and 8s
+
+Most people find the facts from 6 × 6 to 9 × 9 the trickiest. Two ideas help.
+
+**Build from what you know.** 7 × 8 is just 7 × 7 plus one more 7: 49 + 7 = 56. And 8 × 6 is 8 × 5 plus 8: 40 + 8 = 48. Adding one row is always allowed.
+
+**The "hands" trick for 6s to 10s.** Hold up both hands, with the fingers on each hand numbered 6 (pinky) to 10 (thumb). To multiply 7 × 8: touch the 7-finger of one hand to the 8-finger of the other. The fingers at and below the join (2 + 3 = 5) count as tens: 50. The fingers above the join (3 on one hand, 2 on the other) multiply: 3 × 2 = 6. Total: **56**.
+
+## Square numbers worth memorizing
+
+Facts like 7 × 7 are called **square numbers**, and they anchor the whole table. Learn these nine and nearby facts get easier:
+
+| 1² | 2² | 3² | 4² | 5² | 6² | 7² | 8² | 9² |
+|----|----|----|----|----|----|----|----|----|
+| 1 | 4 | 9 | 16 | 25 | 36 | 49 | 64 | 81 |
+
+Spot the pattern: the gaps between them grow by 2 each time (3, 5, 7, 9, 11, 13, 15, 17). Knowing 8² = 64 tells you 8 × 9 is just 64 + 8 = 72.
+
+## Where you'll use times tables
+
+- **Division.** 56 ÷ 7 is easy only if you know 7 × 8 = 56.
+- **Fractions.** Simplifying 12/18 needs the 6-times table, because both numbers divide by 6.
+- **Money.** 6 packs at $4 each is 6 × 4 = $24, no calculator needed.
+- **Time.** 7 weeks is 7 × 7 = 49 days. 9 hours is 9 × 60 = 540 minutes.
+- **Area.** A 9 m by 7 m room is 9 × 7 = 63 m².
+
+## Two quick questions
+
+**Do I really need the 12s?**
+The 12s matter less than they used to, but they still pop up with dozens, feet and inches. If the 12s feel heavy, learn up to 10 × 10 first and build 11s and 12s from the 10s, as shown in the mistakes section above.
+
+**How long does it take to learn them all?**
+Most students get there in a few weeks of short daily practice — ten minutes a day beats one long weekend. Quiz yourself out of order, not just 1-to-12 in a row, so you learn the facts and not the chant.
+
 ## Try it yourself
 
 1. What is 7 × 6?

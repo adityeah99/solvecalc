@@ -92,6 +92,43 @@ A rectangular garden is 3 meters longer than it is wide, and its area is 40 m².
 - **Not setting the equation to 0 first.** w² + 3w = 40 must become w² + 3w − 40 = 0 before you factor or use the formula.
 - **Losing a minus sign.** If b = −5, then −b = 5, and b² = 25, not −25.
 
+## Factoring or the formula: which should you use?
+
+Both methods give the same answers, so pick based on the numbers:
+
+- **Use factoring** when the numbers are small and friendly. If a = 1 and c has few factors (like 6, 10 or 12), factoring is usually the fastest route.
+- **Use the quadratic formula** when factoring looks messy — big numbers, fractions, or when you try the factor pairs and none work. The formula never fails.
+- **Use square roots** when there is no x term at all (x² = 49 style). It is the shortest path.
+
+A good habit: glance at the equation for five seconds. If a factor pair jumps out at you, factor. If not, go straight to the formula instead of burning time hunting.
+
+| Situation | Best method |
+|---|---|
+| x² = 81 (no x term) | Square roots |
+| x² − 5x + 6 = 0 (small friendly numbers) | Factoring |
+| 3x² + 7x − 11 = 0 (messy numbers) | Quadratic formula |
+| Any quadratic at all | Quadratic formula (always works) |
+
+## Worked example: x² + 5x + 6 = 0
+
+1. Find two numbers that multiply to 6 and add to 5. Positive 2 and 3 work: 2 × 3 = 6 and 2 + 3 = 5.
+2. Write the brackets: (x + 2)(x + 3) = 0.
+3. Set each bracket to zero: x + 2 = 0 or x + 3 = 0.
+4. The solutions are x = −2 and x = −3.
+
+**Check x = −3:** (−3)² + 5 × (−3) + 6 = 9 − 15 + 6 = 0. Correct.
+
+## Two quick questions
+
+**Can a quadratic have no solution at all?**
+Yes, over ordinary numbers. x² + 1 = 0 would need a number whose square is −1, and no real number does that. The discriminant (b² − 4ac) is negative in this case, which is the warning sign.
+
+**Why does the formula have a ± in it?**
+Because the square root step produces two answers. When you solve x² = 49 you get +7 and −7, and the ± is just shorthand for doing the final division twice — once adding the root, once subtracting it.
+
+**Do I have to simplify the root in the formula?**
+Yes, if you can. If b² − 4ac = 50, write it as √(25 × 2) = 5√2 before dividing by 2a. A simplified root gives a tidier exact answer, and it is often what the marks are for.
+
 ## Try it yourself
 
 1. Solve x² − 7x + 10 = 0.

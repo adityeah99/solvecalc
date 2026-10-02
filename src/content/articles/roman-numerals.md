@@ -79,6 +79,62 @@ Work from the largest place value down. For 2,023:
 - **Reading right to left.** Always read from the left and handle each chunk in order.
 - **Forgetting there is no zero.** Roman numerals have no symbol for zero, so numbers are built entirely from the seven letters.
 
+## Quick reference: key values at a glance
+
+Most numerals are built from these chunks. Learn them and you can assemble almost anything:
+
+| Value | Numeral | Value | Numeral |
+|-------|---------|-------|---------|
+| 1 | I | 40 | XL |
+| 2 | II | 50 | L |
+| 3 | III | 90 | XC |
+| 4 | IV | 100 | C |
+| 5 | V | 400 | CD |
+| 6 | VI | 500 | D |
+| 7 | VII | 900 | CM |
+| 8 | VIII | 1,000 | M |
+| 9 | IX | 2,000 | MM |
+| 10 | X | 3,000 | MMM |
+| 20 | XX | | |
+| 30 | XXX | | |
+
+## Worked example: write 944
+
+Work from the largest chunks down, using the reference table:
+
+1. Hundreds: 900 = CM. Remaining: 44.
+2. Tens: 40 = XL. Remaining: 4.
+3. Ones: 4 = IV.
+4. Put them together: **CMXLIV**.
+
+Check by reading it back: CM = 900, XL = 40, IV = 4. Total 944.
+
+## Roman numerals vs the numbers you use every day
+
+Our normal digits (0–9) are called Arabic numerals. They beat Roman numerals in three ways:
+
+- **Place value.** In 2026, the 2 means 2,000 because of where it sits. Roman numerals have no places — every letter always means the same.
+- **Zero.** Arabic numerals have 0, which makes arithmetic possible. The Romans had no zero.
+- **Big numbers.** Writing 1,000,000 in Roman numerals is painful; in Arabic numerals it is seven characters.
+
+That is why nobody does sums in Roman numerals. But they survive as decoration, tradition and numbering.
+
+## Where you'll still meet Roman numerals
+
+- **Clock faces.** Many clocks write 4 as IIII (a traditional exception) and 12 as XII.
+- **Book chapters and film sequels.** "Chapter VII", "Rocky II".
+- **Years.** Copyright dates in film credits and building cornerstones, like MCMXCIV for 1994.
+- **The Super Bowl.** Numbered with Roman numerals every year, for example Super Bowl LVIII.
+- **Monarchs and popes.** Queen Elizabeth II, Pope John Paul II.
+
+## Two quick questions
+
+**Why is there no zero?**
+The Romans had no need for a zero symbol — their system was built for counting and recording, not for place-value arithmetic. Zero as a number came to Europe much later with Arabic numerals.
+
+**What is the biggest number you can write?**
+With the seven letters, 3,999 is MMMCMXCIX. Bigger numbers were rare in Roman life, so the system simply stops being practical past that point.
+
 ## Try it yourself
 
 1. What number is LXVII?

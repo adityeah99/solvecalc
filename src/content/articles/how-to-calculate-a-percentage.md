@@ -94,6 +94,53 @@ Want a 15% tip on a $40 meal? 10% is $4 and 5% is $2, so 15% is $6.
 - **Using the wrong whole.** If a question says "30% of the class", the class is the whole, not the group you already counted.
 - **Stopping at the discount.** If a question asks what you pay, subtract the discount from the original price.
 
+## Extra worked example: finding the original price
+
+A jacket costs $45 in a sale, after 25% off. What was the original price? This is Type 3 in disguise.
+
+1. If 25% is off, you are paying the other 75%: 100 − 25 = 75.
+2. Change 75% to a decimal: 0.75.
+3. Divide the part by the decimal: 45 ÷ 0.75 = 60.
+4. The original price was $60.
+
+Check: 25% of 60 is 15, and 60 − 15 = 45. It matches.
+
+## Percent vs percentage points
+
+This one confuses even adults, so it is worth learning properly.
+
+- **Percentage points** are the simple difference between two percentages.
+- **Percent change** is that difference as a share of the starting value.
+
+Say a tax rate goes from 20% to 25%:
+
+1. The rise in percentage points: 25 − 20 = 5 percentage points.
+2. The percent change: 5 ÷ 20 × 100 = 25%.
+
+So the tax went up by 5 percentage points, which is a 25% increase. Both statements are true — they just measure different things. News headlines sometimes mix them up, so watch for it.
+
+## Where you'll use this
+
+- **Tips.** A $46 meal with a 20% tip: 10% is $4.60, double it to get $9.20. Round to $9 or $10 — nobody minds.
+- **Discounts.** A $120 jacket at 30% off: 0.30 × 120 = $36 off, so you pay $84. Or pay 70% directly: 0.70 × 120 = $84.
+- **Grades.** A score of 42 out of 50 is 42 ÷ 50 × 100 = 84%.
+- **Battery and storage.** "23% battery left" means 23 out of every 100 units of charge. If your phone lasted 8 hours on a full charge, 25% left is roughly 2 more hours.
+
+## Mini FAQs
+
+**Can a percentage be more than 100%?**
+Yes. Percentages over 100% just mean "more than the whole". 150% of 40 is 1.5 × 40 = 60. A plant that grows from 20 cm to 50 cm has grown by 150%: (50 − 20) ÷ 20 × 100 = 150.
+
+**What is the difference between 0.5 and 0.5%?**
+A lot! 0.5 is the same as 50%, while 0.5% is the same as 0.005. The percent sign means "divide by 100", so never drop it.
+
+**How do I find 1% of something quickly?**
+Divide by 100 — just move the decimal point two places left. 1% of 250 is 2.5. This is handy because once you know 1%, you can build any percentage: 7% of 250 is 7 × 2.5 = 17.5.
+
+## Keep practicing
+
+Percentages get easy with repetition. Check your answers with the [percentage calculator](/calculators/percentage). When you feel ready, test yourself with the [arithmetic quiz](/quizzes/arithmetic), or read on about [percentage increase and decrease](/articles/percentage-increase).
+
 ## Try it yourself
 
 1. What is 35% of 60?

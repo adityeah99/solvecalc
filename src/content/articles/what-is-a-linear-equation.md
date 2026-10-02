@@ -98,6 +98,47 @@ A linear equation with one variable usually has exactly one solution. But there 
 - **Forgetting that 3x means 3 × x.** When x = 4, 3x is 12, not 34.
 - **Doing the order wrong.** In 2 × 5 + 3, multiply before you add. The answer is 13, not 16.
 
+## Linear vs quadratic: spot the difference
+
+These two get mixed up constantly. Here is how to tell them apart at a glance:
+
+| | Linear | Quadratic |
+|---|---|---|
+| Highest power of x | 1 | 2 |
+| Example | 2x + 3 = 11 | x² − 5x + 6 = 0 |
+| Graph shape | Straight line | U-shaped curve (parabola) |
+| Number of solutions | Usually one | Up to two |
+
+The test takes two seconds: look for x². If you see a squared variable, it is quadratic, no matter how simple the rest looks. x² = 16 looks easy, but it has two answers (4 and −4), which is the giveaway.
+
+Also worth knowing: every quadratic was once "almost linear". If you cover up the x² term in x² + 2x = 8, what is left (2x = 8) is linear. The squared term is the whole story — it bends the straight line into a curve and doubles the number of answers.
+
+## The three forms of a linear equation
+
+You will meet the same line written three ways. They are all linear:
+
+| Form | Looks like | Best for |
+|---|---|---|
+| Slope-intercept | y = mx + b | Reading the slope and y-intercept straight off |
+| Standard | ax + by = c | Tidying up and solving systems of equations |
+| Point-slope | y − y₁ = m(x − x₁) | Writing the equation when you know a point and the slope |
+
+Example: y = 2x + 1 is slope-intercept form (m = 2, b = 1). The same line in standard form is 2x − y = −1. Different clothes, same line.
+
+## Worked example: is y = x² + 2x + 1 linear?
+
+1. Scan the powers: the highest power of x is 2 (in x²).
+2. Linear equations allow only power 1.
+3. So no — this is **quadratic**. Its graph is a parabola, not a line.
+
+## Two quick questions
+
+**Is x = 5 a linear equation?**
+Yes. It has no visible x², and its graph is a vertical straight line through x = 5. A "boring" equation can still be linear — simplicity does not disqualify it.
+
+**Can a linear equation multiply two variables, like xy = 4?**
+No. The moment two variables multiply each other, the equation is no longer linear — its graph becomes a curve.
+
 ## Try it yourself
 
 1. Is 5x − 7 = 3 linear? If so, solve it.

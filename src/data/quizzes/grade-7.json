@@ -1,0 +1,127 @@
+{
+  "title": "7th Grade Math Quiz",
+  "description": "Ten questions for 7th graders: integer operations, one-step equations and proportional relationships, with explanations.",
+  "topic": "algebra",
+  "questions": [
+    {
+      "id": "grade-7-01",
+      "question": "Solve for x: x + 9 = 21.",
+      "options": [
+        "12",
+        "30",
+        "11",
+        "2.3"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 9 from both sides: x = 21 − 9 = 12."
+    },
+    {
+      "id": "grade-7-02",
+      "question": "What is −8 − (−3)?",
+      "options": [
+        "−11",
+        "−5",
+        "5",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Subtracting a negative is the same as adding: −8 + 3 = −5."
+    },
+    {
+      "id": "grade-7-03",
+      "question": "Solve for x: 4x = 36.",
+      "options": [
+        "9",
+        "8",
+        "32",
+        "144"
+      ],
+      "answer": 0,
+      "explanation": "Divide both sides by 4: x = 36 ÷ 4 = 9."
+    },
+    {
+      "id": "grade-7-04",
+      "question": "y is proportional to x. When x = 3, y = 12. What is y when x = 5?",
+      "options": [
+        "15",
+        "17",
+        "20",
+        "60"
+      ],
+      "answer": 2,
+      "explanation": "The constant is 12 ÷ 3 = 4, so y = 4x. When x = 5, y = 4 × 5 = 20."
+    },
+    {
+      "id": "grade-7-05",
+      "question": "Solve for x: x/5 = 7.",
+      "options": [
+        "12",
+        "2",
+        "35",
+        "1.4"
+      ],
+      "answer": 2,
+      "explanation": "Multiply both sides by 5: x = 7 × 5 = 35."
+    },
+    {
+      "id": "grade-7-06",
+      "question": "What is (−2)³?",
+      "options": [
+        "−6",
+        "6",
+        "−8",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "(−2)³ = (−2) × (−2) × (−2) = −8. An odd number of negative factors gives a negative product."
+    },
+    {
+      "id": "grade-7-07",
+      "question": "Solve for x: x − 14 = 6.",
+      "options": [
+        "−8",
+        "8",
+        "20",
+        "84"
+      ],
+      "answer": 2,
+      "explanation": "Add 14 to both sides: x = 6 + 14 = 20."
+    },
+    {
+      "id": "grade-7-08",
+      "question": "A car travels 180 miles in 3 hours at a steady speed. How far will it travel in 5 hours?",
+      "options": [
+        "300 miles",
+        "240 miles",
+        "360 miles",
+        "900 miles"
+      ],
+      "answer": 0,
+      "explanation": "Speed is 180 ÷ 3 = 60 mph. In 5 hours: 5 × 60 = 300 miles."
+    },
+    {
+      "id": "grade-7-09",
+      "question": "What is the value of 2x + 5 when x = −3?",
+      "options": [
+        "11",
+        "−1",
+        "−11",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "2 × (−3) + 5 = −6 + 5 = −1."
+    },
+    {
+      "id": "grade-7-10",
+      "question": "Solve for x: −x = 11.",
+      "options": [
+        "11",
+        "−11",
+        "−1",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Multiply both sides by −1: x = −11."
+    }
+  ]
+}

@@ -57,6 +57,50 @@ You need **6 cups of flour**. Check: 6:9 simplifies to 2:3, the original ratio.
 - **Cross-multiplying the wrong pairs.** Multiply each numerator by the opposite denominator, not a top by its own bottom.
 - **Forgetting the units.** If the ratio compares cups to cups, your answer is in cups too.
 
+## Ratio vs fraction: what's the difference?
+
+A ratio and a fraction look alike, but they answer different questions.
+
+A fraction like 2/3 tells you about **one part out of a whole**. If 2 out of 3 slices of a pizza are eaten, the fraction eaten is 2/3.
+
+A ratio like 2:3 compares **one amount against another amount**, side by side. It does not have to add up to a whole.
+
+The link between them: if the ratio 2:3 compares parts of one whole, the total is 2 + 3 = 5 parts, so the first part is 2/5 of the whole. A class with a boys-to-girls ratio of 2:3 has 2/5 boys and 3/5 girls.
+
+A quick memory aid: a fraction is "part of a whole", a ratio is "part compared to part".
+
+## Unit rates: the "best buy" trick
+
+A **unit rate** is a ratio scaled down to "per one". You use it every time you compare prices.
+
+### Worked example: which bag of rice is cheaper?
+
+- A 2 kg bag costs $5.
+- A 5 kg bag costs $11.
+
+1. Find the price per kilogram for the small bag: $5 ÷ 2 = $2.50 per kg.
+2. Find the price per kilogram for the big bag: $11 ÷ 5 = $2.20 per kg.
+3. Compare: $2.20 is less than $2.50.
+
+The big bag is the better buy, even though it costs more in total. This is the same cross-multiplication idea wearing a shopping disguise.
+
+## Where you'll use ratios
+
+- **Cooking:** scaling a recipe for 4 people up to 10 people is a proportion problem.
+- **Maps:** a scale of 1:50,000 means 1 cm on the map is 50,000 cm (500 m) in real life.
+- **Money:** currency exchange rates are ratios — 1 USD to 0.92 EUR, for example.
+- **Medicine:** a dose of 5 mg per 1 kg of body weight is a ratio that must be scaled exactly.
+
+One line to remember it all: a ratio compares two things, a proportion says two ratios are equal.
+
+## Two quick questions
+
+**Can a ratio use more than two numbers?**
+Yes. A paint mix of 1:2:3 means 1 part red, 2 parts blue and 3 parts white. The total is 6 parts, so red is 1/6 of the mix.
+
+**Do ratios keep their units?**
+Sometimes. A ratio of 2 cups to 3 cups is plain — the units cancel. But 60 miles to 1 hour (60 mph) keeps its units, because it is a rate.
+
 ## Try it yourself
 
 1. Simplify the ratio 20:35.
