@@ -1,0 +1,29 @@
+---
+// Auto table of contents for long articles / blog posts.
+// Rendered only when there are enough sections to make it useful.
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+  /** Minimum number of h2 sections before the box appears. */
+  min?: number;
+}
+
+const { headings, min = 3 } = Astro.props;
+const items = headings.filter((h) => h.depth === 2);
+---
+
+{
+  items.length >= min && (
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ol>
+        {items.map((h) => (
+          <li>
+            <a href={`#${h.slug}`}>{h.text}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}

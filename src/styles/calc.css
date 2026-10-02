@@ -418,3 +418,24 @@
   display: block;
   border-radius: 0.5rem;
 }
+
+/* Table of contents box for long articles. */
+.toc {
+  border: 1px solid var(--line, #e2e8f0);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.75rem;
+  background: var(--sheet, #f8fafc);
+}
+.toc-title {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+.toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}

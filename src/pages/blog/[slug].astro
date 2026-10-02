@@ -5,6 +5,7 @@ import RelatedTools from '../../components/RelatedTools.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import PostCard from '../../components/PostCard.astro';
 import BlogArt from '../../components/BlogArt.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
 import '../../styles/blog.css';
 import '../../styles/calc.css';
 import { SITE } from '../../config/site.ts';
@@ -19,7 +20,7 @@ interface Props {
   entry: CollectionEntry<'blog'>;
 }
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { Content, headings } = await render(entry);
 const cat = blogCategory(entry.data.category);
 const words = (entry.body ?? '').split(/\s+/).filter(Boolean).length;
 const minutes = Math.max(1, Math.round(words / 200));
@@ -67,6 +68,7 @@ const jsonLd = [
         </p>
       </header>
       <div class="prose">
+        <TableOfContents headings={headings} />
         <Content />
       </div>
     </article>
