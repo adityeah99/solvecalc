@@ -1,0 +1,46 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="compound-interest">
+  <CalculatorShell id="ci-form">
+    <InputField
+      name="principal"
+      label="Starting amount"
+      placeholder="10000"
+      hint="The amount you invest or deposit first"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual interest rate (%)"
+      placeholder="5"
+      hint="As a percent, e.g. 5 for 5%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Years"
+      placeholder="10"
+      hint="How long the money stays invested"
+      inputmode="decimal"
+    />
+    <Segmented
+      name="freq"
+      legend="Compounded how often?"
+      options={[
+        { value: '1', label: 'Yearly' },
+        { value: '4', label: 'Quarterly' },
+        { value: '12', label: 'Monthly' },
+        { value: '365', label: 'Daily' },
+      ]}
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/compound-interest.ts';
+</script>

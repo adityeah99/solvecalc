@@ -1,0 +1,29 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="roman-numerals">
+  <CalculatorShell id="roman-numerals-form">
+    <Segmented
+      name="mode"
+      legend="Which direction?"
+      options={[
+        { value: 'to-roman', label: 'Number → Roman' },
+        { value: 'from-roman', label: 'Roman → Number' },
+      ]}
+    />
+    <div class="field-row" data-when="mode:to-roman">
+      <InputField name="n" label="Number (1–3999)" placeholder="2026" inputmode="numeric" hint="Whole numbers only" />
+    </div>
+    <div class="field-row" data-when="mode:from-roman">
+      <InputField name="roman" label="Roman numeral" placeholder="MMXXVI" inputmode="text" hint="Letters I, V, X, L, C, D and M" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/roman-numerals.ts';
+</script>

@@ -1,0 +1,61 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="trigonometry">
+  <CalculatorShell id="trig-form">
+    <Segmented
+      name="mode"
+      legend="What do you know about the right triangle?"
+      options={[
+        { value: 'sides', label: 'An angle + one side' },
+        { value: 'angle', label: 'Two sides → find the angle' },
+      ]}
+    />
+    <div class="field-row" data-when="mode:sides">
+      <InputField
+        name="angle"
+        label="Angle (degrees)"
+        placeholder="30"
+        hint="An acute angle, between 0 and 90"
+      />
+      <InputField name="side" label="Known side length" placeholder="10" />
+    </div>
+    <div data-when="mode:sides">
+      <Segmented
+        name="known"
+        legend="Which side do you know?"
+        options={[
+          { value: 'opposite', label: 'Opposite' },
+          { value: 'adjacent', label: 'Adjacent' },
+          { value: 'hypotenuse', label: 'Hypotenuse' },
+        ]}
+      />
+    </div>
+    <div class="field-row" data-when="mode:angle">
+      <InputField name="x" label="First side" placeholder="3" />
+      <InputField name="y" label="Second side" placeholder="4" />
+    </div>
+    <div data-when="mode:angle">
+      <Segmented
+        name="pair"
+        legend="Which two sides?"
+        options={[
+          { value: 'oa', label: 'Opposite & adjacent' },
+          { value: 'oh', label: 'Opposite & hypotenuse' },
+          { value: 'ah', label: 'Adjacent & hypotenuse' },
+        ]}
+      />
+    </div>
+    <p class="hint muted" data-when="mode:angle">
+      Type the sides in the order named above — for example, the opposite side first, then the adjacent side.
+    </p>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/trigonometry.ts';
+</script>

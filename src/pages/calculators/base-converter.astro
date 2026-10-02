@@ -1,0 +1,19 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="base-converter">
+  <CalculatorShell id="base-converter-form">
+    <div class="field-row">
+      <InputField name="number" label="Number" placeholder="1A3" inputmode="text" hint="Digits must be valid in the from-base" />
+      <InputField name="fromBase" label="From base" placeholder="16" inputmode="numeric" hint="2 to 36" />
+      <InputField name="toBase" label="To base" placeholder="10" inputmode="numeric" hint="2 to 36" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/base-converter.ts';
+</script>

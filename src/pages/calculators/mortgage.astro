@@ -1,0 +1,35 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="mortgage">
+  <CalculatorShell id="mortgage-form">
+    <InputField
+      name="loan"
+      label="Loan amount"
+      placeholder="300000"
+      hint="The principal you borrow, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="annualRate"
+      label="Annual interest rate (%)"
+      placeholder="6.5"
+      hint="As a percent, e.g. 6.5 for 6.5%"
+      inputmode="decimal"
+    />
+    <InputField
+      name="years"
+      label="Loan term (years)"
+      placeholder="30"
+      hint="Common terms are 15 or 30 years"
+      inputmode="numeric"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/mortgage.ts';
+</script>

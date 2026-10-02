@@ -1,0 +1,28 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="logarithm">
+  <CalculatorShell id="logarithm-form">
+    <Segmented
+      name="mode"
+      legend="Which logarithm?"
+      options={[
+        { value: 'log10', label: 'log₁₀ (common)' },
+        { value: 'ln', label: 'ln (natural)' },
+        { value: 'logbase', label: 'log with any base' },
+      ]}
+    />
+    <div class="field-row">
+      <InputField name="x" label="Number (x)" placeholder="100" hint="Must be greater than 0" />
+      <InputField name="base" label="Base (b)" placeholder="2" hint="Greater than 0, and not 1" when="mode:logbase" />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/logarithm.ts';
+</script>

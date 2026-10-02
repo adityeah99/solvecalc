@@ -1,0 +1,23 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="gpa-calculator">
+  <CalculatorShell id="gpa-form">
+    <InputField
+      name="courses"
+      label="Your courses"
+      placeholder={"A 3\nB+ 4\nA- 3"}
+      hint="One course per line: letter grade, then credit hours, e.g. A 3. Standard 4.0 scale (A=4, B=3, C=2, D=1, F=0; plus and minus count)."
+      inputmode="text"
+      multiline={true}
+      rows={6}
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/gpa-calculator.ts';
+</script>

@@ -1,0 +1,49 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+import Segmented from '../../components/calc/Segmented.astro';
+---
+
+<CalculatorLayout slug="triangle-solver">
+  <CalculatorShell id="triangle-form">
+    <Segmented
+      name="mode"
+      legend="What do you know about the triangle?"
+      options={[
+        { value: 'sss', label: 'Three sides (SSS)' },
+        { value: 'sas', label: 'Two sides + angle (SAS)' },
+        { value: 'asa', label: 'Two angles + side (ASA)' },
+      ]}
+    />
+    <div class="field-row" data-when="mode:sss">
+      <InputField name="a" label="Side a" placeholder="3" />
+      <InputField name="b" label="Side b" placeholder="4" />
+      <InputField name="c" label="Side c" placeholder="5" />
+    </div>
+    <div class="field-row" data-when="mode:sas">
+      <InputField name="sa" label="Side a" placeholder="5" />
+      <InputField name="sb" label="Side b" placeholder="7" />
+      <InputField
+        name="angC"
+        label="Angle C (degrees)"
+        placeholder="60"
+        hint="The angle between sides a and b"
+      />
+    </div>
+    <div class="field-row" data-when="mode:asa">
+      <InputField name="angA" label="Angle A (degrees)" placeholder="50" />
+      <InputField name="angB" label="Angle B (degrees)" placeholder="60" />
+      <InputField
+        name="sc"
+        label="Side c"
+        placeholder="8"
+        hint="The side between angles A and B"
+      />
+    </div>
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/triangle-solver.ts';
+</script>

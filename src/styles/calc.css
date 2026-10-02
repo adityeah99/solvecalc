@@ -406,3 +406,15 @@
 .article-row .muted {
   font-size: 0.95rem;
 }
+
+/* Graphing calculator canvas: keep it inside the panel on small screens. */
+.graph-wrap {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+.graph-wrap canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}

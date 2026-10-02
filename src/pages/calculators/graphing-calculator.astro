@@ -1,0 +1,29 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="graphing-calculator">
+  <CalculatorShell id="graph-form">
+    <InputField
+      name="fn"
+      label="Function of x"
+      placeholder="x^2 - 3"
+      value="x^2 - 3"
+      inputmode="text"
+      hint="Use x, +, -, *, /, ^, and sin cos tan sqrt abs ln log pi e"
+    />
+    <div class="field-row">
+      <InputField name="xmin" label="x min" placeholder="-10" value="-10" />
+      <InputField name="xmax" label="x max" placeholder="10" value="10" />
+    </div>
+  </CalculatorShell>
+  <div class="graph-wrap">
+    <canvas id="graph-canvas" width="640" height="400"></canvas>
+  </div>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/graphing-calculator.ts';
+</script>

@@ -1,0 +1,37 @@
+---
+import CalculatorLayout from '../../layouts/CalculatorLayout.astro';
+import CalculatorShell from '../../components/calc/CalculatorShell.astro';
+import InputField from '../../components/calc/InputField.astro';
+---
+
+<CalculatorLayout slug="tip-calculator">
+  <CalculatorShell id="tip-form">
+    <InputField
+      name="bill"
+      label="Bill amount"
+      placeholder="48.50"
+      hint="The total before the tip, in your currency"
+      inputmode="decimal"
+    />
+    <InputField
+      name="tipPercent"
+      label="Tip percent"
+      placeholder="15"
+      hint="Without the % sign"
+      inputmode="decimal"
+      value="15"
+    />
+    <InputField
+      name="split"
+      label="Split between"
+      placeholder="1"
+      hint="Number of people sharing the bill (1 if you are paying alone)"
+      inputmode="numeric"
+      value="1"
+    />
+  </CalculatorShell>
+</CalculatorLayout>
+
+<script>
+  import '../../scripts/calculators/tip-calculator.ts';
+</script>
