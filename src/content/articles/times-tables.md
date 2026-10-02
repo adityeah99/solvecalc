@@ -8,13 +8,13 @@ quiz: arithmetic
 related: [factors-and-multiples, order-of-operations]
 ---
 
-Times tables are the multiplication facts from 1 × 1 up to 12 × 12. Knowing them by heart makes almost every other maths topic quicker, from division to fractions to algebra.
+Here's the truth about times tables: you don't have to memorize 144 separate facts. Not even close. Patterns and a few tricks do most of the work for you.
 
-You do not have to learn all 144 facts one at a time. Patterns and a few tricks cut the work down a lot.
+Knowing them by heart makes everything faster. Division, fractions, algebra. It's the single highest-leverage thing you can learn in early maths, and my students who nail it always pull ahead.
 
 ## The times tables chart
 
-Read a fact by picking a row and a column. The number where they meet is the answer. For example, row 7 and column 8 give 56.
+Read a fact by picking a row and a column. Where they meet is your answer. Row 7, column 8: 56. Keep this chart open while you practice and you'll start seeing the patterns yourself.
 
 | ×  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10  | 11  | 12  |
 |----|----|----|----|----|----|----|----|----|----|-----|-----|-----|
@@ -35,61 +35,63 @@ Read a fact by picking a row and a column. The number where they meet is the ans
 
 ### The 9s finger trick
 
-Hold up all ten fingers. To find 9 × 4, fold down your 4th finger from the left. You now have 3 fingers before the gap and 6 after it, which reads as 36. Try 9 × 7: fold the 7th finger, and you see 6 and 3, giving 63.
+Hold up all ten fingers. For 9 × 4, fold down your 4th finger from the left. You see 3 fingers before the gap and 6 after. That reads as 36. Try 9 × 7: fold the 7th finger, and you see 6 and 3, giving 63. I demo this in class every year and it never fails to get a reaction.
 
 ### The 11s pattern
 
-For 11 times a single digit, just write that digit twice. 11 × 3 = 33 and 11 × 8 = 88. This works up to 11 × 9 = 99.
+For 11 times a single digit, just write the digit twice. 11 × 3 = 33. 11 × 8 = 88. Works all the way up to 11 × 9 = 99. Free marks.
 
 ### Doubling for the 4s and 8s
 
-To multiply by 4, double the number twice. For 4 × 6: double 6 to get 12, then double 12 to get 24. To multiply by 8, double three times: 8 × 6 is 6 → 12 → 24 → 48.
+To multiply by 4, double twice. 4 × 6: double 6 to get 12, double 12 to get 24. For 8, double three times: 8 × 6 goes 6 → 12 → 24 → 48. If you can double, you already know the 4s and 8s.
 
 ## Worked examples
 
-**Find 7 × 8.** Go to row 7, column 8. The answer is 56. A way to remember it: the digits 5, 6, 7, 8 run in order, so "56 = 7 × 8".
+**Find 7 × 8.** Row 7, column 8 on the chart: 56. Memory hook: the digits 5, 6, 7, 8 run in order, so "56 = 7 × 8".
 
-**Find 6 × 9.** Use the 9s trick: fold the 6th finger, leaving 5 and 4, so 6 × 9 = 54.
+**Find 6 × 9.** Use the 9s trick: fold the 6th finger, leaving 5 and 4. So 6 × 9 = 54.
 
-## Common mistakes
+## The mistakes I see every year
 
-- **Mixing up the answer digits.** 7 × 8 is 56, not 65. Say the fact out loud to lock it in.
-- **Forgetting multiplication is commutative.** 3 × 8 and 8 × 3 both equal 24, so you only really learn each fact once.
-- **Guessing the 12s.** Build them from the 10s: 12 × 7 is 10 × 7 plus 2 × 7, which is 70 + 14 = 84.
+- **Swapping the answer digits.** 7 × 8 is 56, not 65. Say the fact out loud when you learn it. Hearing it locks it in differently than reading it.
+- **Learning 3 × 8 and 8 × 3 as two facts.** Multiplication doesn't care about order, so both are 24. You only learn each fact once. The chart is secretly half the size it looks.
+- **Guessing the 12s.** Build them from the 10s instead. 12 × 7 is 10 × 7 plus 2 × 7, which is 70 + 14 = 84. No guessing needed.
 
 ## Taming the hard ones: 6s, 7s and 8s
 
-Most people find the facts from 6 × 6 to 9 × 9 the trickiest. Two ideas help.
+Ask any class which facts are the worst and you'll hear the same answer: 6 × 6 through 9 × 9. Two ideas fix that.
 
-**Build from what you know.** 7 × 8 is just 7 × 7 plus one more 7: 49 + 7 = 56. And 8 × 6 is 8 × 5 plus 8: 40 + 8 = 48. Adding one row is always allowed.
+**Build from what you know.** 7 × 8 is just 7 × 7 plus one more 7: 49 + 7 = 56. And 8 × 6 is 8 × 5 plus 8: 40 + 8 = 48. Adding one row is always allowed. Nobody is checking.
 
-**The "hands" trick for 6s to 10s.** Hold up both hands, with the fingers on each hand numbered 6 (pinky) to 10 (thumb). To multiply 7 × 8: touch the 7-finger of one hand to the 8-finger of the other. The fingers at and below the join (2 + 3 = 5) count as tens: 50. The fingers above the join (3 on one hand, 2 on the other) multiply: 3 × 2 = 6. Total: **56**.
+**The "hands" trick for 6s to 10s.** Hold up both hands, fingers numbered 6 (pinky) to 10 (thumb) on each hand. For 7 × 8: touch the 7-finger of one hand to the 8-finger of the other. The fingers at and below the join (2 + 3 = 5) count as tens: 50. The fingers above the join (3 on one hand, 2 on the other) multiply: 3 × 2 = 6. Total: **56**. It feels like a magic trick. It works every time.
 
 ## Square numbers worth memorizing
 
-Facts like 7 × 7 are called **square numbers**, and they anchor the whole table. Learn these nine and nearby facts get easier:
+Facts like 7 × 7 are called **square numbers**, and they anchor the whole table. Learn these nine and the facts around them get easier:
 
 | 1² | 2² | 3² | 4² | 5² | 6² | 7² | 8² | 9² |
 |----|----|----|----|----|----|----|----|----|
 | 1 | 4 | 9 | 16 | 25 | 36 | 49 | 64 | 81 |
 
-Spot the pattern: the gaps between them grow by 2 each time (3, 5, 7, 9, 11, 13, 15, 17). Knowing 8² = 64 tells you 8 × 9 is just 64 + 8 = 72.
+See the pattern in the gaps? 3, 5, 7, 9, 11, 13, 15, 17. Each gap grows by 2. And here's the payoff: knowing 8² = 64 means 8 × 9 is just 64 + 8 = 72. One fact unlocks its neighbours.
 
-## Where you'll use times tables
+## Where times tables actually pay off
 
-- **Division.** 56 ÷ 7 is easy only if you know 7 × 8 = 56.
+- **Division.** 56 ÷ 7 is only easy if you know 7 × 8 = 56.
 - **Fractions.** Simplifying 12/18 needs the 6-times table, because both numbers divide by 6.
-- **Money.** 6 packs at $4 each is 6 × 4 = $24, no calculator needed.
+- **Money.** 6 packs at $4 each is 6 × 4 = $24. No calculator, no phone.
 - **Time.** 7 weeks is 7 × 7 = 49 days. 9 hours is 9 × 60 = 540 minutes.
 - **Area.** A 9 m by 7 m room is 9 × 7 = 63 m².
+
+Every one of these gets slower without the facts. That's why teachers bang on about them.
 
 ## Two quick questions
 
 **Do I really need the 12s?**
-The 12s matter less than they used to, but they still pop up with dozens, feet and inches. If the 12s feel heavy, learn up to 10 × 10 first and build 11s and 12s from the 10s, as shown in the mistakes section above.
+They matter less than they used to, but they still show up with dozens, feet and inches. If the 12s feel heavy, get solid up to 10 × 10 first, then build 11s and 12s from the 10s like the mistakes section shows.
 
 **How long does it take to learn them all?**
-Most students get there in a few weeks of short daily practice — ten minutes a day beats one long weekend. Quiz yourself out of order, not just 1-to-12 in a row, so you learn the facts and not the chant.
+Most students get there in a few weeks of short daily practice. Ten minutes a day beats one long weekend, every time. And quiz yourself out of order, not 1-to-12 in a row, or you'll learn the chant instead of the facts.
 
 ## Try it yourself
 

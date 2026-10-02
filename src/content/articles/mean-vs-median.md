@@ -8,12 +8,14 @@ quiz: statistics
 related: [how-to-find-the-mean]
 ---
 
-The mean and the median are both types of average. Each one gives a single "typical" value for a set of numbers. Often they are close together, but sometimes they are very different, and knowing why helps you choose.
+The mean and the median are both types of average. Each one boils a set of numbers down to a single "typical" value. Most of the time they're close together. But sometimes they disagree wildly, and knowing why is one of the most useful things statistics teaches you.
 
-## Quick definitions
+## The 30-second version
 
-- **Mean:** add up all the values and divide by how many there are.
-- **Median:** put the values in order from smallest to largest and take the middle one.
+- **Mean:** add up all the values, divide by how many there are.
+- **Median:** put the values in order from smallest to largest, take the middle one.
+
+That's the whole toolkit. Everything below is about when to reach for which.
 
 ## Example: an odd number of values
 
@@ -29,7 +31,7 @@ Five students scored these marks out of 10 on a spelling test: 7, 3, 9, 5, 6.
 1. Put them in order: 3, 5, 6, 7, 9
 2. The middle value is the 3rd one: 6
 
-Here the mean and median are both 6.
+Both give 6. Nice when that happens. It won't always.
 
 ## Example: an even number of values
 
@@ -43,14 +45,14 @@ Six friends ran these distances in km during a week: 12, 4, 8, 10, 6, 14.
 **Median:**
 
 1. Put them in order: 4, 6, 8, 10, 12, 14
-2. With six values there is no single middle. The two middle values are 8 and 10.
+2. Six values, so there's no single middle. The two middle values are 8 and 10.
 3. Take the mean of those two: (8 + 10) ÷ 2 = 9
 
-The median is 9 km, the same as the mean again. So when do they differ?
+Median is 9 km, same as the mean again. I can hear you asking: so when do they actually differ? Right now. Watch this.
 
-## Example: when one value is very different
+## The example that changes minds
 
-Five friends earn this much from weekend jobs: $20, $25, $22, $30 and $200. One of them has a much better paid job than the others.
+Five friends earn this much from weekend jobs: $20, $25, $22, $30 and $200. One of them landed a seriously well-paid gig.
 
 **Mean:**
 
@@ -64,42 +66,42 @@ Five friends earn this much from weekend jobs: $20, $25, $22, $30 and $200. One 
 2. Middle value: 25
 3. The median is $25.
 
-Which one sounds more like what a "typical" friend earns? Four of the five earn $30 or less, so $25 describes the group much better than $59.40.
+Now ask the real question: which number sounds like what a "typical" friend earns? Four of the five earn $30 or less. $25 describes the group. $59.40 describes... nobody, really. It's a fiction created by one big number.
 
-A value that is far away from the rest is called an **outlier**. The mean uses every value, so an outlier drags it towards itself. The median only cares about the middle position, so the outlier barely moves it.
+That big number has a name: an **outlier**, a value far away from the rest. The mean uses every value, so an outlier drags it toward itself. The median only cares about the middle position, so the outlier barely moves it. This single idea explains half the misleading statistics you'll ever see in the news.
 
 ## Side by side
 
 | | Mean | Median |
 |---|---|---|
 | How to find it | Add all values, divide by the count | Order the values, take the middle |
-| Affected by outliers | Yes, a lot | Very little |
+| Bothered by outliers | Yes, a lot | Barely |
 | Good for | Data without extreme values, and finding totals | Data with outliers or a lopsided spread |
 | Everyday examples | Test scores in a class, daily temperatures | House prices, earnings, times with one very slow result |
 
-## So which one should you use?
+## So which one do I use?
 
-Ask yourself two questions.
+Two questions. Answer them and you'll almost always pick right.
 
-**Are there outliers, or is the data lopsided?** If a few values are much bigger or smaller than the rest, the median usually gives a fairer picture. This is why reports on house prices and pay often quote the median.
+**Are there outliers, or is the data lopsided?** If a few values are much bigger or smaller than the rest, the median usually paints the fairer picture. This is why house prices and pay reports almost always quote the median. The mean would let a handful of mansions and millionaires rewrite the story.
 
-**Do you care about the total?** The mean is tied to the total. If you know the mean and the count, you can get the total back, which the median cannot do. For example, if a team scores a mean of 2 goals a game over 10 games, it scored 20 goals in all.
+**Do you care about the total?** The mean is tied to the total in a way the median isn't. Know the mean and the count, and you can get the total back. A team scoring a mean of 2 goals a game over 10 games scored 20 goals in all. The median can't tell you that.
 
-If the values are fairly even with no outliers, both work, and the mean is the usual choice.
+No outliers and fairly even data? Both work, and the mean is the usual pick.
 
-## A note on the mode
+## Don't forget the mode
 
-There is a third average, the **mode**. It is the value that appears most often. In 3, 4, 4, 5, 9 the mode is 4. It is handy for things that are not numbers at all, like the most popular shoe size or favorite color.
+There's a third average people overlook: the **mode**, the value that shows up most often. In 3, 4, 4, 5, 9 the mode is 4. It shines where numbers aren't even the point, like the most popular shoe size or everyone's favorite color. You can't take a mean of favorite colors. Well, you could try. It wouldn't mean anything.
 
-## Mistakes to watch for
+## Mistakes I see every year
 
-- **Forgetting to sort.** The median of 7, 3, 9, 5, 6 is not 9 just because 9 is in the middle of the list as written. Order the values first.
-- **Picking one of the two middle values.** For an even count, the median is the mean of the two middle values.
-- **Thinking one average is always better.** Each tells you something different. It depends on the data.
+- **Forgetting to sort.** The median of 7, 3, 9, 5, 6 is not 9 just because 9 sits in the middle as written. Order the values first. Every year, someone skips this.
+- **Picking one of the two middle values.** With an even count, the median is the mean of the two middle values, not one of them.
+- **Declaring one average "the best".** There is no best. Each tells you something different, and the data decides which one earns its keep.
 
-## Example: house prices
+## The house price example (memorize this one)
 
-Five houses on one street sold for these prices: $180,000, $195,000, $210,000, $225,000 and $950,000. The last one is a mansion; the rest are ordinary family homes.
+Five houses on one street sold for: $180,000, $195,000, $210,000, $225,000 and $950,000. The last one is a mansion. The rest are ordinary family homes.
 
 **Mean:**
 
@@ -109,40 +111,40 @@ Five houses on one street sold for these prices: $180,000, $195,000, $210,000, $
 
 **Median:**
 
-1. They are already in order: 180,000, 195,000, 210,000, 225,000, 950,000
+1. Already in order: 180,000, 195,000, 210,000, 225,000, 950,000
 2. The middle value is $210,000.
 
-The mean says $352,000, but four of the five houses sold for $225,000 or less. The mansion drags the mean up, while the median of $210,000 describes a typical house on the street. This is exactly why property websites and news reports almost always quote the **median** house price.
+The mean says $352,000, but four of the five houses sold for $225,000 or less. The mansion drags the mean up; the median of $210,000 describes a typical house on the street. This is exactly why property websites and news reports quote the **median** house price. Next time you see "median" in a headline, you'll know precisely why they chose it.
 
-## Where each average shows up in real life
+## Where each average lives in the wild
 
-- **Median in the news.** "Median house price", "median pay", "median rent": journalists use the median because a few very rich earners or luxury homes would make the mean misleading.
-- **Mean in sports.** A cricketer's batting average or a basketball player's points per game is a mean. Fans want the total scoring power, outliers and all.
-- **Mode in shops.** A shoe shop orders more of the most popular size. That is the mode. The mean shoe size of its customers would be useless for stocking shelves.
-- **Mean in science.** An experiment repeated ten times reports the mean result, because averaging smooths out the small random errors in each try.
+- **Median in the news.** "Median house price", "median pay", "median rent". Journalists reach for the median because a few very rich earners or luxury homes would make the mean lie.
+- **Mean in sports.** A cricketer's batting average, a basketball player's points per game. Fans want total scoring power, outliers and all.
+- **Mode in shops.** A shoe shop stocks more of the most popular size. That's the mode at work. The mean shoe size of its customers would be useless for ordering stock.
+- **Mean in science.** An experiment repeated ten times reports the mean result, because averaging smooths out the small random errors in each attempt.
 
-## A tricky case: when nobody is average
+## The tricky case: when nobody is average
 
-Six runners finished a fun run in these times in minutes: 30, 31, 29, 62, 60, 61. Three fast runners, three slow ones, nobody in the middle.
+Six runners finished a fun run in these times in minutes: 30, 31, 29, 62, 60, 61. Three fast runners, three slow ones, nobody in between.
 
 - Mean: (30 + 31 + 29 + 62 + 60 + 61) ÷ 6 = 273 ÷ 6 = 45.5
 - Median: ordered, the two middle values are 31 and 60, so (31 + 60) ÷ 2 = 45.5
 
-Both give 45.5 minutes, yet nobody ran anything close to 45.5. When data splits into two clear groups, a single average of any kind can mislead. The honest summary here is "three runners around 30 minutes and three around 61", not one number.
+Both say 45.5 minutes. Nobody ran anything close to 45.5. When data splits into two clear groups, any single average misleads. The honest summary is "three runners around 30 minutes and three around 61", not one number. Averages describe the middle; they can't describe a split.
 
 ## Quick questions
 
-**Can the mean and median differ a lot even without one giant outlier?**
+**Can the mean and median differ a lot without one giant outlier?**
 
-Yes. Any lopsided spread does it. Incomes in a town might run $25k, $28k, $30k, $32k, $35k, $38k, $120k: no single crazy value, but the steady upward stretch still pulls the mean above the median.
+Yes. Any lopsided spread does it. Take town incomes of $25k, $28k, $30k, $32k, $35k, $38k, $120k. No single crazy value, but the steady upward stretch still pulls the mean above the median. Lopsided is lopsided, with or without a villain.
 
 **Does the median have to be one of the values?**
 
-With an odd count, yes: it is the middle value itself. With an even count, it is halfway between the two middle values, which can land between them, like 10.5.
+With an odd count, yes, it's the middle value itself. With an even count, it lands halfway between the two middle values, which can fall between them, like 10.5.
 
-**Which average should I report in a school project?**
+**Which average should I use in a school project?**
 
-Report both when you can, and say why they differ. "The mean is 59.4 and the median is 25, because one value of 200 pulls the mean up" shows far more understanding than picking one number silently.
+Report both when you can, and explain the gap. "The mean is 59.4 and the median is 25, because one value of 200 pulls the mean up" shows far more understanding than silently picking one number. Teachers love this. Trust me.
 
 ## Try it yourself
 

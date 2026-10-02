@@ -10,23 +10,25 @@ articles: [what-is-a-linear-equation, how-to-calculate-a-percentage]
 related: [mental-math-tricks]
 ---
 
-For a lot of students, word problems are the scary part of math. The numbers feel fine on their own, but wrapped in a story they suddenly seem impossible. The good news is that a word problem is just a normal problem hiding behind some sentences. Your job is to translate.
+For a lot of students, word problems are the scary part of math. The numbers feel fine on their own. Wrap them in a story and suddenly everything seems impossible.
 
-Here is a five-step method that works on almost any word problem.
+I have a theory about why. It isn't the math. It's the translation. A word problem is just a normal problem hiding behind some sentences, and your job is to turn the words into math. Once you see it that way, the fear drops fast.
+
+Here's a five-step method that works on almost any word problem. I've taught this to hundreds of students. It holds up.
 
 ## The five steps
 
 1. **Read it twice.** The first read is for the story. The second is for the details: the numbers and the actual question.
-2. **Find what is asked.** Underline it. You cannot aim at a target you have not named.
-3. **Pull out the useful numbers.** List them, and ignore any that do not matter.
+2. **Find what is asked.** Underline it. You can't aim at a target you haven't named.
+3. **Pull out the useful numbers.** List them. Ignore any that don't matter.
 4. **Turn the words into math**, then solve.
 5. **Check that the answer makes sense** in the real situation.
 
-Step 5 is the one most students skip, and it is the one that catches the most mistakes.
+Step 5 is the one most students skip. It's also the one that catches the most mistakes. Funny how that works.
 
-## A worked example: a sale
+## Worked example: the sale
 
-*A shirt costs $40. It is on sale for 25% off. How much do you pay?*
+*A shirt costs $40. It's on sale for 25% off. How much do you pay?*
 
 **Asked:** the final price you pay.
 
@@ -36,7 +38,7 @@ Step 5 is the one most students skip, and it is the one that catches the most mi
 
 **Check:** $30 is less than $40, which is what a discount should give you. It fits. If you had gotten $50, the check would have caught it instantly. When percentages get messier, the [percentage calculator](/calculators/percentage) confirms your working.
 
-## A worked example: a rate
+## Worked example: the train
 
 *A train travels 180 km in 3 hours at a steady speed. How far does it go in 5 hours?*
 
@@ -48,26 +50,28 @@ Step 5 is the one most students skip, and it is the one that catches the most mi
 
 **Check:** 5 hours is more than 3, so the distance should be bigger than 180 km, and 300 is. Sensible.
 
-Finding the "one unit" value first, here the distance in one hour, is a move that solves a huge number of word problems.
+Notice the move here: find the "one unit" value first. The distance in one hour. That single move solves a huge number of word problems, and most students never get told it explicitly. Now you've.
 
-## When to use a letter
+## When a letter helps
 
-Some problems do not hand you the numbers so directly. That is when a variable helps.
+Some problems don't hand you the numbers so directly. That's when a variable earns its keep.
 
-*Tickets cost $12 for adults and $8 for children. A family buys 4 adult tickets and 2 child tickets. What is the total?* Here you can go straight to it: 4 × 12 + 2 × 8 = 48 + 16 = **$64**.
+*Tickets cost $12 for adults and $8 for children. A family buys 4 adult tickets and 2 child tickets. What is the total?* Straightforward: 4 × 12 + 2 × 8 = 48 + 16 = **$64**.
 
-But if the problem said "the total was $64, how many adult tickets if there were 2 children," you would let *a* stand for the number of adults and build an equation: 12a + 16 = 64. Learning to [set up a linear equation](/articles/what-is-a-linear-equation) is what turns a confusing story into something you can just solve, and the [equation calculator](/calculators/equation) lets you check the result.
+But flip it: "the total was $64, and there were 2 children. How many adult tickets?" Now you let *a* stand for the number of adults and build an equation: 12a + 16 = 64. Learning to [set up a linear equation](/articles/what-is-a-linear-equation) is what turns a confusing story into something you can just solve, and the [equation calculator](/calculators/equation) lets you check the result.
 
-## Common traps to avoid
+## The traps that catch everyone
 
-- **Grabbing every number.** Some problems include a number you do not need. Decide what each one is *for* before you use it.
-- **Reacting to keywords blindly.** "Altogether" often means add and "left" often means subtract, but not always. Picture the situation instead of guessing from one word.
-- **Forgetting the units.** An answer of "30" is incomplete. Thirty what? Dollars, kilometers, minutes? The units are part of the answer.
-- **Skipping the sense check.** If a person's age comes out negative, or a bill is larger than every price added up, something went wrong. Notice it.
+- **Grabbing every number.** Some problems include a number you don't need. It's bait. Decide what each number is *for* before you use it.
+- **Reacting to keywords blindly.** "Altogether" often means add and "left" often means subtract. Often. Not always. Picture the situation instead of guessing from one word. Keyword-hunting is how good students get easy problems wrong.
+- **Forgetting the units.** An answer of "30" is incomplete. Thirty what? Dollars, kilometers, minutes? The units are part of the answer. Teachers take marks off for this, and they're right to.
+- **Skipping the sense check.** If a person's age comes out negative, or a bill is larger than every price added up, something went wrong. Notice it. Your common sense is a legitimate mathematical tool.
 
-## Build the habit
+## Make it automatic
 
-Word problems get easier with practice, not with a secret formula. Each time, run the same five steps until they feel automatic. Soon you will read a problem and the plan will appear on its own.
+Word problems get easier with practice, not with a secret formula. Run the same five steps every time until they feel automatic. It will feel slow at first. That's normal.
+
+Then one day you'll read a problem and the plan will just appear on its own. That day feels great. I've seen it happen over and over.
 
 ## Try this next
 

@@ -10,59 +10,59 @@ articles: []
 related: [how-to-study-for-a-math-test, mental-math-tricks]
 ---
 
-If your heart speeds up when a worksheet lands on your desk, you are not broken and you are not bad at math. That feeling has a name, math anxiety, and it happens to plenty of people who go on to be very good at the subject.
+If your heart speeds up when a worksheet lands on your desk, you aren't broken, and you aren't "just bad at math."
 
-The good news is that it is a feeling, not a fact about your brain. Feelings can change.
+I meet this feeling all the time: capable students convinced their brain is wired wrong. That racing heart has a name. Math anxiety. And it hits plenty of people who go on to be genuinely good at the subject.
 
-## Why math feels different from other subjects
+Here's the part nobody tells them: it's a feeling, not a fact about your brain. Feelings change.
 
-In most subjects a small gap is easy to hide. You can write a decent essay even if you forgot one date.
+## Why math punishes small gaps more than other subjects
 
-Math is more like a staircase. Each idea stands on the one below it. If you missed how fractions work, then ratios feel shaky, and later algebra feels impossible, not because you are slow, but because a step is missing further down.
+Math is a staircase. In most subjects, a small gap hides easily: you can write a decent essay even if you forgot one date.
 
-That is actually hopeful. It means the problem is usually a specific gap you can find and fill, not something wrong with you.
+Math is less forgiving. Each idea stands on the one below it. Miss how fractions work, ratios wobble, and later algebra feels impossible. Not because you're slow. Because a step went missing further down and nobody spotted it.
 
-## The pressure that makes it worse
+"The whole subject is broken" is a terrifying problem. "One missing step" is a fixable one. And almost every student I ever wrote off as bad at math turned out to just have one or two unfixed gaps.
 
-Two things tend to turn a small wobble into real anxiety.
+## Speed isn't intelligence
 
-The first is speed. Timed drills and "who finishes first" make it feel like slow means dumb. It does not. Plenty of careful, excellent mathematicians are not fast.
+Two things turn a small wobble into real anxiety, and schools are great at both.
 
-The second is the fear of looking silly. So students stay quiet when they are confused, the gap grows, and the fear grows with it. The quiet is what does the damage, not the confusion.
+The first is speed. Timed drills. "Who finishes first?" It teaches you that slow means dumb. It doesn't. Some of the sharpest mathematical thinkers I know aren't fast.
 
-## What helps: slow down on purpose
+The second is the fear of looking silly. Students sit quietly when confused, the gap grows, the fear grows with it. And here's the cruel part: the quiet does the damage, not the confusion.
 
-When a problem scares you, your brain wants to rush or freeze. Do the opposite.
+## Slow down on purpose
 
-Read the question twice. Write down what you know. Take the first small step, even if you cannot see the whole path yet. Often the second step becomes clear only after you have taken the first.
+When a problem scares you, your brain wants to rush or freeze. Do the opposite. I know it sounds backwards. It works.
 
-Speaking the steps quietly to yourself works too. It keeps you moving instead of staring.
+Read the question twice. Write down what you know. Take the first small step, even if you can't see the whole path yet. The second step usually shows up only after the first.
 
-## Find the missing stair
+Saying the steps quietly to yourself works too. It keeps you moving instead of staring.
 
-If a whole topic feels like fog, the real trouble is usually one level down.
+## Go back to the missing stair
 
-Struggling with equations? Check whether negative numbers still trip you up. Lost in fractions? Make sure you are solid on times tables first. Fixing the earlier gap often makes the newer topic quietly click into place.
+If a whole topic feels like fog, the real trouble is usually one level down. Equations scary? Check whether negative numbers still trip you up. Fractions a blur? Make sure your times tables are solid first. Fixing the earlier gap makes the newer topic quietly fall into place, like it was never hard at all.
 
-Working through a [lesson](/learn/fractions) from the beginning, even one that feels "too easy," is one of the fastest ways to find the stair you skipped.
+A [lesson](/learn/fractions) from the beginning, even one that feels "too easy," is one of the fastest ways to find the stair you skipped. Swallow your pride for fifteen minutes. Worth it.
 
 ## Make mistakes boring
 
-A wrong answer is information, not a verdict. Every mistake tells you exactly which step to look at.
+A wrong answer is information, not a verdict. I tell my students this until they're sick of hearing it. Then I tell them again.
 
-Try keeping a small list of errors you make more than once. Seeing "I forget to flip the sign" written down turns a scary mystery into a simple thing to watch for. The mistakes shrink because you are looking straight at them.
+Every mistake points at exactly which step to look at. Keep a small list of errors you make more than once. Seeing "I forget to flip the sign" written down turns a scary mystery into a boring little thing to watch for. Boring is good. Boring means manageable. The mistakes shrink because you're looking straight at them instead of flinching.
 
-## Small wins build real confidence
+## Stack small wins
 
-Confidence does not arrive in one big moment. It stacks up from small, finished problems.
+Confidence doesn't arrive in one big moment. It stacks up from small, finished problems.
 
-Start each study session with one problem you can definitely do. Getting it right tells your brain, correctly, that you can do this. Then take the next one. A short daily habit beats a long, tense cram, because calm practice teaches your brain that math is normal, not an emergency.
+Start each study session with one problem you can definitely do. Get it right. Let your brain register the evidence: I can do this. Then take the next one. A short daily habit beats a long, tense cram, because calm practice teaches your brain that math is normal, not an emergency.
 
-## Talk about it
+## Tell someone
 
-Tell a teacher, a parent, or a friend that a topic scares you. Saying it out loud makes it smaller, and most people are glad to help once they know where you are stuck.
+Tell a teacher, a parent, or a friend that a topic scares you. Out loud. It makes it smaller, I promise. And most people are glad to help once they know where you're stuck.
 
-You are allowed to need something explained more than once. That is how learning works, not a sign that you are behind.
+You're allowed to need something explained more than once. That's how learning works. It was never a sign that you're behind.
 
 ## Try this next
 

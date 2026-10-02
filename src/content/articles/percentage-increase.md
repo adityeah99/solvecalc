@@ -8,23 +8,23 @@ quiz: arithmetic
 related: [how-to-calculate-a-percentage]
 ---
 
-When a price, a score or a number of people changes, we often want to know how big the change is compared with where it started. That is what percentage increase and percentage decrease tell you.
+Picture this: a shop puts up a sign saying "prices up 50 cents" on the bus fare. Useful, sure. But then someone says "the fare went up 20%" and suddenly you feel the size of it. That is what percentage change does. It tells you how big a change is compared with where it started.
 
-Saying "the bus fare went up 50 cents" is useful. Saying "the bus fare went up 20%" tells you how big that jump is for that fare.
+A student once told me his test score "went up 10%" from 40 to 50. I asked the class if he was right. Half said yes. He was wrong, and the reason is the most useful thing in this article. Keep reading.
 
 ## The formula
 
-There is one formula for both increase and decrease:
+One formula covers both increase and decrease:
 
 **percentage change = (new value − original value) ÷ original value × 100**
 
-In words:
+In plain steps:
 
-1. Find the change by subtracting: new minus original.
-2. Divide the change by the **original** value.
+1. Find the change: new minus original.
+2. Divide the change by the **original** value. This is the step everyone gets wrong, so circle it.
 3. Multiply by 100 to get a percentage.
 
-If the answer is positive, it is an increase. If it is negative, it is a decrease.
+Positive answer means increase. Negative means decrease.
 
 ## Example: a bus fare goes up
 
@@ -44,7 +44,7 @@ A jacket was $120. Now it costs $90. What is the percentage decrease?
 3. Multiply by 100: −0.25 × 100 = −25
 4. The price went down by 25%.
 
-Notice that we divided by 120, the old price, not 90. The original value is always the starting point.
+Notice we divided by 120, the old price, not 90. The original value is always your starting point. Always.
 
 ## Example: a growing club
 
@@ -57,48 +57,48 @@ A school chess club had 40 members last year. This year it has 58. By what perce
 
 ## Going the other way: increasing by a percentage
 
-Sometimes you know the percentage and want the new amount. For example, "Increase 64 by 15%."
+Sometimes you know the percentage and want the new amount. Say: "Increase 64 by 15%."
 
-You could find 15% of 64 and add it on:
+The slow way: find 15% of 64 and add it on.
 
 - 15% of 64 = 0.15 × 64 = 9.6
 - 64 + 9.6 = 73.6
 
-Or you can do it in one step. The new amount is the old 100% plus another 15%, so it is 115% of the original. That means multiply by 1.15:
+The fast way, and the one I want you to learn: the new amount is the old 100% plus another 15%, so it is 115% of the original. Multiply by 1.15 in one step:
 
 - 64 × 1.15 = 73.6
 
-For a decrease, subtract instead. To decrease something by 20%, you keep 80% of it, so multiply by 0.80.
+For a decrease, flip it. To cut something by 20%, you keep 80% of it, so multiply by 0.80. One multiplication, done.
 
-## Why up 10% then down 10% is not the same
+## Why up 10% then down 10% does not cancel out
 
-This surprises a lot of people. Suppose a game costs $100.
+This surprises nearly everyone. Take a game that costs $100.
 
 - It goes up 10%: 100 × 1.10 = $110
 - Then it goes down 10%: 110 × 0.90 = $99
 
-It does not return to $100. The second 10% was taken from $110, which is a bigger starting amount. Each percentage change is based on the value just before it.
+It does not land back on $100. The second 10% was taken from $110, a bigger starting pile. Every percentage change is measured from the value right before it, not from where you began. Remember this the next time a shop does "20% off, then an extra 10% off" and you wonder why the till shows a weird number.
 
-## Mistakes to watch for
+## Mistakes I see all the time
 
-- **Dividing by the new value.** For $2.50 to $3.00, dividing 0.50 by 3.00 gives about 16.7%, which is wrong. Always divide by the original.
-- **Forgetting to subtract first.** The formula uses the change, not the new value. 3.00 ÷ 2.50 = 1.2 is not a 1.2% increase.
-- **Mixing up "percent" and "percentage points".** If a test pass rate goes from 40% to 50%, that is 10 percentage points, but it is a 25% increase, because 10 ÷ 40 = 0.25.
-- **Losing the sign.** A negative result means a decrease. Say "a 25% decrease" rather than "−25% increase".
+- **Dividing by the new value.** For $2.50 to $3.00, dividing 0.50 by 3.00 gives about 16.7%. Wrong. The original value goes on the bottom, every time.
+- **Forgetting to subtract first.** The formula needs the change, not the new value. 3.00 ÷ 2.50 = 1.2 is not a 1.2% increase. Find the difference first.
+- **Mixing up "percent" and "percentage points".** If a pass rate goes from 40% to 50%, that is 10 percentage points. But as a percent change it is 25%, because 10 ÷ 40 = 0.25. My student's "10% increase" from the intro? Same mistake.
+- **Losing the sign.** A negative result means a decrease. Say "a 25% decrease", not "minus 25% increase". Words matter.
 
 ## Percentage points vs percent: the difference
 
-These two sound alike but mean different things, and mixing them up is one of the most common mistakes in news headlines.
+These two sound alike and cause chaos in news headlines. Here is the clean version:
 
-- A **percentage point** is a simple subtraction of two percentages.
-- A **percent change** compares the difference with the starting value.
+- A **percentage point** is just the plain subtraction of two percentages.
+- A **percent change** compares that difference with the starting value.
 
-Say a test pass rate goes from 40% to 50%:
+A test pass rate goes from 40% to 50%:
 
 - In percentage points: 50 − 40 = **10 percentage points**.
 - As a percent increase: 10 ÷ 40 = 0.25 = **25%**.
 
-So the pass rate rose by 10 percentage points, which is a 25% increase. Both are correct, but they answer different questions. Use percentage points when you want the plain gap, and percent when you want to show how big the gap is relative to the start.
+Both are correct. They answer different questions. Use percentage points for the plain gap, percent for how big the gap is relative to the start.
 
 | Situation | Percentage points | Percent change |
 |---|---|---|
@@ -106,21 +106,21 @@ So the pass rate rose by 10 percentage points, which is a 25% increase. Both are
 | 80% → 60% | 20 | 25% decrease |
 | 5% → 6% | 1 | 20% increase |
 
-Notice the last row. A rise of just 1 percentage point is a 20% increase, because 1 ÷ 5 = 0.2. Small percentage-point moves can be big percent moves when you start from a small number.
+Look at that last row. A rise of only 1 percentage point is a 20% increase, because 1 ÷ 5 = 0.2. Tiny point moves can be huge percent moves when you start small. That is exactly how headlines mislead people.
 
 ## Worked example: a pay rise
 
-Maya earns $2,400 a month. She gets an 8% pay rise. What is her new salary?
+Maya earns $2,400 a month and gets an 8% pay rise. What is her new salary?
 
-1. The new salary is the old 100% plus another 8%, so it is 108% of the original. That means multiply by 1.08.
+1. The new salary is the old 100% plus 8%, so 108% of the original. Multiply by 1.08.
 2. 2,400 × 1.08 = 2,592.
 3. Her new salary is $2,592 a month.
 
-The rise itself is 2,592 − 2,400 = $192. You can check: 192 ÷ 2,400 = 0.08, which is 8%. Correct.
+The rise itself is 2,592 − 2,400 = $192. Check it: 192 ÷ 2,400 = 0.08, which is 8%. Correct.
 
 ## Quick reference: one-step multipliers
 
-Instead of finding the percent and then adding or subtracting, use one multiplication:
+Skip the two-step dance. One multiplication does it:
 
 | What you want | Multiply by |
 |---|---|
@@ -130,27 +130,27 @@ Instead of finding the percent and then adding or subtracting, use one multiplic
 | Decrease by 40% | 0.60 |
 | Undo a 20% increase | ÷ 1.20 |
 
-The pattern: for an increase, add the percent to 1 (10% → 1.10). For a decrease, subtract it from 1 (10% → 0.90).
+The pattern is simple. For an increase, add the percent to 1 (10% becomes 1.10). For a decrease, subtract it from 1 (10% becomes 0.90).
 
 ## Quick questions
 
 **Can a percentage increase be more than 100%?**
 
-Yes. Going from 50 to 150 is a change of 100, and 100 ÷ 50 = 2, so it is a 200% increase. Anything more than doubling is over 100%.
+Yes. Going from 50 to 150 is a change of 100, and 100 ÷ 50 = 2, so that is a 200% increase. Anything more than doubling is over 100%.
 
 **What if the original value is 0?**
 
-Then there is no percentage change. The formula divides by the original value, and you cannot divide by zero. A club that goes from 0 members to 10 members just grew by 10 members.
+Then there is no percentage change to calculate. The formula divides by the original value, and you cannot divide by zero. A club going from 0 members to 10 just grew by 10 members. Plain numbers are fine.
 
 **Does a 50% decrease undo a 50% increase?**
 
-No. Take 200: up 50% gives 300, then down 50% of 300 gives 150. You end below where you started, because the decrease is taken from the bigger number.
+No. Start at 200: up 50% gives 300, then down 50% of 300 gives 150. You finish below where you started, because the decrease bites into the bigger number.
 
 ## Try it yourself
 
 1. A plant was 50 cm tall. Now it is 65 cm. What is the percentage increase?
 2. A bike's price drops from $80 to $68. What is the percentage decrease?
 
-**Answers:** 1) Change is 15, and 15 ÷ 50 = 0.3, so a 30% increase. 2) Change is −12, and −12 ÷ 80 = −0.15, so a 15% decrease.
+**Answers:** 1) The change is 15, and 15 ÷ 50 = 0.3, so a 30% increase. 2) The change is −12, and −12 ÷ 80 = −0.15, so a 15% decrease.
 
 Check your working with the [percentage calculator](/calculators/percentage), then try the [arithmetic quiz](/quizzes/arithmetic). If you need a refresher on the basics, see [how to calculate a percentage](/articles/how-to-calculate-a-percentage).

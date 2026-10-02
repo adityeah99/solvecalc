@@ -8,18 +8,20 @@ quiz: geometry
 related: [degrees-vs-radians]
 ---
 
-The Pythagorean theorem is a rule about right triangles. A right triangle is a triangle with one square corner, a 90° angle, like the corner of a sheet of paper.
+I used to mix up which side was c in this formula. Every time. Then a teacher told me: c is the loner. It sits alone, opposite the right angle, always the longest. I have never mixed it up since. If this theorem is new to you, start with that image.
 
-The rule links the three sides. If you know any two of them, you can find the third.
+The Pythagorean theorem is a rule about right triangles. A right triangle has one square corner, a 90° angle, exactly like the corner of a sheet of paper.
+
+The rule links the three sides. Know any two and you can find the third. That is genuinely useful, as you are about to see.
 
 ## The rule
 
 **a² + b² = c²**
 
-- a and b are the two shorter sides. They meet at the right angle and are called the **legs**.
-- c is the longest side. It is opposite the right angle and is called the **hypotenuse**.
+- a and b are the two shorter sides. They meet at the right angle. Call them the **legs**.
+- c is the longest side. It sits opposite the right angle. Call it the **hypotenuse**. The loner.
 
-In words: if you square the two shorter sides and add them, you get the square of the longest side.
+In words: square the two shorter sides, add them, and you get the square of the longest side.
 
 ## Example: the classic 3-4-5 triangle
 
@@ -31,63 +33,65 @@ A right triangle has legs of 3 cm and 4 cm. How long is the hypotenuse?
 4. Take the square root: c = √25 = 5
 5. The hypotenuse is 5 cm.
 
+You will meet 3-4-5 again and again. It is the most famous triangle in maths. Memorize it.
+
 ## Example: a shortcut across the park
 
-A rectangular park is 80 m long and 60 m wide. You are at one corner and want to get to the opposite corner. How much shorter is it to walk straight across than to walk along the edges?
+A rectangular park is 80 m long and 60 m wide. You stand at one corner and want the opposite corner. How much shorter is the straight diagonal than walking the edges?
 
-The diagonal path and two edges of the park make a right triangle.
+The diagonal plus two edges forms a right triangle.
 
 1. The legs are 80 m and 60 m.
 2. Square them: 80² = 6400 and 60² = 3600
 3. Add: 6400 + 3600 = 10,000
-4. Take the square root: √10,000 = 100
+4. Square root: √10,000 = 100
 5. The diagonal is 100 m.
 
-Walking along the edges is 80 + 60 = 140 m. So cutting across saves 140 − 100 = 40 m.
+Walking the edges is 80 + 60 = 140 m. Cutting across saves 140 − 100 = 40 m. Nearly a third of the walk, gone.
 
 ## Finding a shorter side
 
-If you know the hypotenuse and one leg, you **subtract** instead of adding.
+Know the hypotenuse and one leg? Then you **subtract** instead of adding. Same rule, rearranged.
 
 ### Example: a ladder against a wall
 
-A 6.5 m ladder leans against a wall. Its foot is 2.5 m away from the wall. How high up the wall does it reach?
+A 6.5 m ladder leans against a wall, its foot 2.5 m out from the wall. How high does it reach?
 
-The ladder is the hypotenuse, because it sits opposite the right angle between the wall and the ground.
+The ladder is the hypotenuse. It sits opposite the right angle where wall meets ground.
 
-1. Write the rule with the unknown height h: 2.5² + h² = 6.5²
-2. Square the numbers you know: 6.25 + h² = 42.25
+1. Write the rule with height h unknown: 2.5² + h² = 6.5²
+2. Square what you know: 6.25 + h² = 42.25
 3. Subtract 6.25 from both sides: h² = 36
-4. Take the square root: h = 6
+4. Square root: h = 6
 5. The ladder reaches 6 m up the wall.
 
 ## When the answer is not a whole number
 
-Most triangles do not give neat answers. If the legs are 5 and 7:
+Most triangles are not as tidy as 3-4-5. Legs of 5 and 7:
 
 1. 5² + 7² = 25 + 49 = 74
 2. c = √74 ≈ 8.60
 
-That is fine. Use a calculator for the square root and round at the end.
+That is completely fine. Grab a calculator for the square root and round at the end, not in the middle.
 
 ## Checking for a right angle
 
-The rule also works backwards. If a² + b² = c² for the three sides, the triangle has a right angle.
+The rule runs backwards too. If a² + b² = c² holds for three sides, the triangle has a right angle.
 
-- Sides 6, 8, 10: 6² + 8² = 36 + 64 = 100, and 10² = 100. They match, so it is a right triangle.
-- Sides 5, 6, 8: 5² + 6² = 25 + 36 = 61, but 8² = 64. Since 61 ≠ 64, it is not a right triangle.
+- Sides 6, 8, 10: 6² + 8² = 36 + 64 = 100, and 10² = 100. Match. Right triangle.
+- Sides 5, 6, 8: 5² + 6² = 25 + 36 = 61, but 8² = 64. 61 ≠ 64. Not a right triangle.
 
-This gives you a handy way to check that a corner is square, for example when marking out a patio with a tape measure.
+Builders use this constantly. Marking out a patio? Measure 3-4-5 along the edges and your corner is square. No protractor needed.
 
 ## Why it works
 
-Picture a square drawn on each side of a right triangle. The area of a square is its side length squared. So the theorem says the two smaller squares together have exactly the same area as the big square on the hypotenuse.
+Draw a square on each side of a right triangle. A square's area is its side length squared. So the theorem says something visual: the two smaller squares together cover exactly the same area as the big square on the hypotenuse.
 
-For the 3-4-5 triangle, the small squares have areas 9 and 16. Together that is 25, which is the area of the square on the side of length 5.
+For 3-4-5: the small squares have areas 9 and 16. Together that is 25, precisely the area of the square on the side of length 5. It is not a coincidence. It is geometry showing off.
 
 ## Whole-number triangles
 
-Some right triangles have whole-number sides. These sets are called Pythagorean triples.
+Some right triangles have all whole-number sides. These sets have a name: Pythagorean triples.
 
 | a | b | c |
 |---|---|---|
@@ -96,40 +100,40 @@ Some right triangles have whole-number sides. These sets are called Pythagorean 
 | 8 | 15 | 17 |
 | 7 | 24 | 25 |
 
-Any multiple also works. Doubling 3-4-5 gives 6-8-10.
+Multiples work too. Double 3-4-5 and you get 6-8-10, still a perfect right triangle.
 
 ## Mistakes to watch for
 
-- **Putting the hypotenuse in the wrong place.** c must be the longest side, opposite the right angle.
-- **Adding when you should subtract.** To find a leg, take the smaller square away from the hypotenuse squared.
-- **Forgetting the square root.** c² = 25 means c = 5, not 25.
-- **Using it on the wrong triangle.** The rule only works for right triangles.
+- **Putting the hypotenuse in the wrong slot.** c is the longest side, opposite the right angle. Remember the loner.
+- **Adding when you should subtract.** Finding a leg? Take the smaller square away from the hypotenuse squared.
+- **Forgetting the final square root.** c² = 25 means c = 5, not 25. The squaring has to be undone.
+- **Using it on the wrong triangle.** Right triangles only. No 90° angle, no theorem.
 
 ## Example: how big is a 55-inch TV?
 
-TV sizes are measured diagonally, which hides how wide and tall the screen really is. A 55-inch TV with a 16:9 screen: how wide is it?
+TV sizes are measured diagonally, which hides the real width and height. A 55-inch TV with a 16:9 screen: how wide is it actually?
 
-The width, height, and diagonal form a right triangle, so:
+Width, height, and diagonal form a right triangle:
 
-1. Find the diagonal of a 16-by-9 rectangle: 16² + 9² = 256 + 81 = 337.
-2. Take the square root: √337 ≈ 18.36. So 18.36 ratio-units equal 55 inches.
+1. Diagonal of a 16-by-9 rectangle: 16² + 9² = 256 + 81 = 337.
+2. Square root: √337 ≈ 18.36. So 18.36 ratio-units equal 55 inches.
 3. One ratio-unit is 55 ÷ 18.36 ≈ 3.00 inches.
 4. Width = 16 × 3.00 ≈ 48 inches. Height = 9 × 3.00 ≈ 27 inches.
 
-Check: 48² + 27² = 2304 + 729 = 3033, and √3033 ≈ 55. Correct. So a "55-inch" TV is about 48 inches wide and 27 inches tall. You can use the same trick for any screen size.
+Check: 48² + 27² = 2304 + 729 = 3033, and √3033 ≈ 55. Correct. So a "55-inch" TV is about 48 inches wide and 27 inches tall. Same trick works for any screen size, which is handy before you buy.
 
 ## The distance formula is the same idea
 
-On a grid or a map, the distance between two points is just the hypotenuse of a right triangle. The horizontal gap is one leg, the vertical gap is the other.
+On a grid or a map, the distance between two points is just a hypotenuse in disguise. The horizontal gap is one leg, the vertical gap is the other.
 
-**Example.** How far is it from point (1, 2) to point (7, 10)?
+**Example.** How far from point (1, 2) to point (7, 10)?
 
 1. Horizontal gap: 7 − 1 = 6.
 2. Vertical gap: 10 − 2 = 8.
 3. Distance² = 6² + 8² = 36 + 64 = 100.
 4. Distance = √100 = 10.
 
-So the two points are 10 units apart. Map apps use exactly this maths (in fancier form) to measure distances for you.
+The points are 10 units apart. Map apps do exactly this maths (in fancier form) every time they measure a distance for you.
 
 ## Quick reference
 
@@ -140,21 +144,21 @@ So the two points are 10 units apart. Map apps use exactly this maths (in fancie
 | All three sides | Is it a right angle? | Check whether a² + b² = c² |
 | Two points on a grid | Distance | d = √((x₂ − x₁)² + (y₂ − y₁)²) |
 
-The second row is just the rule rearranged. If a² + b² = c², then b² = c² − a².
+The second row is the rule rearranged. If a² + b² = c², then b² = c² − a². Same maths, different unknown.
 
 ## Quick questions
 
 **Does the theorem work for any triangle?**
 
-No, only right triangles. If there is no 90° angle, the rule does not apply. For other triangles you need the law of cosines, which the [triangle solver](/calculators/triangle-solver) handles for you.
+No. Right triangles only. Without a 90° angle the rule does not apply. Other triangles need the law of cosines, which the [triangle solver](/calculators/triangle-solver) handles for you.
 
 **What if I only know one side?**
 
-That is not enough. Infinitely many right triangles share one side length, so you need at least two sides (or one side and an angle) to pin the triangle down.
+Not enough, sorry. Infinitely many right triangles share one side length. You need at least two sides, or one side and an angle, to pin the triangle down.
 
-**Why is it called a theorem and not a rule?**
+**Why "theorem" and not "rule"?**
 
-A theorem is a statement that has been proved true, not just noticed to work. The Pythagorean theorem has hundreds of known proofs, from ancient Chinese diagrams to a proof by US president James Garfield.
+A theorem is a statement proved true, not just observed to work. This one has hundreds of known proofs, from ancient Chinese diagrams to one by US president James Garfield. That is quite a fan club for a triangle fact.
 
 ## Try it yourself
 
@@ -163,4 +167,4 @@ A theorem is a statement that has been proved true, not just noticed to work. Th
 
 **Answers:** 1) 81 + 144 = 225, and √225 = 15 cm. 2) 100 − 36 = 64, and √64 = 8 m.
 
-Check these with the [geometry calculator](/calculators/geometry) or the [square root calculator](/calculators/square-root), then try the [geometry quiz](/quizzes/geometry). Right triangles lead on to trigonometry, where angles are often measured in radians. See [degrees vs radians](/articles/degrees-vs-radians) for more.
+Check these with the [geometry calculator](/calculators/geometry) or the [square root calculator](/calculators/square-root), then try the [geometry quiz](/quizzes/geometry). Right triangles lead naturally into trigonometry, where angles are often measured in radians. See [degrees vs radians](/articles/degrees-vs-radians) for more.

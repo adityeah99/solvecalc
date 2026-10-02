@@ -7,9 +7,9 @@ calculators: []
 related: [times-tables]
 ---
 
-Roman numerals are an old way of writing numbers using letters. You still see them on clock faces, book chapters, film credits, and the Super Bowl.
+Look at the end of any old film. Instead of "2024" you'll see something like MMXXIV. Or glance at a clock face: XII, III, VI, IX. Those are Roman numerals, and once you crack the code, they're weirdly satisfying to read.
 
-There are only seven letters to learn. Once you know them and two short rules, you can read almost any Roman numeral you meet.
+There are only seven letters to learn. Two short rules. That's the whole system.
 
 ## The seven letters
 
@@ -23,37 +23,39 @@ There are only seven letters to learn. Once you know them and two short rules, y
 | D      | 500   |
 | M      | 1,000 |
 
-A useful phrase to remember the order is "I Value Xylophones Like Cows Do Milk".
+To remember the order, I give my students this phrase: "I Value Xylophones Like Cows Do Milk". Silly. That's why it sticks.
 
 ## The two rules
 
-Roman numerals are read from left to right, and you add the values as you go. Two rules control how they combine.
+Read left to right, adding as you go. Two rules control how the letters combine.
 
-### Rule 1: add when values stay the same or decrease
+### Rule 1: add when values stay the same or shrink
 
-When a letter is followed by one of equal or smaller value, add them. So VI is 5 + 1 = 6, and XV is 10 + 5 = 15. You can repeat a letter up to three times: III is 3, and XXX is 30.
+When a letter is followed by one of equal or smaller value, just add. VI is 5 + 1 = 6. XV is 10 + 5 = 15. You can repeat a letter up to three times: III is 3, XXX is 30.
 
-### Rule 2: subtract when a smaller value comes first
+### Rule 2: subtract when a small one jumps ahead
 
-When a smaller letter sits directly before a larger one, subtract it. So IV is 5 − 1 = 4, and IX is 10 − 1 = 9. Only I, X, and C are used this way:
+When a smaller letter sits directly before a larger one, subtract it. IV is 5 − 1 = 4. IX is 10 − 1 = 9. But only I, X, and C are allowed to do this:
 
 - IV = 4, IX = 9
 - XL = 40, XC = 90
 - CD = 400, CM = 900
 
+Think of it as the Romans being too lazy to write IIII, so they invented a shortcut. Honestly, respect.
+
 ## Worked example: read XXIV
 
-Break it into parts from the left:
+Break it into chunks from the left:
 
 1. XX = 10 + 10 = 20.
 2. IV = 5 − 1 = 4 (subtract, because I comes before V).
-3. Add the parts: 20 + 4 = 24.
+3. Add the chunks: 20 + 4 = 24.
 
 So XXIV = **24**.
 
 ## Worked example: read MCMXCIV
 
-This looks hard, but the chunks make it simple.
+Looks scary. It's just four chunks.
 
 1. M = 1,000.
 2. CM = 900 (100 before 1,000).
@@ -61,23 +63,23 @@ This looks hard, but the chunks make it simple.
 4. IV = 4 (1 before 5).
 5. Add: 1,000 + 900 + 90 + 4 = 1,994.
 
-So MCMXCIV = **1,994**, a year you often see written this way.
+So MCMXCIV = **1,994**. You'll see this exact one in film credits from the nineties. Now you can read it without googling.
 
 ## Writing a number as Roman numerals
 
-Work from the largest place value down. For 2,023:
+Go from the largest place value down. For 2,023:
 
 1. Thousands: 2,000 = MM.
 2. Tens: 20 = XX.
 3. Ones: 3 = III.
-4. Put them together: **MMXXIII**.
+4. Stick them together: **MMXXIII**.
 
-## Common mistakes
+## The mistakes I see every year
 
-- **Repeating a letter four times.** You cannot write IIII for 4. Use the subtraction rule: IV.
-- **Subtracting the wrong letters.** Only I, X, and C subtract, and only from the next one or two sizes up. VL is not valid for 45; the correct form is XLV.
-- **Reading right to left.** Always read from the left and handle each chunk in order.
-- **Forgetting there is no zero.** Roman numerals have no symbol for zero, so numbers are built entirely from the seven letters.
+- **Writing a letter four times.** IIII for 4 is wrong. Use the subtraction shortcut: IV. (Fun fact: many clock faces break this rule and write IIII anyway. Tradition beats logic.)
+- **Subtracting with the wrong letters.** Only I, X, and C subtract, and only from the next one or two sizes up. VL is not 45. The correct form is XLV.
+- **Reading right to left.** Always left to right, chunk by chunk.
+- **Hunting for a zero.** There isn't one. Roman numerals have no symbol for zero, so everything is built from the seven letters.
 
 ## Quick reference: key values at a glance
 
@@ -100,40 +102,40 @@ Most numerals are built from these chunks. Learn them and you can assemble almos
 
 ## Worked example: write 944
 
-Work from the largest chunks down, using the reference table:
+Work from the biggest chunks down, grabbing from the table:
 
 1. Hundreds: 900 = CM. Remaining: 44.
 2. Tens: 40 = XL. Remaining: 4.
 3. Ones: 4 = IV.
 4. Put them together: **CMXLIV**.
 
-Check by reading it back: CM = 900, XL = 40, IV = 4. Total 944.
+Check by reading it back: CM = 900, XL = 40, IV = 4. Total 944. It works.
 
-## Roman numerals vs the numbers you use every day
+## Roman numerals vs the numbers you actually use
 
-Our normal digits (0–9) are called Arabic numerals. They beat Roman numerals in three ways:
+Our everyday digits (0–9) are called Arabic numerals. They won for three reasons:
 
-- **Place value.** In 2026, the 2 means 2,000 because of where it sits. Roman numerals have no places — every letter always means the same.
-- **Zero.** Arabic numerals have 0, which makes arithmetic possible. The Romans had no zero.
-- **Big numbers.** Writing 1,000,000 in Roman numerals is painful; in Arabic numerals it is seven characters.
+- **Place value.** In 2026, the 2 means 2,000 because of where it sits. Roman letters never change meaning based on position.
+- **Zero.** Arabic numerals have 0, which makes real arithmetic possible. The Romans never had one.
+- **Big numbers.** Writing 1,000,000 in Roman numerals is a nightmare. In Arabic numerals it's seven characters.
 
-That is why nobody does sums in Roman numerals. But they survive as decoration, tradition and numbering.
+So nobody does sums in Roman numerals anymore. They survive as decoration, tradition, and numbering. And honestly, they look cooler on a clock.
 
-## Where you'll still meet Roman numerals
+## Where you'll still bump into them
 
 - **Clock faces.** Many clocks write 4 as IIII (a traditional exception) and 12 as XII.
 - **Book chapters and film sequels.** "Chapter VII", "Rocky II".
-- **Years.** Copyright dates in film credits and building cornerstones, like MCMXCIV for 1994.
-- **The Super Bowl.** Numbered with Roman numerals every year, for example Super Bowl LVIII.
+- **Years.** Copyright dates in film credits and cornerstones of old buildings, like MCMXCIV for 1994.
+- **The Super Bowl.** Numbered in Roman numerals every year. Super Bowl LVIII, for example.
 - **Monarchs and popes.** Queen Elizabeth II, Pope John Paul II.
 
 ## Two quick questions
 
 **Why is there no zero?**
-The Romans had no need for a zero symbol — their system was built for counting and recording, not for place-value arithmetic. Zero as a number came to Europe much later with Arabic numerals.
+The Romans built their system for counting and recording, not for place-value arithmetic, so they never needed a zero symbol. Zero as a number arrived in Europe much later, with Arabic numerals.
 
-**What is the biggest number you can write?**
-With the seven letters, 3,999 is MMMCMXCIX. Bigger numbers were rare in Roman life, so the system simply stops being practical past that point.
+**What's the biggest number you can write?**
+With the seven letters, it's 3,999: MMMCMXCIX. The Romans rarely needed bigger numbers, so the system just stops being practical past that point.
 
 ## Try it yourself
 

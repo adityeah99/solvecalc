@@ -8,34 +8,32 @@ quiz: arithmetic
 related: [negative-numbers, how-to-calculate-a-percentage]
 ---
 
-When a sum has more than one operation, the order you work in changes the answer. To make sure everyone gets the same result, maths uses one agreed order.
+Last term a student argued with me for a full five minutes that 3 + 4 × 5 is 35. His logic: you just go left to right. He was so confident that half the class started doubting themselves.
 
-Look at 3 + 4 × 5. If you add first you get 35. If you multiply first you get 23. Only one of these is correct, and the rules below tell you which.
+He was wrong, but I understood why. When a sum has more than one operation, the order you work in changes the answer. Add first and you get 35. Multiply first and you get 23. Maths needed one agreed answer, so it settled on one agreed order. Learn it once and you will never argue about it again.
 
 ## The rule in one word
 
-Two common ways to remember the order are PEMDAS and BODMAS. They mean the same thing:
+Two memory words for the same order: PEMDAS and BODMAS.
 
-- **P / B** — Parentheses or Brackets: ( )
-- **E / O** — Exponents or Orders: powers and roots, like 5² or √9
-- **MD** — Multiplication and Division
-- **AS** — Addition and Subtraction
+- **P / B** : Parentheses or Brackets, ( )
+- **E / O** : Exponents or Orders, powers and roots like 5² or √9
+- **MD** : Multiplication and Division
+- **AS** : Addition and Subtraction
 
-Work from the top of the list down. Do brackets first, then powers, then multiply and divide, and finally add and subtract.
+Work down the list. Brackets first, then powers, then multiply and divide, then add and subtract.
 
-### One important detail
-
-Multiplication and division are equal in rank, so you do them left to right as they appear. The same is true for addition and subtraction. You do not always multiply before dividing, or add before subtracting.
+One detail people miss: multiplication and division are equals. Same with addition and subtraction. When two operations share a rank, you go left to right as they appear. You do not always multiply before dividing. That is the single most failed exam point in this topic.
 
 ## Worked example 1
 
 Solve 3 + 4 × 5.
 
-1. There are no brackets or powers.
-2. Do the multiplication: 4 × 5 = 20.
+1. No brackets, no powers.
+2. Multiply: 4 × 5 = 20.
 3. Now add: 3 + 20 = 23.
 
-So 3 + 4 × 5 = 23. The multiplication happened before the addition, even though the addition was written first.
+So 3 + 4 × 5 = 23. The multiplication jumped the queue even though the addition was written first. That is the whole point of the rule.
 
 ## Worked example 2
 
@@ -60,69 +58,69 @@ The answer is 6.
 
 ## Left to right, when ranks are equal
 
-Solve 24 ÷ 6 × 2. These are the same rank, so go left to right.
+Solve 24 ÷ 6 × 2. Same rank, so read left to right.
 
 1. 24 ÷ 6 = 4.
 2. 4 × 2 = 8.
 
-If you had multiplied first (6 × 2 = 12, then 24 ÷ 12 = 2) you would get the wrong answer. Left to right keeps it correct.
+If you multiplied first instead, you would do 6 × 2 = 12, then 24 ÷ 12 = 2. Wrong. Left to right is not a suggestion here. It is the rule.
 
-## Common mistakes
+## Mistakes I mark wrong every year
 
-- **Always adding before subtracting.** In 10 − 4 + 2, work left to right: 10 − 4 = 6, then 6 + 2 = 8. Doing 4 + 2 first gives the wrong answer of 4.
-- **Always multiplying before dividing.** They are equal, so 8 ÷ 4 × 2 is 4, not 1.
-- **Ignoring the brackets.** In 2 × (3 + 4), you must add inside first. It is not 2 × 3 + 4.
-- **Applying a power to the wrong part.** In 3 × 2², only the 2 is squared: 3 × 4 = 12, not 6².
+- **Adding before subtracting no matter what.** In 10 − 4 + 2, go left to right: 10 − 4 = 6, then 6 + 2 = 8. Adding 4 + 2 first gives 4, which is wrong.
+- **Multiplying before dividing no matter what.** They are equals. 8 ÷ 4 × 2 is 4, not 1.
+- **Skipping the brackets.** In 2 × (3 + 4), the inside comes first. It is not 2 × 3 + 4.
+- **Squaring the wrong thing.** In 3 × 2², only the 2 is squared: 3 × 4 = 12, not 36.
 
-## Nested brackets: work from the inside out
+## Nested brackets: inside out
 
-Sometimes brackets sit inside other brackets. The rule is simple: start with the innermost pair and work your way out.
+Sometimes brackets sit inside other brackets. Start with the innermost pair and work outward, like peeling an onion.
 
 ### Worked example: nested brackets
 
 Solve 2 × [3 + (4 − 1) × 2].
 
-1. Innermost brackets first: 4 − 1 = 3. The sum becomes 2 × [3 + 3 × 2].
+1. Innermost brackets: 4 − 1 = 3. The sum becomes 2 × [3 + 3 × 2].
 2. Inside the square brackets, multiply before adding: 3 × 2 = 6. Now it is 2 × [3 + 6].
 3. Finish the square brackets: 3 + 6 = 9. Now it is 2 × 9.
 4. Multiply: 2 × 9 = 18.
 
-The answer is 18. Treat each bracket layer like its own little sum, with the normal order applying inside each one.
+The answer is 18. Treat each bracket layer as its own little sum, with the normal order running inside each one.
 
-## PEMDAS vs BODMAS: no real difference
+## PEMDAS vs BODMAS: same thing, different accent
 
-You may see both words taught. They describe the exact same order:
+You will see both words. They describe the exact same order:
 
 | PEMDAS | BODMAS | Meaning |
 |---|---|---|
-| P — Parentheses | B — Brackets | ( ) first |
-| E — Exponents | O — Orders | powers and roots |
-| M/D — Multiplication / Division | D/M — Division / Multiplication | left to right |
-| A/S — Addition / Subtraction | A/S — Addition / Subtraction | left to right |
+| P : Parentheses | B : Brackets | ( ) first |
+| E : Exponents | O : Orders | powers and roots |
+| M/D | D/M | multiply and divide, left to right |
+| A/S | A/S | add and subtract, left to right |
 
-The letters differ, the maths does not. Use whichever word your teacher uses. Just remember that M and D are equal in rank (as are A and S), so within each pair you always go left to right.
+Different letters, same maths. Use whichever word your teacher uses. Just remember M and D are equals (and so are A and S), so within each pair you always go left to right.
 
 ## Where this actually matters
 
-This is not just an exam rule. It shows up whenever a machine does the maths for you:
+This is not only an exam rule. It is running quietly inside every machine that does maths for you:
 
-- **Calculators.** A scientific calculator follows the order, so 3 + 4 × 5 gives 23. But a very basic calculator works out each step as you type it, giving 35. That is why two calculators can disagree.
-- **Spreadsheets.** Typing `=2+3*4` into a spreadsheet gives 14, because it multiplies first. If you want the addition first, you must write `=(2+3)*4`.
-- **Programming.** Every programming language uses this order, which is why learning it now makes coding easier later.
+- **Calculators.** A scientific calculator follows the order, so 3 + 4 × 5 gives 23. A very basic calculator just works left to right as you type, giving 35. Two calculators, two answers. Now you know why.
+- **Spreadsheets.** Type `=2+3*4` and you get 14, because it multiplies first. Want the addition first? Write `=(2+3)*4`. The brackets are doing real work there.
+- **Programming.** Every programming language uses this order. Learning it now is a head start on coding later.
 
 ## Quick questions
 
-**Why not just always go left to right?**
+**Why not always go left to right?**
 
-Because then 3 + 4 × 5 would be 35, and every textbook, calculator, and computer in the world would disagree with you. The agreed order keeps everyone's answers the same.
+Because then 3 + 4 × 5 would be 35, and every textbook, calculator, and computer on the planet would disagree with you. One agreed order keeps everyone's answers identical.
 
 **Do brackets really change anything?**
 
-Yes. Compare 10 − 2 × 3 = 4 with (10 − 2) × 3 = 24. The brackets force the subtraction first and the answer is six times bigger.
+Hugely. Compare 10 − 2 × 3 = 4 with (10 − 2) × 3 = 24. The brackets drag the subtraction to the front and the answer comes out six times bigger.
 
-**What if I am still unsure?**
+**What if I am still unsure on a tricky one?**
 
-Add brackets yourself. There is nothing wrong with writing (4 × 5) + 3 to make your meaning clear. Brackets are free, and they remove all doubt.
+Add brackets yourself. Writing (4 × 5) + 3 costs nothing and removes all doubt. Brackets are free. Use them.
 
 ## Worked example: powers and brackets together
 
@@ -135,7 +133,7 @@ Solve (2 + 3)² − 4 × 3.
 
 The answer is 13.
 
-A handy tip: when a sum looks scary, rewrite it after each step, exactly as above. Each line should have one fewer operation than the line before. If a line looks the same as the one above it, you probably skipped a step.
+My best tip for scary-looking sums: rewrite the whole line after each step, exactly as above. Each new line should have one fewer operation than the last. If a line looks identical to the one above it, you skipped a step. Go back.
 
 ## Try it yourself
 

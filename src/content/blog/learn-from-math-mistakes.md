@@ -10,55 +10,63 @@ articles: [order-of-operations]
 related: [how-to-study-for-a-math-test]
 ---
 
-Most students treat a wrong answer as bad news to hide. But a returned test full of red marks is one of the most useful things you will ever hold. Every X is a signpost pointing at exactly what to fix. The trick is learning to read the signs.
+Most students treat a wrong answer as bad news to hide. The paper comes back, they glance at the grade, and it goes straight into the bag. Or the bin.
 
-## Not all mistakes are the same
+That paper is one of the most useful things you'll ever hold. Every X on it's a signpost pointing at exactly what to fix. The trick is learning to read the signs instead of hiding from them.
 
-Before you can fix a mistake, you have to know what kind it is. Most fall into three groups, and each one needs a different response.
+## First, sort your mistakes. They aren't all the same.
 
-- **Careless slips.** You knew the method but wrote 6 × 7 = 48 or lost a minus sign.
-- **Method gaps.** You did not know how to start, or used the wrong approach.
-- **Reading errors.** You solved a problem, just not the one that was asked.
+Before you can fix a mistake, you've to know what kind it's. Most fall into three groups, and each one needs a completely different response.
 
-Sort your wrong answers into these three piles. The pattern that shows up tells you where your effort will pay off most.
+- **Careless slips.** You knew the method but wrote 6 × 7 = 48 or lost a minus sign along the way.
+- **Method gaps.** You did not know how to start, or you used the wrong approach entirely.
+- **Reading errors.** You solved a problem. Just not the one that was asked.
 
-## Fixing careless slips
+Sort your last test's wrong answers into these three piles. The pattern tells you exactly where your effort pays off most. Ten minutes, highest-value studying you can do.
 
-If most of your errors are slips, your math is stronger than your grade suggests. That is genuinely good news, because slips are the easiest kind to cut.
+## Slips mean your math is better than your grade
 
-Slow down and write every step, even the "obvious" ones. Most slips hide in the steps people do in their heads. A very common one is the order of operations: in 2 + 3 × 4 you must multiply first, giving 14, not 20. If that rule ever slips, the [order of operations article](/articles/order-of-operations) is worth a fresh look.
+If most of your errors are slips, your math is stronger than your grade suggests. Slips are the easiest kind to cut.
 
-Leaving two minutes at the end of a test to recheck your arithmetic catches a surprising number of these.
+Slow down. Write every step, even the "obvious" ones. Most slips hide in the steps people do in their heads.
 
-## Fixing method gaps
+A very common one is the order of operations: in 2 + 3 × 4 you must multiply first, giving 14, not 20. If that rule ever slips, the [order of operations article](/articles/order-of-operations) is worth a fresh look.
 
-Method gaps are the ones that actually cost you knowledge, so they deserve the most time.
+Leave two minutes at the end of every test to recheck your arithmetic. It catches a shocking number of these.
 
-Do not just copy the correct solution and move on. Ask *why* each step happens. Then, and this is the important part, find two or three similar problems and solve them on your own with the answer covered. Copying feels like learning but rarely sticks. Redoing it yourself is what proves you have got it.
+## Gaps are where the real points live
 
-## Fixing reading errors
+Method gaps actually cost you knowledge, so they deserve the most time. No shortcuts here.
 
-Reading errors are frustrating because the math was right. The fix is a habit, not a skill.
+Don't just copy the correct solution and move on. Copying feels like learning and almost never sticks. Ask *why* each step happens, then find two or three similar problems and solve them yourself with the answer covered.
 
-Underline exactly what the question asks before you start: "how many left," "the total cost," "rounded to one decimal place." Then, at the end, check that your answer matches those words. If it asked for change and you wrote the price, you have found a reading error before it cost you.
+Redoing it yourself is the only proof that you've actually got it. Everything else is wishful thinking.
 
-## Keep an error log
+## Reading errors are a habit problem, not a math problem
 
-This one habit separates students who improve from students who keep making the same mistakes. Keep a running list of errors you make more than once.
+These are the most frustrating mistakes, because the math was right. You just answered the wrong question. The fix is a habit, not a skill.
 
-Each entry is short: the mistake, and the reminder. For example, "I flip the inequality sign the wrong way, so I check the direction whenever I divide by a negative." Reviewing this page before a test is far more useful than rereading the whole chapter, because it targets *your* weak spots, not everyone's.
+Underline exactly what the question asks before you start: "how many left," "the total cost," "rounded to one decimal place." Then check your answer against those words at the end. If it asked for the change and you wrote the price, you just caught a reading error before it cost you.
+
+## Keep an error log. This is the whole game.
+
+Keep a running list of errors you make more than once. This single habit separates students who improve from students who make the same mistakes forever.
+
+Each entry is short: the mistake, and the reminder. For example: "I flip the inequality sign the wrong way, so I check the direction whenever I divide by a negative."
+
+Review this page before a test. It targets *your* weak spots, not everyone's.
 
 ## Redo old tests, not just new problems
 
 When you study for a big exam, dig out your old quizzes and tests. Redo the ones you got wrong, from scratch, without looking at the previous solution.
 
-If you get them right this time, that is real proof you have closed the gap. If you get them wrong again, you have found exactly what still needs work, while there is still time to fix it.
+If you get them right this time, that's real proof you've closed the gap. If not, you've found exactly what still needs work, while there's still time.
 
-## Change how the mistake feels
+## Stop treating mistakes as verdicts
 
-A wrong answer is not a verdict on how smart you are. It is data about one specific step on one specific day.
+A wrong answer isn't a verdict on how smart you are. It's data about one specific step on one specific day.
 
-Students who improve fastest are usually not the ones who make fewer mistakes at first. They are the ones who look their mistakes in the eye instead of shoving the paper in a drawer. Every error you understand is one you are far less likely to repeat.
+The students who improve fastest are usually not the ones who made fewer mistakes at first. They're the ones who looked their mistakes in the eye instead of shoving the paper in a drawer. Every error you understand is one you're far less likely to repeat.
 
 ## Try this next
 

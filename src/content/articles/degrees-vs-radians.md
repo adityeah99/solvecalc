@@ -7,11 +7,11 @@ calculators: [scientific, unit-converter]
 related: [pythagorean-theorem]
 ---
 
-Degrees and radians are two different units for measuring angles, in the same way that inches and centimeters are two units for measuring length. The angle itself does not change. Only the number you use to describe it does.
+Here's a confession: radians confused me too, the first time I met them. Degrees felt natural. Radians felt like someone invented them just to make tests harder.
 
-Most people meet degrees first. Radians show up later in math, especially in trigonometry, and they can feel strange at first. They are simpler than they look.
+They didn't. Degrees and radians are just two different units for measuring the same angle, the way inches and centimeters are two units for the same length. The angle doesn't change. Only the number you describe it with does.
 
-## Degrees
+## Degrees: the ones you already know
 
 In degrees, one full turn is split into 360 equal parts. Each part is 1°.
 
@@ -19,27 +19,27 @@ In degrees, one full turn is split into 360 equal parts. Each part is 1°.
 - A half turn, a straight line, is 180°.
 - A quarter turn, a square corner, is 90°.
 
-The number 360 is a choice people made a very long time ago. It divides nicely by lots of numbers, like 2, 3, 4, 5, 6, 8, 9, 10 and 12, which makes it handy.
+Why 360? People picked it a very long time ago because it divides nicely by so many numbers: 2, 3, 4, 5, 6, 8, 9, 10, 12. Handy for splitting circles into neat pieces.
 
-## Radians
+## Radians: measured with the circle itself
 
-A radian is based on the circle itself. Imagine a circle with radius r. Take a piece of string the same length as the radius and lay it along the edge of the circle. The angle at the center that this piece of string makes is **1 radian**.
+A radian is based on the circle, not on some ancient counting choice. Imagine a circle with radius r. Take a piece of string exactly as long as the radius and lay it along the edge of the circle. The angle at the center that this piece of string makes is **1 radian**.
 
-How many of those pieces fit around the whole circle? The distance around a circle is 2πr, so 2π pieces of length r fit. That gives:
+Now, how many of those string-pieces fit around the whole circle? The distance around is 2πr, so 2π pieces of length r fit. That gives:
 
 - A full turn is 2π radians, about 6.28.
 - A half turn is π radians, about 3.14.
 - A quarter turn is π/2 radians, about 1.57.
 
-The link you need to remember is:
+The one link worth memorizing:
 
 **180° = π radians**
 
-From this, 1 radian = 180 ÷ π ≈ 57.3°.
+From this, 1 radian = 180 ÷ π ≈ 57.3°. So a radian is a big angle, more than fifty degrees. That surprises people.
 
 ## Converting degrees to radians
 
-Multiply by π/180.
+Multiply by π/180. That's the whole method.
 
 ### Example: convert 60° to radians
 
@@ -54,9 +54,11 @@ Multiply by π/180.
 2. 45/180 simplifies to 1/4
 3. So 45° = π/4 radians ≈ 0.7854
 
+See the pattern? The π sticks around in the exact answer. That's normal and good. Exact beats decimal here.
+
 ## Converting radians to degrees
 
-Multiply by 180/π.
+Multiply by 180/π. Just the flip of the other direction.
 
 ### Example: convert 3π/4 radians to degrees
 
@@ -71,9 +73,9 @@ Multiply by 180/π.
 2. 360 ÷ 3.14159… ≈ 114.59
 3. So 2 radians ≈ 114.59°.
 
-Radians do not always come with a π in them. 2 radians is a perfectly good angle.
+Radians don't always come with a π attached. 2 radians is a perfectly good angle, nothing missing.
 
-## Common angles
+## Common angles worth memorizing
 
 | Degrees | Radians (exact) | Radians (decimal) |
 |---|---|---|
@@ -86,30 +88,37 @@ Radians do not always come with a π in them. 2 radians is a perfectly good angl
 | 270° | 3π/2 | ≈ 4.7124 |
 | 360° | 2π | ≈ 6.2832 |
 
-## Why bother with radians?
+You don't need all eight on day one. Start with 90°, 180°, and 360°.
 
-Radians make some formulas much neater. For example, the length of an arc of a circle is:
+## Why bother with radians at all?
+
+Fair question. Here's the honest answer: radians make the formulas cleaner. The length of an arc of a circle is:
 
 **arc length = radius × angle in radians**
 
-A bicycle wheel has a radius of 30 cm. If it turns through 2 radians, a point on the tire moves 30 × 2 = 60 cm along the edge. In degrees, you would need an extra π/180 in the formula.
+A bicycle wheel has a radius of 30 cm. It turns through 2 radians. A point on the tire moves 30 × 2 = 60 cm along the edge. Done, no extra steps.
 
-Radians are also the standard unit in more advanced math, so it is good to get comfortable with them early.
+In degrees, that same formula needs an extra π/180 bolted on. Radians are also the standard unit in higher math and physics, so getting comfortable now saves you a headache later.
 
-## Mistakes to watch for
+## The mistake I see every year
 
-- **Using the wrong calculator mode.** This is the big one. In degree mode, sin(30) = 0.5. In radian mode, sin(30) means the sine of 30 radians, which is about −0.988. Always check the DEG or RAD setting.
-- **Flipping the conversion.** Degrees to radians is × π/180. Radians to degrees is × 180/π. If your answer looks huge or tiny, you may have used the wrong one.
-- **Rounding π too soon.** Keep answers like π/3 exact as long as you can, then round at the end.
-- **Thinking 1 radian is 1°.** One radian is about 57.3°, much bigger than one degree.
+**Using the wrong calculator mode.** This is the big one, and I've watched it cost students marks on real tests.
 
-## Where you'll use radians
+In degree mode, sin(30) = 0.5. In radian mode, sin(30) means the sine of 30 *radians*, which is about −0.988. Same buttons, wildly different answer. Before every trigonometry question, glance at your calculator screen and check for DEG or RAD. Make it a habit, like checking your mirrors before driving.
 
-Radians feel abstract until you see them working:
+The other classics:
 
-- **Wheels and spinning.** A car wheel, a Ferris wheel, a spinning record — anything that rotates is measured naturally in radians. If a Ferris wheel with a radius of 12 m turns through π/2 radians, each cabin travels along an arc of 12 × π/2 = 6π ≈ 18.85 m.
+- **Flipping the conversion.** Degrees to radians is × π/180. Radians to degrees is × 180/π. If your answer looks absurdly huge or tiny, you probably used the wrong one.
+- **Rounding π too soon.** Keep answers like π/3 exact as long as you can. Round at the very end.
+- **Thinking 1 radian is 1°.** One radian is about 57.3°. Much bigger than one degree.
+
+## Where you'll actually meet radians
+
+Radians feel abstract until you catch them working in the wild:
+
+- **Wheels and spinning.** A car wheel, a Ferris wheel, a spinning record. Anything that rotates is measured naturally in radians. If a Ferris wheel with a radius of 12 m turns through π/2 radians, each cabin travels along an arc of 12 × π/2 = 6π ≈ 18.85 m.
 - **Robots and games.** Robot arms and video game cameras rotate in radians under the hood, because the math stays simpler that way.
-- **Physics.** The speed of a rotation is measured in radians per second. A wheel turning at 2 radians per second completes about 0.32 of a full turn each second, since one full turn is 2π ≈ 6.28 radians.
+- **Physics.** Rotational speed is measured in radians per second. A wheel turning at 2 radians per second completes about 0.32 of a full turn each second, since one full turn is 2π ≈ 6.28 radians.
 
 ## Extra worked example: arc length
 
@@ -139,10 +148,10 @@ Check the pattern: multiply the fraction by 360 for degrees, or by 2π for radia
 You can, but the formulas get uglier. In degrees, arc length = radius × degrees × π/180. That extra π/180 is just converting to radians behind the scenes. Radians are the unit the formulas were built for.
 
 **Do I write "radians" after the number?**
-It helps. An answer of "1.05" could mean 1.05 radians or 1.05 degrees — very different angles. Writing "1.05 radians" removes the doubt. Exact answers like π/3 are understood to be radians.
+It helps. An answer of "1.05" could mean 1.05 radians or 1.05 degrees, and those are very different angles. Writing "1.05 radians" removes the doubt. Exact answers like π/3 are understood to be radians.
 
 **Which mode should my calculator be in for homework?**
-Match the question. If the angle is written with °, use degree mode. If it involves π or the word "radians", use radian mode. When you switch, say it out loud — "switching to radians" — so you never forget to switch back.
+Match the question. If the angle is written with °, use degree mode. If it involves π or the word "radians", use radian mode. When you switch, say it out loud, "switching to radians", so you never forget to switch back.
 
 ## Keep going
 
