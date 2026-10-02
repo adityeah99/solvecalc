@@ -1,6 +1,6 @@
 ---
 title: "Mental Math Tricks Worth Knowing"
-description: "Real mental math shortcuts with worked examples: multiplying by 11, squaring numbers ending in 5, quick percentages, and doubling and halving."
+description: "Multiply by 11 in your head, square numbers ending in 5, split a bill in seconds. Real tricks with worked examples. No magic, just patterns."
 category: math-basics
 published: 2026-09-30
 icon: spark

@@ -1,6 +1,6 @@
 ---
 title: "Turning Wrong Answers Into Better Grades"
-description: "Wrong answers are the best study tool you have. Here is how to sort your mistakes, learn from each kind, and stop repeating them."
+description: "Every wrong answer points at exactly what to fix. Here's how to sort your mistakes, learn from each kind, and stop repeating them."
 category: study-tips
 published: 2026-09-30
 icon: target

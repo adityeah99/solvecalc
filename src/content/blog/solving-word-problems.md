@@ -1,6 +1,6 @@
 ---
 title: "How to Solve Math Word Problems, Step by Step"
-description: "A reliable five-step method for word problems, with worked examples: turn the words into math, solve, and check the answer makes sense."
+description: "Word problems aren't really about math, they're about translation. A five-step method that turns confusing paragraphs into solvable equations."
 category: math-basics
 published: 2026-09-30
 icon: magnifier

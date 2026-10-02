@@ -1,6 +1,6 @@
 ---
 title: "How to Study for a Math Test"
-description: "A calm, step-by-step plan for studying math: what to review first, how to practice, and what to do the night before the test."
+description: "Cramming doesn't work for math, but a calm plan does. What to review first, how to practice, and what to do the night before the test."
 category: study-tips
 published: 2026-09-30
 icon: notepad

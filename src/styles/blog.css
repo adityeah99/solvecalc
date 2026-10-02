@@ -44,8 +44,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 22px;
 }
 .post-card {
   display: flex;
@@ -80,27 +80,28 @@
 .post-cover {
   display: grid;
   place-items: center;
-  aspect-ratio: 16 / 7;
-  font-size: 2.6rem;
+  aspect-ratio: 16 / 9;
+  font-size: 3.4rem;
   border-bottom: 1px solid var(--border);
   background-size: 18px 18px;
 }
 .post-card-body {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 14px 16px 16px;
+  gap: 10px;
+  padding: 18px 20px 20px;
   flex: 1;
 }
 .post-card-body h3 {
   margin: 0;
-  font-size: 1.12rem;
+  font-size: 1.35rem;
   line-height: 1.25;
 }
 .post-card-body p {
   margin: 0;
   color: var(--ink-2);
-  font-size: 0.95rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
   flex: 1;
 }
 .post-card-more {

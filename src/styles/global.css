@@ -817,7 +817,7 @@ textarea {
   padding-bottom: 40px;
 }
 .reading-main {
-  max-width: 760px;
+  max-width: 1080px;
   padding: 22px 18px 8px;
   background: var(--paper);
   border: 1px solid var(--border);
@@ -859,7 +859,7 @@ textarea {
 .reading-after {
   display: grid;
   gap: 40px;
-  max-width: 880px;
+  max-width: 1080px;
   margin-top: 40px;
 }
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Help Your Child With Math Homework"
-description: "How to support your child with math homework without doing it for them, even when the methods look different from the ones you learned."
+description: "Your kid's homework looks nothing like what you learned. Here's how to actually help, without doing it for them or starting a fight at the kitchen table."
 category: for-parents
 published: 2026-09-30
 icon: family

@@ -1,6 +1,6 @@
 ---
 title: "Why Math Feels Hard (and How to Make It Easier)"
-description: "Math anxiety is common and beatable. Here is why math feels scary for so many students, and calm, practical ways to make it feel doable."
+description: "If math makes your stomach drop, you're not broken and you're not alone. Here's what's really going on, and how to make it feel doable again."
 category: study-tips
 published: 2026-09-30
 icon: lightbulb

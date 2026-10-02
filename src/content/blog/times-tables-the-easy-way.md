@@ -1,6 +1,6 @@
 ---
 title: "Learn Your Times Tables the Easy Way"
-description: "You do not have to memorize 144 facts by brute force. Use patterns and a few clever tricks to learn your times tables far faster."
+description: "144 facts is a lot to memorize by brute force. Patterns, tricks, and a smarter order make it way faster, and far less painful."
 category: math-basics
 published: 2026-09-30
 icon: grid
